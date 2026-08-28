@@ -2,15 +2,22 @@
 
 | Shot | Source | Edit | Caption |
 |---|---|---|---|
-| Hook | `assets/video/conversation-fork-source.mp4` 00:00–00:05 | Crop to app, quick title fade | Rehearse. Rewind. Compare. |
-| First conversation | same source 00:05–00:21 | 105% center crop, two clean cuts | Talk naturally |
-| Intent Lock | same source, lock segment | Hold long enough to read both chips | Your intent, one tap |
-| Turning Point and rewind | same source 00:22–00:43 | Preserve rewind motion; no speed ramp over text | Same moment |
-| Second path | same source 00:43–00:57 | Match cut at restored checkpoint | One different choice |
-| RevenueCat | `assets/video/revenuecat-test-store-source.mp4` 00:00–00:18 | Show Test Store modal, success, unlocked comparison | Real Test Store integration |
-| Comparison | screenshot/recording hold | Slow vertical move; avoid unreadable zoom | Compare consequences |
-| Architecture | `assets/diagrams/architecture.svg` | 6–7 second static pan | AI flexibility, deterministic safety |
-| Close | `assets/app-icon.svg` | Logo/title fade | Second Take |
+| Hook | `assets/video/conversation-fork-source.mp4` | Crop to app, quick title fade | Rehearse. Rewind. Compare. |
+| First conversation | same source | Two clean cuts | Talk naturally |
+| Intent Lock | same source | Hold long enough to read both chips | Your intent, one tap |
+| Turning Point and rewind | same source | Preserve rewind motion | Same moment |
+| Second path | same source | Match cut at restored checkpoint | One different choice |
+| RevenueCat | `assets/video/revenuecat-test-store-source.mp4` | Show Test Store modal, success, unlocked comparison | Real Test Store integration |
+| Comparison | screenshot/recording hold | Slow vertical move | Compare consequences |
+| Architecture | local architecture card | Static hold | AI flexibility, deterministic safety |
+| Close | local closing card | Logo/title fade | Second Take |
 
-Captions will be burned in or supplied as an English subtitle track. No commercial music is planned; the safest default is narration plus original, minimal UI audio.
+## Final assembly
 
+- 0:00-1:00 — real conversation/fork source, paced for legibility.
+- 1:00-1:20.8 — dedicated RevenueCat source, including paywall, Test Store modal, purchase success, and unlocked comparison.
+- 1:20.8-1:32 — comparison hold.
+- 1:32-1:42 — architecture card.
+- 1:42-1:47.7 — closing card.
+
+Final output: `assets/video/second-take-shipaton-final.mp4`. No commercial music is used.

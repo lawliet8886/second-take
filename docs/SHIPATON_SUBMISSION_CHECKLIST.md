@@ -1,30 +1,31 @@
 # Shipaton submission checklist
 
-Official rules checked 2026-08-28 at `https://revenuecat-shipaton-2026.devpost.com/rules` and `https://www.shipaton.com/next-gen`.
+Official rules and the live Devpost form were checked on 2026-08-28.
 
-| Requirement | Prepared | Verified | Asset/path | Blocker |
-|---|---:|---:|---|---:|
-| Joined hackathon | Pending | Yes (not joined) | Devpost account | Normal submission step |
-| Next Gen category | Draft | Pending join | Devpost form | Normal submission step |
-| Active student | Yes | Verified from private official declaration | Private evidence retained outside repository | No |
-| Qualifying academic email | Yes | Official format/domain verified; Devpost checker pending join | `[PRIVATE STUDENT EMAIL — retained in submission-private]` | No eligibility blocker |
-| Enrollment evidence | Yes | Active enrollment confirmed | Private official declaration retained outside repository | No |
-| Private student proof retained | Yes | Git-isolated | Private submission storage | No |
-| Public open-source repo | Candidate ready | Pending publication | `second-take/` | Normal submission step |
-| License/source/setup | Yes | Yes | root + README | No |
-| Text description | Yes | Yes | `docs/DEVPOST_SUBMISSION.md` | No |
-| Demo video <2 min | Script/sources ready | No final render | video docs/assets | Normal submission step |
-| Public YouTube/Vimeo | Pending | No | pending | Normal submission step |
-| Android footage | Yes | Yes | source recordings | No |
-| 1024 icon | Yes | Yes | `assets/app-icon.png` | No |
-| 1179×2556 screenshot | Yes | Yes | required screenshot | No |
-| English materials | Yes | Reviewed | public candidate | No |
-| RevenueCat real integration | Yes | Yes | source + demo recording | No |
-| Test Store disclosure | Yes | Yes | README/Devpost/video | No |
-| No store listing required | Yes | Official rules | form still unavailable | No |
-| All form fields inspected | No | Pending join | checklist | Normal submission step |
-| No false store-release declaration | Yes | Policy recorded | checklist | No |
+| Requirement | Status | Evidence / remaining action |
+|---|---|---|
+| Joined hackathon | PASS | Devpost draft is active |
+| Next Gen category | PASS | Live repository and academic-email fields present |
+| Active student | PASS | Private official declaration retained outside repository |
+| Academic email checker | PASS_FINAL | Saved by Devpost without validation error |
+| Public open-source repo | READY_TO_PUBLISH | `second-take/`; publication intentionally pending |
+| MIT license/source/setup | PASS | `LICENSE`, `README.md` |
+| Final English video <2 min | READY_TO_UPLOAD | 107.7 s local final render |
+| Public YouTube/Vimeo URL | PENDING | Upload intentionally outside this phase |
+| Android app icon | READY | `assets/app-icon.png`, 1024x1024 |
+| Required screenshot | READY | `assets/screenshots/required-1179x2556.png`, 1179x2556 |
+| Screenshot set | READY | Eight local PNGs; gallery upload pending |
+| RevenueCat integration | PASS | Real Test Store flow visible in video |
+| No false store-release declaration | PASS | All store URLs blank; release checkbox unchecked |
+| Full form inspection | PASS | All required and optional award fields mapped |
+| Tree/history/PII scans | PASS | Re-run after final docs/media |
+| Final Devpost submission | NOT_SUBMITTED | Hard stop preserved |
 
-Official deadline: 2026-09-30 23:45 PDT (2026-10-01 03:45 BRT). Internal deadline: 2026-09-28 23:45 BRT.
+## Remaining irreversible/public steps
 
-Student eligibility evidence is retained privately and must not be added to this public candidate. The remaining Join, publication, and form actions are normal submission execution, not evidence of ineligibility.
+1. Publish the reviewed repository.
+2. Upload the final video to YouTube or Vimeo.
+3. Paste both public URLs and upload the prepared image set.
+4. Perform a human final preview, accept the rules, and click Submit.
+
+Status: `READY_PENDING_PUBLIC_URLS`. Internal readiness: **96%**.

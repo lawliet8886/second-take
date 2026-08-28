@@ -1,0 +1,79 @@
+1
+00:00:00,000 --> 00:00:05,700
+Difficult conversations matter because real life rarely gives us a clean second attempt.
+
+2
+00:00:05,700 --> 00:00:11,550
+Second Take creates a private rehearsal space to try one before the moment matters.
+
+3
+00:00:11,870 --> 00:00:17,400
+Here I am rehearsing with Alex, a teammate on an unfinished project.
+
+4
+00:00:17,400 --> 00:00:23,420
+I write naturally, and Alex responds inside one consistent scenario.
+
+5
+00:00:23,740 --> 00:00:28,700
+For one critical distinction, Second Take does not pretend to read my mind.
+
+6
+00:00:28,700 --> 00:00:33,740
+I confirm whether I am asking what Alex can do, or asking Alex to do it.
+
+7
+00:00:34,060 --> 00:00:40,700
+At the Turning Point, the app saves an exact checkpoint: the same facts, personality, history, and state.
+
+8
+00:00:40,700 --> 00:00:44,200
+My first response creates one consequence.
+
+9
+00:00:44,200 --> 00:00:47,260
+Then I rewind to that identical moment.
+
+10
+00:00:47,580 --> 00:00:51,200
+Everything before the checkpoint is restored.
+
+11
+00:00:51,200 --> 00:00:53,200
+Only my response changes.
+
+12
+00:00:53,200 --> 00:00:59,580
+A more specific, collaborative message creates a genuinely different path.
+
+13
+00:00:59,900 --> 00:01:03,000
+Users experience both paths for free.
+
+14
+00:01:03,000 --> 00:01:08,500
+RevenueCat unlocks Full A/B Comparison through a real Test Store purchase.
+
+15
+00:01:08,500 --> 00:01:14,100
+CustomerInfo updates, and the Pro entitlement becomes active.
+
+16
+00:01:14,420 --> 00:01:20,400
+Now I can compare what I said, Alex's response, and the trajectory each choice created.
+
+17
+00:01:20,400 --> 00:01:25,870
+The value is visible instead of becoming generic AI advice.
+
+18
+00:01:26,190 --> 00:01:34,500
+Gemini chooses only among conversation moves approved by deterministic policy and a finite graph.
+
+19
+00:01:34,500 --> 00:01:42,415
+Authored responses preserve character consistency, while a local fallback handles provider failure.
+
+20
+00:01:42,735 --> 00:01:47,635
+Second Take: rehearse the moment, rewind it exactly, and compare what changed.
