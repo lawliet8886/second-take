@@ -1,0 +1,15 @@
+import { createHash } from "node:crypto";
+import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
+import { resolve } from "node:path";
+const dir = resolve("results/v0531/challenge-generation");
+const files = (await readdir(dir)).filter((x) => x.endsWith(".json")).sort();
+if (files.length !== 72) throw new Error(`EXPECTED_72_BATCHES:${files.length}`);
+const artifacts = await Promise.all(files.map(async (file) => JSON.parse(await readFile(resolve(dir, file), "utf8"))));
+const cases = artifacts.flatMap((batch: any) => batch.utterances.map((u: any) => ({ ...batch.job, ...u, labelDrift: false })));
+if (cases.length !== 1800 || new Set(cases.map((x: any) => x.id)).size !== 1800) throw new Error("V0531_CASE_INTEGRITY");
+const body = `${JSON.stringify({ schemaVersion: "v0531-challenge-1", cases }, null, 2)}\n`;
+const hash = createHash("sha256").update(body).digest("hex");
+await mkdir(resolve("results/v0531"), { recursive: true });
+await writeFile(resolve("results/v0531/challenge.json"), body);
+await writeFile(resolve("results/v0531/challenge-freeze.json"), `${JSON.stringify({ schemaVersion: "v0531-challenge-freeze-1", hash, cases: cases.length, frozenAt: new Date().toISOString(), generationCalls: artifacts.length, generationRetries: artifacts.reduce((n: number, x: any) => n + Math.max(0, x.transport.attempts.length - 1), 0), generationCostUsd: artifacts.reduce((n: number, x: any) => n + x.estimatedCostUsd, 0) }, null, 2)}\n`);
+process.stdout.write(`${JSON.stringify({ cases: cases.length, hash }, null, 2)}\n`);

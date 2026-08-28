@@ -1,0 +1,11 @@
+import { readFile, writeFile } from "node:fs/promises";
+import { resolve } from "node:path";
+const number = Number(process.argv[2]);
+if (!Number.isInteger(number) || number < 1) throw new Error("batch number required");
+const dataset = JSON.parse(await readFile(resolve("results/v052/blind-dataset.json"), "utf8"));
+const freeze = JSON.parse(await readFile(resolve("results/v052/blind-freeze.json"), "utf8"));
+const expected = dataset.cases.slice((number - 1) * 5, number * 5);
+if (expected.length !== 5) throw new Error("INVALID_BATCH");
+const payload = { schemaVersion: "v052-blind-routes-1", index: number - 1, datasetHash: freeze.datasetHash, expected, routes: [], failure: { type: "PERSISTENT_SCHEMA_FAILURE", reason: "INVALID_ROUTER_ENUM:tone:SUPPORTIVE", firstPassAndSingleRepairConsumed: true }, usage: null, latencyMs: null, estimatedCostUsd: null, transportRetries: null, semanticRetry: 1 };
+await writeFile(resolve("results/v052/blind-router-batches", `${String(number).padStart(4,"0")}.json`), `${JSON.stringify(payload,null,2)}\n`);
+process.stdout.write(`V052_BLIND_FAILURE_RECORDED ${number}\n`);

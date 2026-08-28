@@ -1,0 +1,7 @@
+export type CircuitState="CLOSED"|"OPEN"|"HALF_OPEN";
+type Outcome={retried:boolean;terminal:boolean};
+export class SelectorCircuitBreaker{#state:CircuitState="CLOSED";#outcomes:Outcome[]=[];#openedAt=0;#openCount=0;#halfOpenInFlight=false;constructor(readonly windowSize=20,readonly baseCooldownMs=30_000,readonly maxCooldownMs=300_000,private readonly now=()=>Date.now()){}
+  state(){this.refresh();return this.#state;}cooldownMs(){return Math.min(this.maxCooldownMs,this.baseCooldownMs*2**Math.max(0,this.#openCount-1));}
+  canRequest(){this.refresh();if(this.#state==="OPEN")return false;if(this.#state==="HALF_OPEN"){if(this.#halfOpenInFlight)return false;this.#halfOpenInFlight=true;}return true;}
+  record(outcome:Outcome){if(this.#state==="HALF_OPEN"){this.#halfOpenInFlight=false;if(outcome.terminal){this.open();return;}this.#state="CLOSED";this.#outcomes=[];this.#openCount=0;return;}this.#outcomes.push(outcome);if(this.#outcomes.length>this.windowSize)this.#outcomes.shift();if(this.#outcomes.length===this.windowSize){const retries=this.#outcomes.filter(x=>x.retried).length/this.windowSize,terminal=this.#outcomes.filter(x=>x.terminal).length/this.windowSize;if(retries>.30||terminal>.10)this.open();}}
+  private open(){this.#state="OPEN";this.#openedAt=this.now();this.#openCount++;this.#halfOpenInFlight=false;}private refresh(){if(this.#state==="OPEN"&&this.now()-this.#openedAt>=this.cooldownMs())this.#state="HALF_OPEN";}}

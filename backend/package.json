@@ -1,0 +1,36 @@
+{
+  "name": "second-take-backend",
+  "version": "0.6.0",
+  "private": true,
+  "type": "module",
+  "description": "Local-only orchestration backend for Second Take.",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "build": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prestate": "tsx scripts/capture-prestate.ts",
+    "freeze": "tsx scripts/capture-freeze.ts",
+    "poststate": "tsx scripts/capture-poststate.ts",
+    "smoke": "tsx scripts/vertex-smoke.ts",
+    "benchmark:local": "tsx scripts/local-benchmark.ts",
+    "verify": "npm run build && npm test && npm run security:check",
+    "security:check": "tsx scripts/security-check.ts"
+  },
+  "dependencies": {
+    "@google/genai": "latest",
+    "dotenv": "^17.2.2",
+    "fastify": "^5.6.0",
+    "zod": "^4.1.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

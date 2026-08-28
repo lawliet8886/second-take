@@ -1,0 +1,20 @@
+import type{ConversationState,IntentLockState,InterpretationOverrideV055,ResponsePlan,SemanticRoutingEnvelopeV0521}from"../frozen.js";
+export type Locale="pt-BR"|"en-US";
+export type SelectionSource="GEMINI_SELECTOR"|"LOCAL_FALLBACK";
+export type PublicMessage={id:string;role:"USER"|"ALEX";text:string;turnId:string};
+export type InternalTurn={turnId:string;clientTurnId:string;userText:string;locale:Locale;envelope:SemanticRoutingEnvelopeV0521;candidatePlanIds:string[];selectedPlanId:string|null;selectionSource:SelectionSource|null;stateBefore:ConversationState;stateAfter:ConversationState|null;variantId:string|null;interpretationOverride:InterpretationOverrideV055|null};
+export type UsageMetadata={inputTokens:number;outputTokens:number;thinkingTokens:number;totalTokens:number};
+export type PendingIntentLock={turnId:string;clientTurnId:string;userText:string;locale:Locale;envelope:SemanticRoutingEnvelopeV0521;lock:IntentLockState;stateBefore:ConversationState;routerLatencyMs:number;routerRetries:number;routerUsage:UsageMetadata;resolvedResponse:TurnResponse|null};
+export type ForkSnapshot={snapshotId:string;createdAt:string;state:ConversationState;messages:PublicMessage[];turns:InternalTurn[];revealedFacts:string[];activeBranch:string};
+export type Session={sessionId:string;scenarioId:"ALEX_V1";locale:Locale;currentState:ConversationState;messages:PublicMessage[];turns:InternalTurn[];revealedFacts:string[];forkSnapshots:Map<string,ForkSnapshot>;activeBranch:string;pendingIntentLock:PendingIntentLock|null;intentLockResults:Map<string,{confirmedIntent:string;response:AlexReply}>;idempotency:Map<string,TurnResponse>;createdAt:string;updatedAt:string};
+export type IntentLockOption={id:"CAPABILITY"|"REQUEST";intent:"ASK_CAPABILITY"|"REQUEST_COMPLETION";label:string;routerSuggested:boolean};
+export type AlexReply={type:"ALEX_REPLY"|"RECOVERY_FALLBACK";turnId:string;message:{id:string;role:"ALEX";text:string};publicState:PublicSession;selectionSource:SelectionSource};
+export type TurnResponse=AlexReply|{type:"INTENT_LOCK_REQUIRED";turnId:string;options:IntentLockOption[];publicState:PublicSession}|{type:"OUT_OF_SCOPE";turnId:string;message:string;publicState:PublicSession}|{type:"TRANSPORT_FAILURE";turnId:string;message:string;publicState:PublicSession};
+export type PublicSession={sessionId:string;scenarioId:"ALEX_V1";locale:Locale;state:ConversationState;messages:PublicMessage[];revealedFactIds:string[];activeBranch:string;pendingIntentLock:null|{turnId:string;options:IntentLockOption[]}};
+export type RouterResult={envelope:SemanticRoutingEnvelopeV0521;latencyMs:number;retries:number;usage:UsageMetadata};
+export interface RouterPort{route(input:{requestId:string;text:string;locale:Locale;deadlineMs:number}):Promise<RouterResult>;}
+export type SelectorResult={planId:string;confidence:"HIGH"|"MEDIUM"|"LOW";latencyMs:number;transportRetries:number;structuralRetries:number;attempts:ProviderAttempt[];usage:UsageMetadata;};
+export interface SelectorPort{select(input:{requestId:string;userTurn:string;resolvedPrimaryIntent:string;state:ConversationState;recentContext:string[];candidates:ResponsePlan[];locale:Locale;deadlineMs:number}):Promise<SelectorResult>;}
+export type ProviderAttempt={attempt:number;kind:"SUCCESS"|"TRANSPORT_FAILURE"|"MAX_TOKEN_TRUNCATION"|"EMPTY_HTTP_200"|"MALFORMED_JSON"|"SCHEMA_INVALID"|"INVALID_ENUM_RESULT"|"UNKNOWN_STRUCTURAL_FAILURE";httpStatus:number|null;latencyMs:number;finishReason:string|null;};
+export type TurnTelemetry={requestId:string;sessionId:string;turnId:string;route:string;routerLatencyMs:number;policyLatencyMs:number;selectorLatencyMs:number;localProcessingMs:number;fullLatencyMs:number;routerRetries:number;selectorTransportRetries:number;selectorStructuralRetries:number;timeout:boolean;selectionSource:SelectionSource|null;selectedPlanId:string|null;routerUsage:UsageMetadata;selectorUsage:UsageMetadata;providerAttempts:ProviderAttempt[];stateBefore:ConversationState;stateAfter:ConversationState|null;};
+export interface TelemetrySink{record(event:TurnTelemetry):void;}

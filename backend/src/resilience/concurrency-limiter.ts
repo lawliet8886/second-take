@@ -1,0 +1,2 @@
+export class ConcurrencyLimiter{#active=0;#queue:Array<()=>void>=[];constructor(readonly limit:number,readonly queueLimit:number){}async run<T>(task:()=>Promise<T>):Promise<T>{if(this.#active>=this.limit){if(this.#queue.length>=this.queueLimit)throw new Error("VERTEX_BACKPRESSURE");await new Promise<void>(resolve=>this.#queue.push(resolve));}this.#active++;try{return await task();}finally{this.#active--;this.#queue.shift()?.();}}snapshot(){return{active:this.#active,queued:this.#queue.length,limit:this.limit,queueLimit:this.queueLimit};}}
+

@@ -1,0 +1,5109 @@
+{
+  "schemaVersion": "v057-operational-set-1",
+  "source": "v0561 known blind cases; operational reuse only",
+  "count": 150,
+  "ptBR": 75,
+  "enUS": 75,
+  "cases": [
+    {
+      "id": "v0561_CAUSE_ptBR_U05",
+      "locale": "pt-BR",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "E aí, o que rolou que as coisas ficaram travadas por tanto tempo?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "CLOSED",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 1
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAUSE_ptBR_U02",
+      "locale": "pt-BR",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "Qual foi o motivo da demora pra enviar os arquivos de ontem?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "CLOSED",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 6
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAUSE_ptBR_U01",
+      "locale": "pt-BR",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "Oi Alex, você conseguiu ver a minha mensagem mais cedo? O que houve?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "CLOSED",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 5
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAUSE_ptBR_U03",
+      "locale": "pt-BR",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "Alex, tá tudo bem? O que aconteceu que o prazo acabou estourando?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "CLOSED",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 7
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAUSE_ptBR_U04",
+      "locale": "pt-BR",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "Poderia me explicar o que ocasionou esse atraso na entrega final?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "CLOSED",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 0
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAUSE_ptBR_U10",
+      "locale": "pt-BR",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "Não recebi as atualizações ainda, o que houve com o cronograma?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "GUARDED",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 6
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAUSE_ptBR_U07",
+      "locale": "pt-BR",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "Tô tentando entender o que atrasou a nossa etapa do projeto, você sabe dizer?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "GUARDED",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 3
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAUSE_ptBR_U06",
+      "locale": "pt-BR",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "O que pegou para o relatório não ter saído na hora combinada?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "GUARDED",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 2
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAUSE_ptBR_U08",
+      "locale": "pt-BR",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "Alex, o que causou essa demora toda pra gente receber o retorno?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "GUARDED",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 4
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAUSE_ptBR_U09",
+      "locale": "pt-BR",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "Algum problema aconteceu para termos atrasado essa parte?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "GUARDED",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 5
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAUSE_ptBR_U15",
+      "locale": "pt-BR",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "Houve algum imprevisto específico que gerou esse atraso todo?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "OPEN",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 3
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAUSE_ptBR_U12",
+      "locale": "pt-BR",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "O que rolou pra demorar tanto assim pra finalizar a tarefa?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "OPEN",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 0
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAUSE_ptBR_U11",
+      "locale": "pt-BR",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "Você poderia detalhar o que aconteceu que levou a esse atraso?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "OPEN",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 7
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAUSE_ptBR_U13",
+      "locale": "pt-BR",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "Oi, por que acabou atrasando o envio do material hoje?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "OPEN",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 1
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAUSE_ptBR_U14",
+      "locale": "pt-BR",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "Alex, o que foi que motivou essa demora na conclusão da atividade?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "OPEN",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 2
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_ptBR_U05",
+      "locale": "pt-BR",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "Fica pronto até as nove o levantamento das fontes?",
+      "state": {
+        "tension": "CALM",
+        "openness": "CLOSED",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 3
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_ptBR_U02",
+      "locale": "pt-BR",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "Dá tempo de você finalizar as fontes até 21h?",
+      "state": {
+        "tension": "CALM",
+        "openness": "CLOSED",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 0
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_ptBR_U01",
+      "locale": "pt-BR",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "Você consegue deixar a parte das fontes pronta até as nove?",
+      "state": {
+        "tension": "CALM",
+        "openness": "CLOSED",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 7
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_ptBR_U03",
+      "locale": "pt-BR",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "Será que você consegue terminar as fontes antes das nove?",
+      "state": {
+        "tension": "CALM",
+        "openness": "CLOSED",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 1
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_ptBR_U04",
+      "locale": "pt-BR",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "Você vai conseguir fechar essa checagem de fontes até as 9h?",
+      "state": {
+        "tension": "CALM",
+        "openness": "CLOSED",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 2
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_ptBR_U10",
+      "locale": "pt-BR",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "Será que dá pra você entregar a parte de fontes até 21h?",
+      "state": {
+        "tension": "CALM",
+        "openness": "GUARDED",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 0
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_ptBR_U07",
+      "locale": "pt-BR",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "Acha viável terminar as referências/fontes até as 9?",
+      "state": {
+        "tension": "CALM",
+        "openness": "GUARDED",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 5
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_ptBR_U06",
+      "locale": "pt-BR",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "Você dá conta de encerrar as fontes até as 21:00?",
+      "state": {
+        "tension": "CALM",
+        "openness": "GUARDED",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 4
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_ptBR_U08",
+      "locale": "pt-BR",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "Dá pra você concluir a revisão das fontes até as nove?",
+      "state": {
+        "tension": "CALM",
+        "openness": "GUARDED",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 6
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_ptBR_U09",
+      "locale": "pt-BR",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "Você tem como finalizar as fontes até as nove horas?",
+      "state": {
+        "tension": "CALM",
+        "openness": "GUARDED",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 7
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_ptBR_U15",
+      "locale": "pt-BR",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "Você estima que consegue fechar as fontes até as 9h?",
+      "state": {
+        "tension": "CALM",
+        "openness": "OPEN",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 5
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_ptBR_U12",
+      "locale": "pt-BR",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "Consegue terminar tudo das fontes até as nove?",
+      "state": {
+        "tension": "CALM",
+        "openness": "OPEN",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 2
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_ptBR_U11",
+      "locale": "pt-BR",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "Você acha que termina as fontes até as 9?",
+      "state": {
+        "tension": "CALM",
+        "openness": "OPEN",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 1
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_ptBR_U13",
+      "locale": "pt-BR",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "Até as 21h você já terá finalizado as fontes?",
+      "state": {
+        "tension": "CALM",
+        "openness": "OPEN",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 3
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_ptBR_U14",
+      "locale": "pt-BR",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "É possível para você terminar as fontes até as nove?",
+      "state": {
+        "tension": "CALM",
+        "openness": "OPEN",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 4
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_ptBR_U05",
+      "locale": "pt-BR",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "Você mudou mesmo o horário do estágio, Alex? Como ficou no final?",
+      "state": {
+        "tension": "CALM",
+        "openness": "CLOSED",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 3
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_ptBR_U02",
+      "locale": "pt-BR",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "E aí, Alex! Você conseguiu acertar a troca do horário do estágio?",
+      "state": {
+        "tension": "CALM",
+        "openness": "CLOSED",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 0
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_ptBR_U01",
+      "locale": "pt-BR",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "Alex, como ficou aquela mudança no horário do seu estágio que você comentou?",
+      "state": {
+        "tension": "CALM",
+        "openness": "CLOSED",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 7
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_ptBR_U03",
+      "locale": "pt-BR",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "Oi Alex, fiquei na dúvida sobre a alteração do seu estágio. Como vai ser o seu novo horário agora?",
+      "state": {
+        "tension": "CALM",
+        "openness": "CLOSED",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 1
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_ptBR_U04",
+      "locale": "pt-BR",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "Alex, me passa os detalhes daquela mudança de horário do seu estágio por favor?",
+      "state": {
+        "tension": "CALM",
+        "openness": "CLOSED",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 2
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_ptBR_U10",
+      "locale": "pt-BR",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "Opa Alex, tudo bem? Queria confirmar com você os novos horários do seu estágio.",
+      "state": {
+        "tension": "CALM",
+        "openness": "GUARDED",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 0
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_ptBR_U07",
+      "locale": "pt-BR",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "Fala Alex! Quando começa a valer a alteração no horário do seu estágio?",
+      "state": {
+        "tension": "CALM",
+        "openness": "GUARDED",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 5
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_ptBR_U06",
+      "locale": "pt-BR",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "Alex, qual é o seu novo horário de estágio afinal?",
+      "state": {
+        "tension": "CALM",
+        "openness": "GUARDED",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 4
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_ptBR_U08",
+      "locale": "pt-BR",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "Oi Alex, você já tem a confirmação de como vai ficar o novo horário do estágio pra gente se organizar no projeto?",
+      "state": {
+        "tension": "CALM",
+        "openness": "GUARDED",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 6
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_ptBR_U09",
+      "locale": "pt-BR",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "Alex me conta, que história é essa da mudança de horário do estágio? Ficou definido como?",
+      "state": {
+        "tension": "CALM",
+        "openness": "GUARDED",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 7
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_ptBR_U15",
+      "locale": "pt-BR",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "Alex, passa pra gente como ficou seu novo horário do estágio pra ajustarmos as coisas aqui.",
+      "state": {
+        "tension": "CALM",
+        "openness": "OPEN",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 5
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_ptBR_U12",
+      "locale": "pt-BR",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "Como vai funcionar o seu estágio agora com a troca de horário, Alex?",
+      "state": {
+        "tension": "CALM",
+        "openness": "OPEN",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 2
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_ptBR_U11",
+      "locale": "pt-BR",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "Alex, me atualiza sobre aquela mudança no seu horário de estágio, por favor.",
+      "state": {
+        "tension": "CALM",
+        "openness": "OPEN",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 1
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_ptBR_U13",
+      "locale": "pt-BR",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "Alex, você já sabe exatamente quais dias e horários vai fazer no estágio depois dessa mudança?",
+      "state": {
+        "tension": "CALM",
+        "openness": "OPEN",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 3
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_ptBR_U14",
+      "locale": "pt-BR",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "Sobre aquela alteração na escala do seu estágio, Alex: já tá valendo o novo horário?",
+      "state": {
+        "tension": "CALM",
+        "openness": "OPEN",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 4
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_ptBR_U05",
+      "locale": "pt-BR",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Alex, já que o professor estendeu o prazo de sexta, podemos revisar a introdução com mais calma no final de semana.",
+      "state": {
+        "tension": "HIGH",
+        "openness": "CLOSED",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 3
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_ptBR_U02",
+      "locale": "pt-BR",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "O prof jogou a data limite de sexta-feira pra terça que vem, então nem precisa correr com a sua parte agora.",
+      "state": {
+        "tension": "HIGH",
+        "openness": "CLOSED",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 0
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_ptBR_U01",
+      "locale": "pt-BR",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Alex, viu que o professor adiou a entrega de sexta pra semana que vem? Podemos relaxar um pouco hoje.",
+      "state": {
+        "tension": "HIGH",
+        "openness": "CLOSED",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 7
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_ptBR_U03",
+      "locale": "pt-BR",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Boa notícia: o professor mudou o prazo final da sexta feira! Temos mais alguns dias pra fechar o relatório.",
+      "state": {
+        "tension": "HIGH",
+        "openness": "CLOSED",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 1
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_ptBR_U04",
+      "locale": "pt-BR",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "ei cara, o prof adiou a entrega que era pra sexta, então a gente tem mais tempo",
+      "state": {
+        "tension": "HIGH",
+        "openness": "CLOSED",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 2
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_ptBR_U10",
+      "locale": "pt-BR",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "o prof mudou a data de sexta feira!! da pra fazer o projeto com mais calma agora",
+      "state": {
+        "tension": "HIGH",
+        "openness": "GUARDED",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 0
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_ptBR_U07",
+      "locale": "pt-BR",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "o professor transferiu o prazo de sexta pro dia 20, viu lá no mural?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "GUARDED",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 5
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_ptBR_U06",
+      "locale": "pt-BR",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Ainda bem que o professor mudou a entrega de sexta pra frente, eu não ia conseguir terminar a tempo.",
+      "state": {
+        "tension": "HIGH",
+        "openness": "GUARDED",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 4
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_ptBR_U08",
+      "locale": "pt-BR",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Fica tranquilo com a apresentação de sexta, o professor adiou tudo pra próxima aula.",
+      "state": {
+        "tension": "HIGH",
+        "openness": "GUARDED",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 6
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_ptBR_U09",
+      "locale": "pt-BR",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Alex, você viu o aviso? O professor alterou o deadline de sexta-feira, ganhamos mais uma semana de folga.",
+      "state": {
+        "tension": "HIGH",
+        "openness": "GUARDED",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 7
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_ptBR_U15",
+      "locale": "pt-BR",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Nem esquenta a cabeça com a parte teórica pra sexta, Alex, o professor já mudou a data final.",
+      "state": {
+        "tension": "HIGH",
+        "openness": "OPEN",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 5
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_ptBR_U12",
+      "locale": "pt-BR",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Alex, o professor postergou a entrega de sexta, então não precisamos madrugar hoje terminando o código.",
+      "state": {
+        "tension": "HIGH",
+        "openness": "OPEN",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 2
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_ptBR_U11",
+      "locale": "pt-BR",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Como o professor mudou o prazo da entrega de sexta, acho melhor a gente focar na outra matéria por enquanto.",
+      "state": {
+        "tension": "HIGH",
+        "openness": "OPEN",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 1
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_ptBR_U13",
+      "locale": "pt-BR",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "vc viu que o professor jogou a entrega de sexta pra próxima segunda? mó alívio",
+      "state": {
+        "tension": "HIGH",
+        "openness": "OPEN",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 3
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_ptBR_U14",
+      "locale": "pt-BR",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "O professor remarcou a entrega do trabalho que era pra sexta-feira, então podemos agendar nossa reunião pro fim de semana.",
+      "state": {
+        "tension": "HIGH",
+        "openness": "OPEN",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 4
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_ptBR_U05",
+      "locale": "pt-BR",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Ué, você não tinha assumido a responsabilidade de terminar tudo essa semana?",
+      "state": {
+        "tension": "TENSE",
+        "openness": "CLOSED",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 1
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_ptBR_U02",
+      "locale": "pt-BR",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Mas você tinha prometido que ia finalizar todas as tarefas sozinho, esqueceu?",
+      "state": {
+        "tension": "TENSE",
+        "openness": "CLOSED",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 6
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_ptBR_U01",
+      "locale": "pt-BR",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Alex, você falou claramente na última reunião que cuidaria de absolutamente tudo até hoje.",
+      "state": {
+        "tension": "TENSE",
+        "openness": "CLOSED",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 5
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_ptBR_U03",
+      "locale": "pt-BR",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Não entendi por que ainda tem coisa pendente se você garantiu que entregaria tudo pronto.",
+      "state": {
+        "tension": "TENSE",
+        "openness": "CLOSED",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 7
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_ptBR_U04",
+      "locale": "pt-BR",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Você disse com todas as letras ontem que ia fechar o projeto inteiro sem precisar de ajuda.",
+      "state": {
+        "tension": "TENSE",
+        "openness": "CLOSED",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 0
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_ptBR_U10",
+      "locale": "pt-BR",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Você tinha se comprometido a finalizar tudo antes do prazo, não faz sentido deixar pela metade.",
+      "state": {
+        "tension": "TENSE",
+        "openness": "GUARDED",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 6
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_ptBR_U07",
+      "locale": "pt-BR",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Alex, vc mesmo disse no chat que ia fazer a entrega completa de cabo a rabo.",
+      "state": {
+        "tension": "TENSE",
+        "openness": "GUARDED",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 3
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_ptBR_U06",
+      "locale": "pt-BR",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Pelo que combinamos, você jurou que entregava tudo 100% concluído hoje cedo.",
+      "state": {
+        "tension": "TENSE",
+        "openness": "GUARDED",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 2
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_ptBR_U08",
+      "locale": "pt-BR",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Lembro muito bem de você prometendo que ia dar conta de todas as etapas pendentes.",
+      "state": {
+        "tension": "TENSE",
+        "openness": "GUARDED",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 4
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_ptBR_U09",
+      "locale": "pt-BR",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Por que está me cobrando isso agora? Você garantiu que resolveria tudo sozinho.",
+      "state": {
+        "tension": "TENSE",
+        "openness": "GUARDED",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 5
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_ptBR_U15",
+      "locale": "pt-BR",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Não adianta desconversar, você falou explicitamente que ia fechar todas as pendências.",
+      "state": {
+        "tension": "TENSE",
+        "openness": "OPEN",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 3
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_ptBR_U12",
+      "locale": "pt-BR",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Tenho certeza de que você afirmou que cuidaria de todo o restante do trabalho.",
+      "state": {
+        "tension": "TENSE",
+        "openness": "OPEN",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 0
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_ptBR_U11",
+      "locale": "pt-BR",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Vc prometeu q ia fazer tudo hj, agora tá dizendo q não vai dar tempo?",
+      "state": {
+        "tension": "TENSE",
+        "openness": "OPEN",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 7
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_ptBR_U13",
+      "locale": "pt-BR",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Na nossa última conversa ficou certinho que você ia assumir e finalizar tudo.",
+      "state": {
+        "tension": "TENSE",
+        "openness": "OPEN",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 1
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_ptBR_U14",
+      "locale": "pt-BR",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Alex, você jurou de pés juntos que entregava o projeto todo finalizado nesta sprint.",
+      "state": {
+        "tension": "TENSE",
+        "openness": "OPEN",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 2
+      },
+      "recentContext": [
+        "A conversa já abordou o atraso do projeto."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAUSE_enUS_U05",
+      "locale": "en-US",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "Hey, what went wrong with the delivery today?",
+      "state": {
+        "tension": "TENSE",
+        "openness": "CLOSED",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 2
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAUSE_enUS_U02",
+      "locale": "en-US",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "What caused the delay with the slides?",
+      "state": {
+        "tension": "TENSE",
+        "openness": "CLOSED",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 7
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAUSE_enUS_U01",
+      "locale": "en-US",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "Hey Alex, did something come up on your end?",
+      "state": {
+        "tension": "TENSE",
+        "openness": "CLOSED",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 6
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAUSE_enUS_U03",
+      "locale": "en-US",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "Can you fill me in on what happened with the project timeline?",
+      "state": {
+        "tension": "TENSE",
+        "openness": "CLOSED",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 0
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAUSE_enUS_U04",
+      "locale": "en-US",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "Just checking in, what's holding things up?",
+      "state": {
+        "tension": "TENSE",
+        "openness": "CLOSED",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 1
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAUSE_enUS_U10",
+      "locale": "en-US",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "What happened with the update we were waiting on?",
+      "state": {
+        "tension": "TENSE",
+        "openness": "GUARDED",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 7
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAUSE_enUS_U07",
+      "locale": "en-US",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "What's the reason for the delay?",
+      "state": {
+        "tension": "TENSE",
+        "openness": "GUARDED",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 4
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAUSE_enUS_U06",
+      "locale": "en-US",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "Could you let me know what happened?",
+      "state": {
+        "tension": "TENSE",
+        "openness": "GUARDED",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 3
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAUSE_enUS_U08",
+      "locale": "en-US",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "Hey Alex, what ended up causing the setback on this task?",
+      "state": {
+        "tension": "TENSE",
+        "openness": "GUARDED",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 5
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAUSE_enUS_U09",
+      "locale": "en-US",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "Any update on what held up the report?",
+      "state": {
+        "tension": "TENSE",
+        "openness": "GUARDED",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 6
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAUSE_enUS_U15",
+      "locale": "en-US",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "What's behind the delay today?",
+      "state": {
+        "tension": "TENSE",
+        "openness": "OPEN",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 4
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAUSE_enUS_U12",
+      "locale": "en-US",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "Hey, just wanted to ask what happened with our deadline?",
+      "state": {
+        "tension": "TENSE",
+        "openness": "OPEN",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 1
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAUSE_enUS_U11",
+      "locale": "en-US",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "Could you clarify what caused the hold-up?",
+      "state": {
+        "tension": "TENSE",
+        "openness": "OPEN",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 0
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAUSE_enUS_U13",
+      "locale": "en-US",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "What led to the delay on your side?",
+      "state": {
+        "tension": "TENSE",
+        "openness": "OPEN",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 2
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAUSE_enUS_U14",
+      "locale": "en-US",
+      "category": "CAUSE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAUSE",
+      "userTurn": "Hi Alex, can you explain what happened with the submission?",
+      "state": {
+        "tension": "TENSE",
+        "openness": "OPEN",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 3
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ASK_CLARIFICATION"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_enUS_U05",
+      "locale": "en-US",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "Good to know you're on it. Can you get those sources finished up by 9?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "CLOSED",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 4
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_enUS_U02",
+      "locale": "en-US",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "Awesome, thanks for confirming! Will you be able to finish citing the sources by 9 tonight?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "CLOSED",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 1
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_enUS_U01",
+      "locale": "en-US",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "Glad to hear you can handle it. Is it possible for you to get all the sources done by 9?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "CLOSED",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 0
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_enUS_U03",
+      "locale": "en-US",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "Perfect. Do you think you'll have the source list wrapped up by 9:00?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "CLOSED",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 2
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_enUS_U04",
+      "locale": "en-US",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "Great, sounds good. Are you going to be able to complete the sources by nine?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "CLOSED",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 3
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_enUS_U10",
+      "locale": "en-US",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "That works. Will you have the sources finalized by 9?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "GUARDED",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 1
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_enUS_U07",
+      "locale": "en-US",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "Awesome. Are you on track to finish reviewing the sources by nine?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "GUARDED",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 6
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_enUS_U06",
+      "locale": "en-US",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "Nice, thanks. Will the sources be completely done by 9:00 PM?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "GUARDED",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 5
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_enUS_U08",
+      "locale": "en-US",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "Great! Does 9 PM look feasible for wrapping up all the sources?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "GUARDED",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 7
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_enUS_U09",
+      "locale": "en-US",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "Sweet, glad you've got this covered. Think you can finish the sources by nine?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "GUARDED",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 0
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_enUS_U15",
+      "locale": "en-US",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "Understood, thanks for taking that on. Are the sources going to be finished by 9:00?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "OPEN",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 6
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_enUS_U12",
+      "locale": "en-US",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "Glad you're able to jump in. Are you going to have the sources finished by nine tonight?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "OPEN",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 3
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_enUS_U11",
+      "locale": "en-US",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "Cool. Is a 9:00 completion realistic for finishing up the sources?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "OPEN",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 2
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_enUS_U13",
+      "locale": "en-US",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "Sounds great. Can you realistically have the sources all finished by 9?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "OPEN",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 4
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_CAPABILITY_LOCK_enUS_U14",
+      "locale": "en-US",
+      "category": "CAPABILITY_LOCK",
+      "difficulty": "EASY",
+      "userIntent": "ASK_CAPABILITY",
+      "userTurn": "Super relieved you can do that! Will you be done with the sources by nine?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "OPEN",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 5
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_ANSWER_CAPABILITY"
+      ],
+      "intentLock": {
+        "routerPrimaryIntent": "REQUEST_COMPLETION",
+        "confirmedIntent": "ASK_CAPABILITY"
+      },
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_enUS_U05",
+      "locale": "en-US",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "I didn't do the last section because you explicitly said you were going to handle every single part.",
+      "state": {
+        "tension": "CALM",
+        "openness": "CLOSED",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 2
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_enUS_U02",
+      "locale": "en-US",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Why are we still talking about splitting the remaining tasks when you promised you'd finish everything?",
+      "state": {
+        "tension": "CALM",
+        "openness": "CLOSED",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 7
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_enUS_U01",
+      "locale": "en-US",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Alex you literally swore yesterday that you would take care of the entire submission yourself.",
+      "state": {
+        "tension": "CALM",
+        "openness": "CLOSED",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 6
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_enUS_U03",
+      "locale": "en-US",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "You told the whole group on Tuesday that you had the rest of this completely covered.",
+      "state": {
+        "tension": "CALM",
+        "openness": "CLOSED",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 0
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_enUS_U04",
+      "locale": "en-US",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Hold on, you definitely gave your word that you would do all the remaining slides before tonight.",
+      "state": {
+        "tension": "CALM",
+        "openness": "CLOSED",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 1
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_enUS_U10",
+      "locale": "en-US",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "We agreed to let you have it because you promised you would finish every last detail.",
+      "state": {
+        "tension": "CALM",
+        "openness": "GUARDED",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 7
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_enUS_U07",
+      "locale": "en-US",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "You promised you would finish everything by yourself, so why are you asking for help now?",
+      "state": {
+        "tension": "CALM",
+        "openness": "GUARDED",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 4
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_enUS_U06",
+      "locale": "en-US",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Alex, remember when you promised you'd wrap up the whole project so we wouldn't have to worry about it?",
+      "state": {
+        "tension": "CALM",
+        "openness": "GUARDED",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 3
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_enUS_U08",
+      "locale": "en-US",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Wait, you told me earlier you'd take the entire final phase off our plates completely.",
+      "state": {
+        "tension": "CALM",
+        "openness": "GUARDED",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 5
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_enUS_U09",
+      "locale": "en-US",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Don't try to backtrack now, you said you were going to do all of it.",
+      "state": {
+        "tension": "CALM",
+        "openness": "GUARDED",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 6
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_enUS_U15",
+      "locale": "en-US",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "You clearly stated earlier that you'd take care of 100% of the rest of this work.",
+      "state": {
+        "tension": "CALM",
+        "openness": "OPEN",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 4
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_enUS_U12",
+      "locale": "en-US",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "I thought you said you'd knock out everything left on the board before morning?",
+      "state": {
+        "tension": "CALM",
+        "openness": "OPEN",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 1
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_enUS_U11",
+      "locale": "en-US",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Alex you gave us your word earlier that the whole thing was your responsibility to finish.",
+      "state": {
+        "tension": "CALM",
+        "openness": "OPEN",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 0
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_enUS_U13",
+      "locale": "en-US",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "You promised earlier that you'd handle all remaining items, so I didn't touch the doc.",
+      "state": {
+        "tension": "CALM",
+        "openness": "OPEN",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 2
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_HISTORY_enUS_U14",
+      "locale": "en-US",
+      "category": "FALSE_HISTORY",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Didn't you tell everyone you would finish the whole assignment alone?",
+      "state": {
+        "tension": "CALM",
+        "openness": "OPEN",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 3
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "preferredPlanIds": [
+        "PLAN_DISPUTE_FALSE_HISTORY"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_enUS_U05",
+      "locale": "en-US",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "Alex, how does the updated internship timetable affect our project meetings?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "CLOSED",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 4
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_enUS_U02",
+      "locale": "en-US",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "Did your internship hours get shifted around for this week?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "CLOSED",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 1
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_enUS_U01",
+      "locale": "en-US",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "Hey Alex, what's the deal with the internship schedule change?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "CLOSED",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 0
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_enUS_U03",
+      "locale": "en-US",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "Heard there was a change to your internship schedule, can you give me the details?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "CLOSED",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 2
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_enUS_U04",
+      "locale": "en-US",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "Are you still working those new internship hours we talked about, or did it change again?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "CLOSED",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 3
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_enUS_U10",
+      "locale": "en-US",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "Hey, did they finalize that change to your internship shifts yet?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "GUARDED",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 1
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_enUS_U07",
+      "locale": "en-US",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "Can you confirm what days you're working the internship after the recent schedule adjustment?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "GUARDED",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 6
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_enUS_U06",
+      "locale": "en-US",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "Wait, when are you actually at your internship now with the new schedule?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "GUARDED",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 5
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_enUS_U08",
+      "locale": "en-US",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "Just wanted to check in about your internship schedule change—what are your new hours?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "GUARDED",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 7
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_enUS_U09",
+      "locale": "en-US",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "What's your updated availability look like now that the internship schedule moved?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "GUARDED",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 0
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_enUS_U15",
+      "locale": "en-US",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "Can you send over the updated internship schedule so we can coordinate our project work?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "OPEN",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 6
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_enUS_U12",
+      "locale": "en-US",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "So when exactly is your internship happening now that the times changed?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "OPEN",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 3
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_enUS_U11",
+      "locale": "en-US",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "Could you clarify what your internship hours are going to be with the new setup?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "OPEN",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 2
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_enUS_U13",
+      "locale": "en-US",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "Alex, what are the new internship dates/times again?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "OPEN",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 4
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_SCHEDULE_enUS_U14",
+      "locale": "en-US",
+      "category": "SCHEDULE",
+      "difficulty": "EASY",
+      "userIntent": "ASK_SCHEDULE",
+      "userTurn": "Quick question, how did your internship schedule end up changing for the rest of the term?",
+      "state": {
+        "tension": "HIGH",
+        "openness": "OPEN",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 5
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "preferredPlanIds": [
+        "PLAN_REVEAL_SCHEDULE_DIRECT"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_enUS_U05",
+      "locale": "en-US",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Hey! Prof moved the Friday deadline back, thank goodness.",
+      "state": {
+        "tension": "TENSE",
+        "openness": "CLOSED",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 4
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_enUS_U02",
+      "locale": "en-US",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Good news, the professor moved the Friday project due date so we have more breathing room.",
+      "state": {
+        "tension": "TENSE",
+        "openness": "CLOSED",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 1
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_enUS_U01",
+      "locale": "en-US",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Hey Alex, just saw that the prof shifted our Friday deadline to next Tuesday.",
+      "state": {
+        "tension": "TENSE",
+        "openness": "CLOSED",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 0
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_enUS_U03",
+      "locale": "en-US",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Did you catch the announcement about the professor pushing back Friday's deadline?",
+      "state": {
+        "tension": "TENSE",
+        "openness": "CLOSED",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 2
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_enUS_U04",
+      "locale": "en-US",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Since the prof changed the deadline from Friday to next week, we can slow down a bit on the slides.",
+      "state": {
+        "tension": "TENSE",
+        "openness": "CLOSED",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 3
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_enUS_U10",
+      "locale": "en-US",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Hey, since the professor officially moved Friday's project deadline, when do you want to finish the report?",
+      "state": {
+        "tension": "TENSE",
+        "openness": "GUARDED",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 1
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_enUS_U07",
+      "locale": "en-US",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Alex, the prof extended our deadline past Friday, so let's reschedule our prep meeting.",
+      "state": {
+        "tension": "TENSE",
+        "openness": "GUARDED",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 6
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_enUS_U06",
+      "locale": "en-US",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "The professor pushed the Friday deadline out, right? We have until Monday now.",
+      "state": {
+        "tension": "TENSE",
+        "openness": "GUARDED",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 5
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_enUS_U08",
+      "locale": "en-US",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Just double checking if you noticed the professor changed the due date away from Friday.",
+      "state": {
+        "tension": "TENSE",
+        "openness": "GUARDED",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 7
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_enUS_U09",
+      "locale": "en-US",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Prof gave us an extension on the Friday deadline, so no need to rush the code tonight.",
+      "state": {
+        "tension": "TENSE",
+        "openness": "GUARDED",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 0
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_enUS_U15",
+      "locale": "en-US",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Did you see the prof's update moving the Friday project deadline?",
+      "state": {
+        "tension": "TENSE",
+        "openness": "OPEN",
+        "resolutionStage": "AGREED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 6
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_enUS_U12",
+      "locale": "en-US",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Great news, prof moved the deadline from this Friday to next Wednesday.",
+      "state": {
+        "tension": "TENSE",
+        "openness": "OPEN",
+        "resolutionStage": "CONTEXT_AVAILABLE",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 3
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_enUS_U11",
+      "locale": "en-US",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "The professor pushed back the Friday submission date to next week.",
+      "state": {
+        "tension": "TENSE",
+        "openness": "OPEN",
+        "resolutionStage": "ISSUE_RAISED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 2
+      },
+      "recentContext": [],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_enUS_U13",
+      "locale": "en-US",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "We got an extension—the professor shifted the deadline from Friday to Monday afternoon.",
+      "state": {
+        "tension": "TENSE",
+        "openness": "OPEN",
+        "resolutionStage": "NEGOTIATING",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 4
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    },
+    {
+      "id": "v0561_FALSE_DEADLINE_enUS_U14",
+      "locale": "en-US",
+      "category": "FALSE_DEADLINE",
+      "difficulty": "EASY",
+      "userIntent": "ASSERT_CLAIM",
+      "userTurn": "Hey Alex, now that the professor officially moved our Friday deadline, let's take the weekend to polish it.",
+      "state": {
+        "tension": "TENSE",
+        "openness": "OPEN",
+        "resolutionStage": "PLAN_PROPOSED",
+        "revealedFacts": [],
+        "lastPlanId": "",
+        "variantHistory": [],
+        "turn": 5
+      },
+      "recentContext": [
+        "The conversation has already addressed the project delay."
+      ],
+      "candidatePlanIds": [
+        "PLAN_ASK_CLARIFICATION",
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "acceptablePlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "preferredPlanIds": [
+        "PLAN_CORRECT_FALSE_DEADLINE"
+      ],
+      "intentLock": null,
+      "paraphraseGroupId": null,
+      "forkPairId": null,
+      "forkKind": null
+    }
+  ]
+}
