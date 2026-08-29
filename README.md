@@ -6,6 +6,10 @@ Second Take is an Android conversation-rehearsal app for moments that matter bec
 
 ![Second Take comparison](assets/screenshots/06-comparison.png)
 
+## Demo
+
+Watch the final Shipaton demo: [Second Take — Rehearse, Rewind, Try Again](https://www.youtube.com/watch?v=KMOa5bSV1Eo).
+
 ## Why it is different
 
 This is not a generic advice chatbot. A **Conversation Fork** preserves the same facts, personality, history, and pre-state across two branches. Only the user's choice changes. The resulting consequences can therefore be compared instead of improvised after the fact.

@@ -56,8 +56,7 @@ After the Shipaton build: production hosting, more authored scenarios, account-b
 
 The free experience lets users discover the Conversation Fork before monetization. RevenueCat appears at the natural next question: “What exactly changed between my two attempts?” Test Store is used because this is a Next Gen submission; no real payment is claimed.
 
-## Links to provide at submission time
+## Public links
 
-- Public repository: **PENDING PUBLICATION**
-- Public video (YouTube or Vimeo, under 2 minutes): **PENDING UPLOAD**
-
+- Public repository: https://github.com/lawliet8886/second-take
+- Public video (YouTube, under 2 minutes): https://www.youtube.com/watch?v=KMOa5bSV1Eo
