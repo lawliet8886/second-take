@@ -1,4 +1,6 @@
-# Devpost submission draft
+# Devpost submission copy
+
+> This file preserves the reviewed English submission copy associated with the confirmed RevenueCat Shipaton 2026 — Next Gen entry. Devpost confirmed submission on 2026-08-29. See [`CURRENT_SUBMISSION_STATUS.md`](CURRENT_SUBMISSION_STATUS.md) for current status.
 
 ## Project name
 
@@ -20,7 +22,7 @@ Difficult conversations matter precisely because we often get only one real atte
 
 The user talks naturally with Alex, a teammate in an unfinished-project scenario. When a capability question could instead be a request, Intent Lock gives the user one-tap control over the intended move. At a Turning Point, Second Take records an exact checkpoint. The user completes a first path, rewinds, returns to the same facts and conversational state, and tries a second response. Full A/B Comparison shows how the two choices produced different consequences.
 
-The complete fork experience is free. After both paths have demonstrated the value, RevenueCat unlocks Full A/B Comparison through a real Test Store offering, purchase, CustomerInfo update, and `pro` entitlement.
+The complete two-path rehearsal is free. After both paths have demonstrated the value, RevenueCat unlocks the premium Full A/B Comparison through a real Test Store offering, purchase, CustomerInfo update, and `pro` entitlement.
 
 ## How we built it
 
@@ -59,4 +61,4 @@ The free experience lets users discover the Conversation Fork before monetizatio
 ## Public links
 
 - Public repository: https://github.com/lawliet8886/second-take
-- Public video (YouTube, under 2 minutes): https://www.youtube.com/watch?v=KMOa5bSV1Eo
+- Public video (YouTube, under two minutes): https://www.youtube.com/watch?v=KMOa5bSV1Eo
