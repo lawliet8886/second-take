@@ -1,43 +1,46 @@
-# v0.9 readiness report
+# v0.9 readiness report — historical snapshot
 
-## Result
+> **Historical pre-submission record.** This report captures readiness work performed before the Devpost finalization and is preserved for traceability. Statements such as `PENDING_JOIN` and `READY_FOR_FINAL_MEDIA_AND_SUBMISSION` are no longer current. Devpost confirmed the final Second Take submission on **2026-08-29**. See [`CURRENT_SUBMISSION_STATUS.md`](CURRENT_SUBMISSION_STATUS.md).
 
-**GREEN — student eligibility evidence is verified and no known eligibility blocker remains.** A private official declaration confirms active enrollment, the academic address follows the official Estácio student-email format, and the institutional domain is present in JetBrains/swot with documented subdomain coverage. The Devpost checker remains pending until the user joins the hackathon; this is a normal administrative step, not evidence of ineligibility.
+## Result at the time
 
-## Verified locally
+**GREEN — student eligibility evidence was verified and no known eligibility blocker remained.** A private official declaration confirmed active enrollment, the academic address followed the official Estácio student-email format, and the institutional domain was present in JetBrains/swot with documented subdomain coverage.
+
+## Verified locally in that pre-submission phase
 
 - Candidate Android: clean build, lint, 30/30 JVM tests.
 - Candidate backend: TypeScript build, 22/22 tests, internal secret scan.
-- Fresh clone: backend verification and Android test/build both pass without committed credentials.
+- Fresh clone: backend verification and Android test/build both passed without committed credentials.
 - Assets: icon 1024×1024; eight submission PNGs 1179×2556 with no device frame.
 - Video sources: clean fork recording 61.90 s; RevenueCat recording 20.77 s; rough cut 83.17 s.
 - Candidate current tree and one-commit history: no credential, personal-path, or selected PII pattern found.
-- Frozen v0.8 evidence explicitly records 0 crashes and successful Test Store purchase, cancellation, failure, restore, relaunch, CustomerInfo, and Pro unlock.
+- Frozen v0.8 evidence recorded 0 crashes and successful Test Store purchase, cancellation, failure, restore, relaunch, `CustomerInfo`, and Pro unlock.
+
+These are recorded project-audit results from that phase; they are not a new independent reproduction performed on 2026-09-17.
 
 ## Instrumented recheck note
 
-A 12-test emulator recheck was attempted. The functional run reached the RevenueCat/Comparison test, but the AVD returned a null screenshot bitmap inside evidence capture; the suite was then stopped after prolonged Test Store waits without local Test Store configuration. This is recorded as an evidence-harness limitation, not a passing final smoke. No product crash was observed.
+A 12-test emulator recheck was attempted. The functional run reached the RevenueCat/Comparison test, but the AVD returned a null screenshot bitmap inside evidence capture; the suite was then stopped after prolonged Test Store waits without local Test Store configuration. This was correctly recorded as an evidence-harness limitation, not a passing final smoke. No product crash was observed during that attempt.
 
-## Corrected eligibility status
+## Eligibility status at that phase
 
 - Active student: PASS — verified from private official evidence dated 2026-08-26.
 - Academic institution: PASS — Universidade Estácio de Sá (UNESA).
 - Academic email format: PASS — verified against official Estácio guidance.
-- Domain evidence: PASS — `estacio.br` is registered to UNESA in JetBrains/swot and its documented matching includes subdomains.
+- Domain evidence: PASS — `estacio.br` was documented in JetBrains/swot with subdomain coverage.
 - Enrollment evidence: PASS — retained privately outside the public candidate.
-- Devpost primary email: no change required according to the official Shipaton manager response.
-- Devpost student-email checker: PENDING_JOIN; no rejection was observed.
-- Known eligibility blocker: NONE.
+- Devpost primary email: no change required according to the recorded official Shipaton manager response.
+- Devpost student-email checker at this historical point: `PENDING_JOIN`.
 
-## Corrected submission readiness
+## Superseding events
 
-**86% — READY_FOR_FINAL_MEDIA_AND_SUBMISSION.** Product, candidate repository, technical evidence, student eligibility, and submission assets are prepared. The remaining work consists of normal Join, media publication, form inspection, and final human review steps.
+After this readiness snapshot:
 
-## Remaining normal submission actions
+1. the hackathon was joined;
+2. the academic checker accepted the qualifying address;
+3. the repository was published;
+4. the final video was published;
+5. the Devpost media/links were finalized; and
+6. Devpost sent `Submission confirmed: Second Take` on 2026-08-29.
 
-1. Join the hackathon and select Next Gen.
-2. Enter the private student email in the submission field and record the checker result.
-3. Inspect every now-visible Devpost field without making a false store-release declaration.
-4. Review and publish the clean repository candidate.
-5. Produce/review the narrated and captioned final video, then upload it publicly.
-6. Attach final assets and submit only after a human review.
+The current official rules were rechecked on 2026-09-17; see [`OFFICIAL_RULES_AUDIT.md`](OFFICIAL_RULES_AUDIT.md).
