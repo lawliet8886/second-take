@@ -1,31 +1,42 @@
 # Shipaton submission checklist
 
-Official rules and the live Devpost form were checked on 2026-08-28.
+Current-status audit refreshed on **2026-09-17**. Official rules were rechecked against the current RevenueCat Shipaton 2026 Devpost rules, schedule, FAQ, and the official Next Gen/Test Store clarification.
 
-| Requirement | Status | Evidence / remaining action |
+| Requirement | Status | Evidence / note |
 |---|---|---|
-| Joined hackathon | PASS | Devpost draft is active |
-| Next Gen category | PASS | Live repository and academic-email fields present |
-| Active student | PASS | Private official declaration retained outside repository |
-| Academic email checker | PASS_FINAL | Saved by Devpost without validation error |
+| Joined hackathon | PASS | Live Devpost flow was joined before submission |
+| Next Gen category | PASS | Next Gen academic-email/repository fields were present and used |
+| Active student | PASS | Private enrollment evidence retained outside the public repository |
+| Academic email checker | PASS_FINAL | Saved by Devpost without validation error during finalization |
 | Public open-source repo | PASS | https://github.com/lawliet8886/second-take |
-| MIT license/source/setup | PASS | `LICENSE`, `README.md` |
-| Final English video <2 min | PASS | 107.633 s approved master |
+| Detectable open-source license | PASS | Root `LICENSE` is MIT; GitHub detects the repository license as MIT |
+| Source/assets/setup instructions | PASS_WITH_HARDENING | Present; this audit corrects stale/broken setup paths before merge |
+| Final English video under 2 min | PASS | 107.7 s approved master |
 | Public YouTube/Vimeo URL | PASS | https://www.youtube.com/watch?v=KMOa5bSV1Eo |
-| Android app icon | PASS | `assets/app-icon.png`, 1024x1024; uploaded to Devpost media |
-| Required screenshot | PASS | `assets/screenshots/required-1179x2556.png`, 1179x2556; uploaded |
-| Screenshot set | PASS | Eight images uploaded; product video remains the first media item |
-| RevenueCat integration | PASS | Real Test Store flow visible in video |
-| No false store-release declaration | PASS | All store URLs blank; release checkbox unchecked |
-| Devpost story and links | PASS | Public GitHub/video URLs and reviewed English story saved |
-| Full form inspection | PASS | Finalization page reached; no placeholders or local paths |
-| Tree/history/PII scans | PASS | Final public-tree scan completed after docs/media |
-| Terms | PENDING_USER | Personal agreement remains unchecked |
-| Final Devpost submission | NOT_SUBMITTED | Hard stop preserved |
+| Device/platform footage | PASS_RECORDED | Prior video QA records the Android flow, fork, Intent Lock, RevenueCat flow, and comparison |
+| Android app icon | PASS | `assets/app-icon.png`, 1024×1024 |
+| Required screenshot | PASS | `assets/screenshots/required-1179x2556.png`, 1179×2556, no device frame |
+| RevenueCat integration | PASS | Test Store purchase → `CustomerInfo` → `pro` entitlement → Full A/B Comparison |
+| Test Store allowed for Next Gen | PASS | Explicitly confirmed by a Shipaton manager in the official Devpost discussion |
+| No false store-release claim | PASS | Next Gen does not require a store release; none is claimed |
+| Devpost story and public links | PASS_RECORDED | Final public URLs were saved before submission |
+| Final Devpost submission | PASS_CONFIRMED | Devpost email received 2026-08-29: `Submission confirmed: Second Take` |
+| Private academic evidence excluded from repo | PASS | No academic address/document is intentionally published |
 
-## Remaining human steps
+## Current competition state
 
-1. Review the final Devpost page and the personal legal declaration.
-2. If accurate, accept the Official Rules/Terms checkbox and click Submit.
+- Submission period closes **2026-09-30 at 11:45 PM PDT**.
+- Judging runs after the submission period; winners are scheduled for **2026-10-21**.
+- Current official rules freeze submission changes after the Submission Period ends, except limited organizer-permitted corrections.
+- This repository hardening work is being prepared on a review branch before that deadline.
 
-Status: `READY_FOR_HUMAN_FINAL_REVIEW_AND_SUBMIT`. Internal readiness: **99%**.
+## Current limitations that must remain explicit
+
+- One polished Alex scenario.
+- Local backend; no production backend deployment.
+- RevenueCat **Test Store**, not a charged production-store transaction.
+- Anonymous RevenueCat user identity; no account system.
+- Release build intentionally contains no Test Store key and no production backend endpoint.
+- Full human TalkBack accessibility audit remains future work.
+
+Status: `SUBMITTED_AND_UNDER_PRE_DEADLINE_HARDENING`.
