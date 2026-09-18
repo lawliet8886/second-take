@@ -1,6 +1,6 @@
 # Current submission status
 
-**Last verified: 2026-09-17**
+**Last verified: 2026-09-18**
 
 This file is the canonical current-status record for Second Take. Older readiness and form-audit documents are preserved as historical snapshots and may describe pre-submission states.
 
@@ -59,5 +59,7 @@ It does **not** claim:
 ## Current audit note
 
 On 2026-09-17, the public repository was re-audited for Shipaton Next Gen alignment. The hardening branch addresses stale submission-status documentation, broken setup references, cross-platform backend configuration fallback, and reproducibility wording. The core product architecture and submitted claims remain substantively unchanged.
+
+On 2026-09-18, independent clean-room verification passed the provider-free backend gates (`npm ci`, build, tests, security check, `verify`) and the committed-wrapper Android gates (`./gradlew --version`, `assembleDebug`, `testDebugUnitTest`, `lintDebug`, `assembleRelease`) with Gradle 8.13. `@google/genai` is pinned consistently to `2.19.0` in the manifest and lockfile. External credentialed runtime checks remain separately classified.
 
 Historical documents should be read in their dated context. In particular, any older `NOT_SUBMITTED`, `PENDING_JOIN`, `READY_PENDING_PUBLIC_URLS`, or similar labels describe states before the confirmed 2026-08-29 submission.
