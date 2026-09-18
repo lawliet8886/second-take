@@ -6,9 +6,16 @@ Second Take is an Android conversation-rehearsal app for moments that matter bec
 
 ![Second Take comparison](assets/screenshots/06-comparison.png)
 
-## Demo
+## Shipaton 2026 — Next Gen
 
-Watch the final Shipaton demo: [Second Take — Rehearse, Rewind, Try Again](https://www.youtube.com/watch?v=KMOa5bSV1Eo).
+Second Take is a confirmed **RevenueCat Shipaton 2026 — Next Gen** submission.
+
+- Public demo: [Second Take — Rehearse, Rewind, Try Again](https://www.youtube.com/watch?v=KMOa5bSV1Eo)
+- Current submission status: [`docs/CURRENT_SUBMISSION_STATUS.md`](docs/CURRENT_SUBMISSION_STATUS.md)
+- Current rules audit: [`docs/OFFICIAL_RULES_AUDIT.md`](docs/OFFICIAL_RULES_AUDIT.md)
+- Demonstrated-claim boundary: [`docs/FINAL_PRODUCT_CLAIMS.md`](docs/FINAL_PRODUCT_CLAIMS.md)
+
+The demo uses **RevenueCat Test Store**. No real payment or production-store release is claimed.
 
 ## Why it is different
 
@@ -30,6 +37,8 @@ Intent Lock gives the user one-tap control over the critical distinction between
 
 The Android client uses RevenueCat Android SDK 10.19.1 and the RevenueCat Test Store. Offering `default` exposes package `$rc_monthly`; access is granted only from `CustomerInfo.entitlements["pro"].isActive`. No purchase state is faked locally. The Shipaton Next Gen build transparently discloses that it uses Test Store, not a real charged transaction.
 
+The core conversation, rewind, and second attempt remain usable without Pro access. The entitlement gate applies to **Full A/B Comparison**.
+
 ## Stack
 
 - Android: Kotlin, Jetpack Compose, Material 3, OkHttp, RevenueCat Android SDK
@@ -40,6 +49,21 @@ The Android client uses RevenueCat Android SDK 10.19.1 and the RevenueCat Test S
 
 ### Provider-free checks
 
+These checks use fakes and do not require Google Cloud or RevenueCat credentials.
+
+macOS/Linux:
+
+```bash
+cd backend
+npm ci
+npm test
+
+cd ../android
+./gradlew testDebugUnitTest
+```
+
+Windows PowerShell:
+
 ```powershell
 cd backend
 npm ci
@@ -49,11 +73,24 @@ cd ..\android
 .\gradlew.bat testDebugUnitTest
 ```
 
-These test paths use fakes and do not require Google Cloud or RevenueCat credentials.
+For the broader backend verification, run `npm run verify`; for Android, run `assembleDebug testDebugUnitTest lintDebug`.
 
 ### Backend with Vertex
 
-Requirements: Node.js 22+, Google Cloud CLI, your own project with Vertex AI enabled.
+Requirements: Node.js 22+, Google Cloud CLI, and your own Google Cloud project with Vertex AI enabled.
+
+macOS/Linux:
+
+```bash
+gcloud auth application-default login
+export VERTEX_PROJECT_ID="your-project-id"
+cd backend
+npm ci
+npm run verify
+npm start
+```
+
+Windows PowerShell:
 
 ```powershell
 gcloud auth application-default login
@@ -68,28 +105,37 @@ The local service binds to `127.0.0.1:8765`. ADC, OAuth tokens, and credential J
 
 ### Android
 
-Use JDK 17 and Android SDK 35. The emulator reaches the host backend at `http://10.0.2.2:8765`; a physical device can use `adb reverse tcp:8765 tcp:8765`.
+Use JDK 17 and Android SDK 35. Start the local backend first. The emulator reaches the host backend at `http://10.0.2.2:8765`; a physical device can use `adb reverse tcp:8765 tcp:8765`.
+
+macOS/Linux:
+
+```bash
+cd android
+./gradlew assembleDebug testDebugUnitTest lintDebug
+```
+
+Windows PowerShell:
 
 ```powershell
 cd android
 .\gradlew.bat assembleDebug testDebugUnitTest lintDebug
 ```
 
-Optional values belong only in untracked `android/local.properties`:
+Optional debug-only values belong in untracked `android/local.properties`:
 
 ```properties
 SECOND_TAKE_BACKEND_URL=http://10.0.2.2:8765
 REVENUECAT_TEST_STORE_API_KEY=test_your_public_sdk_key
 ```
 
-Configure one RevenueCat Test Store monthly product (`monthly`), entitlement `pro`, offering `default`, and package `$rc_monthly`. Release builds disable Test Store configuration.
+Configure one RevenueCat Test Store monthly product (`monthly`), entitlement `pro`, offering `default`, and package `$rc_monthly`. See [`docs/REVENUECAT_TEST_STORE_SETUP.md`](docs/REVENUECAT_TEST_STORE_SETUP.md). Release builds deliberately receive no Test Store key.
 
 ## Project map
 
 - `android/` — Compose client, tests, and RevenueCat entitlement layer
 - `backend/` — local orchestration, graph/policy, resilience, and fake-provider tests
-- `docs/` — architecture, data flow, claims, judging and submission material
-- `assets/` — curated diagrams, screenshots, and source recordings
+- `docs/` — architecture, data flow, claims, judging, and submission material
+- `assets/` — curated diagrams, screenshots, captions, and source recordings
 
 ## Privacy and safety
 
@@ -97,7 +143,7 @@ The backend is the conversation authority and keeps hidden facts server-side. Th
 
 ## Current limits
 
-The MVP contains one polished Alex scenario, uses a local backend, relies on an anonymous RevenueCat user, and uses Test Store rather than a real app-store purchase. Provider outages can activate a safe local fallback. A full human TalkBack audit remains future work.
+The MVP contains one polished Alex scenario, uses a local backend, relies on an anonymous RevenueCat user, and uses Test Store rather than a real app-store purchase. The repository does not contain a production backend deployment or production billing configuration. Provider outages can activate a safe local fallback. A full human TalkBack audit remains future work.
 
 ## Roadmap
 

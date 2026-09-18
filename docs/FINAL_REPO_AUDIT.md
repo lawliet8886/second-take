@@ -1,8 +1,8 @@
-# Final repository audit
+# Final repository audit — historical pre-submission record
 
-Audit date: 2026-08-28.
+> This audit was performed on **2026-08-28** before the final public-link/submission steps. It is preserved as evidence of that phase, not presented as a new independent run. See [`AUDIT_2026-09-17.md`](AUDIT_2026-09-17.md) for the current static hardening audit and [`CURRENT_SUBMISSION_STATUS.md`](CURRENT_SUBMISSION_STATUS.md) for current submission state.
 
-| Area | Result |
+| Area | Recorded result on 2026-08-28 |
 |---|---|
 | README first-minute clarity | PASS |
 | MIT license | PASS |
@@ -18,4 +18,6 @@ Audit date: 2026-08-28.
 | Private enrollment PDF excluded | PASS |
 | Final video/captions/thumbnail present | PASS |
 
-No personal absolute path, academic email, enrollment identifier, credential, token, or private evidence file is permitted in the public candidate. Final scans must be repeated after committing the documentation and media produced in this phase.
+At that time, the public-candidate policy prohibited personal absolute paths, academic email addresses, enrollment identifiers, credentials, tokens, and private evidence files from entering the repository.
+
+A later checklist recorded that the final public-tree scan was completed after docs/media publication. The 2026-09-17 audit does not silently claim to have rerun Android/Gradle or Node tests in a clean networked machine; those execution checks are intentionally reserved for the independent clean-room verification step.

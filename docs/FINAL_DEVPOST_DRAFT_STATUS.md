@@ -1,4 +1,8 @@
-# Final Devpost draft status
+# Historical final Devpost draft status
+
+> **Historical pre-submission snapshot.** This file records the finalization state before the human Submit action on 2026-08-28. It is not the current status. Devpost confirmed the final submission by email on **2026-08-29**. Current status: [`CURRENT_SUBMISSION_STATUS.md`](CURRENT_SUBMISSION_STATUS.md).
+
+At the time of this snapshot:
 
 - Hackathon join: `CONFIRMED`
 - Draft name: `Second Take`
@@ -12,11 +16,11 @@
 - Next Gen repository URL: pending public repository
 - Video URL: pending public upload
 - Image gallery: local assets ready; upload pending
-- Terms acceptance/final Submit: untouched
-- Devpost step indicator: `2/5`
+- Terms acceptance/final Submit: not yet performed in this snapshot
+- Devpost step indicator at that moment: `2/5`
 
-The draft contains the final name, pitch, English story, technology tags, Android classification, academic email, RevenueCat project identifier, and transparent Test Store note. The exact academic address is intentionally not reproduced in this public document.
+The draft already contained the final name, pitch, English story, technology tags, Android classification, academic email, RevenueCat project identifier, and transparent Test Store note. The exact academic address is intentionally not reproduced in this public document.
 
-Status: `READY_PENDING_PUBLIC_URLS`.
+Historical status: `READY_PENDING_PUBLIC_URLS`.
 
-Hard stop preserved: no repository publication, video upload, terms acceptance, or final submission occurred.
+Later events superseded this snapshot: the repository and video were published, media/links were finalized, and Devpost sent the submission confirmation on 2026-08-29.

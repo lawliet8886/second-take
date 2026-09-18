@@ -1,4 +1,15 @@
 # Post-Shipaton roadmap
 
-The submission scope is frozen. Potential later work includes production hosting, additional authored scenarios, account-based sync, app-store billing, deeper accessibility testing, voice interaction, and opt-in reflection tools. None of these are current product claims.
+This roadmap describes work **outside the demonstrated Shipaton Next Gen MVP**. It is not presented as current functionality or as evidence for judging.
 
+Potential later work includes:
+
+- production backend hosting;
+- additional authored conversation scenarios;
+- account-based sync and cross-device persistence;
+- production app-store billing rather than RevenueCat Test Store;
+- deeper accessibility testing, including a full human TalkBack audit;
+- voice interaction; and
+- opt-in reflection/coaching tools.
+
+The current demonstrated/submitted capability boundary is documented in [`FINAL_PRODUCT_CLAIMS.md`](FINAL_PRODUCT_CLAIMS.md) and [`CURRENT_SUBMISSION_STATUS.md`](CURRENT_SUBMISSION_STATUS.md).

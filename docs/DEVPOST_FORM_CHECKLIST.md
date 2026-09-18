@@ -1,10 +1,12 @@
-# Devpost form checklist
+# Historical Devpost form checklist — pre-submission
 
-Live audit completed on 2026-08-28 after joining RevenueCat Shipaton 2026. Draft: `Second Take`, submission ID `1158646`, public preview slug `second-take-kxgcdq`. The final Submit action was not used.
+> **Historical snapshot (2026-08-28).** This file records the state before the final Submit action. It is intentionally preserved as an audit trail and is **not the current submission status**. Devpost later confirmed the final Second Take submission by email on **2026-08-29**. See [`CURRENT_SUBMISSION_STATUS.md`](CURRENT_SUBMISSION_STATUS.md) for the current record.
 
-## Required and category-relevant fields
+Draft at the time of this snapshot: `Second Take`, submission ID `1158646`, public preview slug `second-take-kxgcdq`.
 
-| Step | Field | Required | Draft value/status | Remaining action |
+## Required and category-relevant fields at this snapshot
+
+| Step | Field | Required | Pre-submit value/status | Remaining action at that time |
 |---|---|---:|---|---|
 | Manage team | Teammate | Yes | Gabriel Fernandes present | None |
 | Project overview | Project name | Yes | `Second Take` | None |
@@ -17,31 +19,30 @@ Live audit completed on 2026-08-28 after joining RevenueCat Shipaton 2026. Draft
 | Project details | Video demo link | Yes | Blank | Upload video publicly, paste URL |
 | Additional info | 1024x1024 icon attached | Yes | Local asset verified; checkbox not asserted | Upload, then check truthfully |
 | Additional info | Screenshot without device frame attached | Yes | Local asset verified; checkbox not asserted | Upload, then check truthfully |
-| Additional info | First store release Aug 1-Sep 30, 2026 | No | Left unchecked | App is not store-published; do not claim otherwise |
+| Additional info | First store release Aug 1-Sep 30, 2026 | No for Next Gen | Left unchecked | App is not store-published; do not claim otherwise |
 | Additional info | RevenueCat/sponsor employee | No | Left unchecked | Correct |
 | Additional info | App type | Yes | Android saved | None |
-| Additional info | App Store URL | No | Blank | Not applicable |
-| Additional info | Google Play URL | No | Blank | Not published; remain blank |
-| Additional info | Samsung Galaxy Store URL | No | Blank | Not published; remain blank |
+| Additional info | App Store URL | No for Next Gen | Blank | Not applicable |
+| Additional info | Google Play URL | No for Next Gen | Blank | Not published; remain blank |
+| Additional info | Samsung Galaxy Store URL | No for Next Gen | Blank | Not published; remain blank |
 | Additional info | Next Gen repository URL | Category requirement | Blank | Paste public repository URL |
 | Additional info | Next Gen academic email | Category requirement | Accepted and saved by Devpost | None |
-| Additional info | RevenueCat project ID | Yes | `18c3c3de` saved | None |
-| Additional info | Promo code | No | Blank | Not needed; Test Store shown in video |
+| Additional info | RevenueCat project ID | Yes | saved | None |
+| Additional info | Promo code | No for Next Gen/Test Store flow | Blank | Test Store shown in video |
 | Additional info | Additional notes | No | Next Gen/Test Store disclosure saved | None |
-| Submit | Rules/Terms agreement | Yes at final submit | Not checked | Human final review, then check |
-| Submit | Submit project | Final action | Not clicked | Explicitly outside this phase |
+| Submit | Rules/Terms agreement | Yes at final submit | Not checked yet | Human final review, then check |
+| Submit | Submit project | Final action | Not clicked yet | Explicitly outside this snapshot |
 
-## Optional award fields inspected
+## Optional award fields inspected at the time
 
-The live form also exposes optional fields for Grand Prize growth, Build in Public (description and links), HAMM monetization, Peace Prize, Design, Catvertising, Best Game, one Influencer category plus description, Ship Kotlin Everywhere, Most Viral/Noise, Best App for Galaxy, Idea to Income/Replit, Keep Them Coming Back/OneSignal, Growth Loop/Layers, and Funnel Vision (funnel URL, Stripe project ID, and description). All were intentionally left blank because this submission targets **Next Gen only** and no unsupported claim should be made.
+The live form exposed optional fields for other Shipaton prizes. They were intentionally left blank because this submission targeted **Next Gen** and no unsupported claim was to be made.
 
-## Validation conclusions
+## Historical validation conclusions
 
 - Join Hackathon: `CONFIRMED`.
-- Next Gen: applicable through the live Next Gen repository and academic-email fields.
-- Student checker: `CHECKER_ACCEPTED` — the exact academic address was saved and the form advanced to finalization without validation error.
-- Store release: optional fields exist and accept blank values; no incompatible mandatory store-release claim exists.
-- Current Devpost step indicator: `2/5`, because public URLs/media and final terms remain incomplete.
-- Submission: `NOT_YET_SUBMITTED`.
+- Next Gen path: present in the live form.
+- Student checker: `CHECKER_ACCEPTED` — the exact academic address was saved without validation error.
+- Store release: not asserted; Next Gen is exempt from the store-release requirement under the current official rules.
+- At this snapshot only, the project had not yet been submitted.
 
 The private enrollment PDF remains outside this public repository and was not uploaded because the live form did not request documentary proof.
