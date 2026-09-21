@@ -1,0 +1,20 @@
+{
+  "version": "V4-review-candidate",
+  "source": "assets/video/second-take-v3-clean-source.mp4",
+  "disclosure": "Edited Android capture. Waiting time shortened; selected frames held. Detail inserts and previews are labeled.",
+  "segments": [
+    {"label":"THE MOMENT", "title":"Friday is coming.\nThe slides are not.", "body":"How do you start the conversation?", "start":0, "end":7, "text":"Your teammate's slides are late. The presentation is Friday. How do you start that conversation?"},
+    {"label":"PREVIEW • RECORDED COMPARISON", "title":"Same moment.\nDifferent words.", "body":"Rehearse. Rewind. Compare.", "start":77, "end":80, "text":"Second Take lets you rehearse, rewind, and see what a different choice changes."},
+    {"label":"01 / FIRST ATTEMPT", "title":"Start with\na concern.", "body":"“I am worried about the project”\n\nAlex: “What do you mean exactly?”", "start":12, "end":23.7, "text":"I tell Alex I am worried about the project. Alex asks what I mean. My concern needs clarification."},
+    {"label":"02 / REWIND", "title":"Go back to\nthe same moment.", "body":"Same facts. Same history.\nSame conversation state.", "start":40.7, "end":47.58, "text":"Now I rewind. The app restores the checkpoint before that choice, with the same facts and conversation history."},
+    {"label":"CHECKPOINT RESTORED", "title":"Change one thing:\nyour choice.", "body":"A second attempt from the preserved context.", "start":47.58, "end":48.5, "text":"Everything before the checkpoint stays fixed. This time, I make a specific request."},
+    {"label":"03 / SECOND ATTEMPT", "title":"“Can you\nfinish today?”", "body":"A capability question — or a request?", "start":49, "end":53.1, "text":"Can you finish today? That could be a question about ability, or a request to act."},
+    {"label":"INTENT LOCK • DETAIL INSERT", "title":"Your intention.\nYour decision.", "body":"Find out if Alex can finish\n\nor ask Alex to finish.", "start":24, "end":33.5, "text":"Intent Lock lets me confirm which I mean, instead of letting the model guess."},
+    {"label":"04 / OBSERVE THE RESPONSE", "title":"A specific\ncommitment.", "body":"Alex: “I can finish the sources\nby nine tonight.”", "start":54, "end":59.8, "text":"Alex now commits to finishing the sources by nine tonight. That is an observable difference."},
+    {"label":"TWO ATTEMPTS • FREE", "title":"Practice first.\nCompare next.", "body":"The conversation, rewind and\nsecond attempt are free.", "start":56, "end":59.8, "text":"Both attempts are free. The premium comparison puts the choices and immediate responses together."},
+    {"label":"REVENUECAT • TEST STORE", "title":"Unlock the\ncomparison.", "body":"Development purchase.\nNo real charge.\n\nDisplayed price is a sandbox configuration.", "start":62, "end":74.1, "text":"Here is the Revenue Cat Test Store purchase. No real money is charged. Access opens only with an active Pro entitlement."},
+    {"label":"05 / COMPARE", "title":"What actually\nchanged?", "body":"A: a request for clarification.\n\nB: a commitment with a time.\n\nThe app shows the words behind each outcome.", "start":75, "end":79.9, "text":"One message led to clarification. The other led to a specific commitment. I can inspect both without relying on memory."},
+    {"label":"BUILT WITH CARE", "title":"Flexible language.\nBounded actions.", "body":"Gemini interprets and selects.\nPolicy limits the available actions.\nAlex's replies are authored.", "start":77, "end":80, "text":"Gemini interprets language and selects allowed actions. Policy and authored replies keep the scenario consistent."},
+    {"label":"SECOND TAKE", "title":"Practice the words.\nSee the difference.", "body":"One Alex scenario. Android prototype.\nOpen source. Built for Next Gen.\n\nA rehearsal — not a prediction of real people.", "start":103, "end":107.6, "text":"A rehearsal, not a prediction of real people. Second Take. Practice the words. See the difference."}
+  ]
+}

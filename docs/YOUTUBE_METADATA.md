@@ -1,21 +1,31 @@
-# YouTube / Vimeo metadata
+# Published YouTube metadata — September 21, 2026
 
 ## Title
 
-Second Take — Rehearse, Rewind, Try Again | RevenueCat Shipaton 2026
+Second Take — One Conversation, A Second Choice | Shipaton 2026
 
 ## Description
 
-Second Take lets people rehearse a difficult conversation, rewind to the exact same checkpoint, try a different choice, and compare the resulting paths.
+Your teammate's slides are late. How do you start the conversation?
 
-Built for RevenueCat Shipaton 2026 — Next Gen. The demo uses RevenueCat Test Store, so no real payment is charged.
+Second Take is an Android rehearsal prototype: try a message, rewind to the same checkpoint, change your choice, and compare the immediate responses.
 
-Source: https://github.com/lawliet8886/second-take
+In this example, Alex offers sources by nine, not completion of the whole project. Inspect what was actually offered, not just whether the reply sounds positive.
+
+Built for RevenueCat Shipaton 2026 — Next Gen. The demo uses RevenueCat Test Store: no real charge. One Alex scenario, local backend, authored replies and policy-bounded AI. This is a rehearsal, not a prediction of real people.
+
+Edited Android footage; waits are shortened and selected frames held. The early comparison is a preview; the Intent Lock close-up is a labeled detail insert. Editorial interpretation is outside the app capture, not an automated coaching feature.
+
+Open-source code: https://github.com/lawliet8886/second-take
 
 ## Thumbnail
 
-- File: `assets/thumbnail.png`
+- File: `assets/thumbnail-v5-review.png`
 - Dimensions: 1280x720
-- SHA-256: `5DF1A20F480423A487C39C8F0150D990F02B7A8FF2E4216880220419BCC41359`
+- English timed captions: `assets/video/second-take-v5-review.srt`, uploaded to the English (United States) track.
+- Public visibility, embedding allowed, not made for children, no paid promotion; AI disclosure enabled for the synthetic narration.
 
-Published video: https://www.youtube.com/watch?v=KMOa5bSV1Eo
+Published video: https://www.youtube.com/watch?v=lKjPDNHgfNc
+
+The old public video remains available as an archive: https://www.youtube.com/watch?v=KMOa5bSV1Eo.
+YouTube showed a verification requirement for clickable external description links; the repository URL is still visible as text and linked directly from Devpost. No account verification/settings change was attempted.

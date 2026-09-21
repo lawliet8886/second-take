@@ -9,5 +9,4 @@ Early fully generative prototypes sounded flexible but could invent pragmatic im
 5. The finite Conversation Action Graph applies a local state transition.
 6. An authored utterance family produces Alex's visible response.
 
-If serving fails, the backend selects a conservative candidate by deterministic fallback priority. It never invents a new plan. Hidden facts remain server-side, and the client cannot submit facts, plans, or transitions.
-
+If the selector fails after routing and policy evaluation, the backend selects a conservative candidate by deterministic fallback priority. If the router fails, it returns `TRANSPORT_FAILURE`; no safe interpretation has been established, so it does not invent one. Application deadlines bound both waits even if the provider ignores its timeout. Late completion does not apply a state transition, but the underlying transport may remain in flight until its own timeout. Hidden facts remain server-side, and the client cannot submit facts, plans, or transitions.

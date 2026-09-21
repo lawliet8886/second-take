@@ -1,6 +1,6 @@
 # Official rules audit
 
-Rechecked on **2026-09-17** against the current official materials:
+Rechecked on **2026-09-21** against the current official materials. No material change affecting the Second Take Next Gen submission was found since the 2026-09-17 audit:
 
 - https://revenuecat-shipaton-2026.devpost.com/rules
 - https://revenuecat-shipaton-2026.devpost.com/details/dates

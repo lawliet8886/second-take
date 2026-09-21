@@ -1,0 +1,128 @@
+{
+  "version": "V4-review-candidate",
+  "publication": "NOT_PUBLISHED",
+  "source": "assets/video/second-take-v3-clean-source.mp4",
+  "sourceSha256": "2d1c5f66dbf6675dffcf3073b39e176d93603b01ef486cc9dc620e05a7692693",
+  "videoSha256": "6e5544f64f6783d44d4c83132c9a12cc8cde7c6f9a152ba97e3c95f68eff5737",
+  "durationSeconds": 100.0,
+  "disclosure": "Edited Android capture. Waiting time shortened; selected frames held. Detail inserts and previews are labeled.",
+  "timeline": [
+    {
+      "segment": 1,
+      "label": "THE MOMENT",
+      "start": 0.0,
+      "end": 7.0,
+      "sourceStart": 0,
+      "sourceEnd": 7,
+      "speedMultiplier": 1.0
+    },
+    {
+      "segment": 2,
+      "label": "PREVIEW \u2022 RECORDED COMPARISON",
+      "start": 7.0,
+      "end": 13.0,
+      "sourceStart": 77,
+      "sourceEnd": 80,
+      "speedMultiplier": 1.0
+    },
+    {
+      "segment": 3,
+      "label": "01 / FIRST ATTEMPT",
+      "start": 13.0,
+      "end": 21.0,
+      "sourceStart": 12,
+      "sourceEnd": 23.7,
+      "speedMultiplier": 1.4625
+    },
+    {
+      "segment": 4,
+      "label": "02 / REWIND",
+      "start": 21.0,
+      "end": 29.0,
+      "sourceStart": 40.7,
+      "sourceEnd": 47.58,
+      "speedMultiplier": 1.0
+    },
+    {
+      "segment": 5,
+      "label": "CHECKPOINT RESTORED",
+      "start": 29.0,
+      "end": 35.0,
+      "sourceStart": 47.58,
+      "sourceEnd": 48.5,
+      "speedMultiplier": 1.0
+    },
+    {
+      "segment": 6,
+      "label": "03 / SECOND ATTEMPT",
+      "start": 35.0,
+      "end": 41.0,
+      "sourceStart": 49,
+      "sourceEnd": 53.1,
+      "speedMultiplier": 1.0
+    },
+    {
+      "segment": 7,
+      "label": "INTENT LOCK \u2022 DETAIL INSERT",
+      "start": 41.0,
+      "end": 47.0,
+      "sourceStart": 24,
+      "sourceEnd": 33.5,
+      "speedMultiplier": 1.5833333333333335
+    },
+    {
+      "segment": 8,
+      "label": "04 / OBSERVE THE RESPONSE",
+      "start": 47.0,
+      "end": 54.0,
+      "sourceStart": 54,
+      "sourceEnd": 59.8,
+      "speedMultiplier": 1.0
+    },
+    {
+      "segment": 9,
+      "label": "TWO ATTEMPTS \u2022 FREE",
+      "start": 54.0,
+      "end": 61.0,
+      "sourceStart": 56,
+      "sourceEnd": 59.8,
+      "speedMultiplier": 1.0
+    },
+    {
+      "segment": 10,
+      "label": "REVENUECAT \u2022 TEST STORE",
+      "start": 61.0,
+      "end": 73.0,
+      "sourceStart": 62,
+      "sourceEnd": 74.1,
+      "speedMultiplier": 1.0083333333333329
+    },
+    {
+      "segment": 11,
+      "label": "05 / COMPARE",
+      "start": 73.0,
+      "end": 83.0,
+      "sourceStart": 75,
+      "sourceEnd": 79.9,
+      "speedMultiplier": 1.0
+    },
+    {
+      "segment": 12,
+      "label": "BUILT WITH CARE",
+      "start": 83.0,
+      "end": 92.0,
+      "sourceStart": 77,
+      "sourceEnd": 80,
+      "speedMultiplier": 1.0
+    },
+    {
+      "segment": 13,
+      "label": "SECOND TAKE",
+      "start": 92.0,
+      "end": 100.0,
+      "sourceStart": 103,
+      "sourceEnd": 107.6,
+      "speedMultiplier": 1.0
+    }
+  ]
+}

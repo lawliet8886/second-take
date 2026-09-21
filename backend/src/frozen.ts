@@ -4,7 +4,7 @@ export { candidatePlansFromRouting } from "../ai-lab/src/v052/policy.js";
 export { prepareProductInput } from "../ai-lab/src/v055/runtime.js";
 export { IntentLockPolicy, resolveIntentLockToPolicy } from "../ai-lab/src/v055/policy.js";
 export { buildSelectorInput } from "../ai-lab/src/v056/selector.js";
-export { SELECTOR_SYSTEM_PROMPT_V056, selectorSchema } from "../ai-lab/src/v056/config.js";
+export { SELECTOR_MODEL_V056, SELECTOR_SYSTEM_PROMPT_V056, selectorSchema } from "../ai-lab/src/v056/config.js";
 export { classifyHttp200 } from "../ai-lab/src/v0561/runtime.js";
 export { ROUTER_SYSTEM_PROMPT_V0521, ROUTER_MODEL_CONFIG_V0521 } from "../ai-lab/src/v0521/prompt.js";
 export { routerBatchSchemaV0521 } from "../ai-lab/src/v0521/schema.js";

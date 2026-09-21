@@ -1,0 +1,334 @@
+{
+  "schemaVersion": "backend-v06-vertex-smoke-1",
+  "createdAt": "2026-09-21T12:50:48.638Z",
+  "route": {
+    "provider": "VERTEX_AI_GLOBAL_STANDARD",
+    "host": "aiplatform.googleapis.com",
+    "location": "global",
+    "apiVersion": "v1",
+    "model": "gemini-3.7-flash",
+    "thinking": "low",
+    "maxOutputTokensSingle": 512,
+    "projectHash": "72c5f3796c12"
+  },
+  "logicalTurns": 20,
+  "sessions": 6,
+  "responseCounts": {
+    "TRANSPORT_FAILURE": 5,
+    "INTENT_LOCK_REQUIRED": 3,
+    "RECOVERY_FALLBACK": 8,
+    "ALEX_REPLY": 3,
+    "OUT_OF_SCOPE": 4
+  },
+  "remoteSelected": 3,
+  "localFallbackSelected": 8,
+  "intentLockRequired": 3,
+  "outOfScope": 4,
+  "transportFailure": 5,
+  "hangingTurns": 0,
+  "latency": {
+    "logical": {
+      "p50Ms": 9037.85,
+      "p95Ms": 15229.1,
+      "maxMs": 15229.1
+    },
+    "initialRequest": {
+      "p50Ms": 8515.1,
+      "p95Ms": 10076.26,
+      "maxMs": 10076.26
+    }
+  },
+  "retries": {
+    "router": 1,
+    "selectorTransport": 6,
+    "selectorStructural": 0
+  },
+  "providerAttempts": {
+    "HTTP_200": 3,
+    "HTTP_429": 1,
+    "HTTP_504": 9
+  },
+  "usage": {
+    "router": {
+      "inputTokens": 25117,
+      "outputTokens": 1366,
+      "thinkingTokens": 250,
+      "totalTokens": 26733
+    },
+    "selector": {
+      "inputTokens": 2610,
+      "outputTokens": 182,
+      "thinkingTokens": 361,
+      "totalTokens": 3153
+    },
+    "combined": {
+      "inputTokens": 27727,
+      "outputTokens": 1548,
+      "thinkingTokens": 611,
+      "totalTokens": 29886
+    }
+  },
+  "estimatedCostUsd": 0.028892,
+  "records": [
+    {
+      "id": "smoke-en-apology",
+      "locale": "en-US",
+      "initialType": "TRANSPORT_FAILURE",
+      "finalType": "TRANSPORT_FAILURE",
+      "initialHttp": 200,
+      "finalHttp": 200,
+      "initialLatencyMs": 10076.26,
+      "confirmationLatencyMs": 0,
+      "logicalLatencyMs": 10076.52,
+      "aborted": false,
+      "publicFactIds": []
+    },
+    {
+      "id": "smoke-en-capability",
+      "locale": "en-US",
+      "initialType": "INTENT_LOCK_REQUIRED",
+      "finalType": "RECOVERY_FALLBACK",
+      "initialHttp": 200,
+      "finalHttp": 200,
+      "initialLatencyMs": 5191.2,
+      "confirmationLatencyMs": 10037.58,
+      "logicalLatencyMs": 15229.1,
+      "aborted": false,
+      "publicFactIds": []
+    },
+    {
+      "id": "smoke-en-claim",
+      "locale": "en-US",
+      "initialType": "ALEX_REPLY",
+      "finalType": "ALEX_REPLY",
+      "initialHttp": 200,
+      "finalHttp": 200,
+      "initialLatencyMs": 6489.44,
+      "confirmationLatencyMs": 0,
+      "logicalLatencyMs": 6489.53,
+      "aborted": false,
+      "publicFactIds": []
+    },
+    {
+      "id": "smoke-en-collaboration",
+      "locale": "en-US",
+      "initialType": "RECOVERY_FALLBACK",
+      "finalType": "RECOVERY_FALLBACK",
+      "initialHttp": 200,
+      "finalHttp": 200,
+      "initialLatencyMs": 8509.76,
+      "confirmationLatencyMs": 0,
+      "logicalLatencyMs": 8509.82,
+      "aborted": false,
+      "publicFactIds": []
+    },
+    {
+      "id": "smoke-en-frustration",
+      "locale": "en-US",
+      "initialType": "TRANSPORT_FAILURE",
+      "finalType": "TRANSPORT_FAILURE",
+      "initialHttp": 200,
+      "finalHttp": 200,
+      "initialLatencyMs": 9021.97,
+      "confirmationLatencyMs": 0,
+      "logicalLatencyMs": 9022.03,
+      "aborted": false,
+      "publicFactIds": []
+    },
+    {
+      "id": "smoke-en-generalization",
+      "locale": "en-US",
+      "initialType": "ALEX_REPLY",
+      "finalType": "ALEX_REPLY",
+      "initialHttp": 200,
+      "finalHttp": 200,
+      "initialLatencyMs": 5322.88,
+      "confirmationLatencyMs": 0,
+      "logicalLatencyMs": 5322.94,
+      "aborted": false,
+      "publicFactIds": []
+    },
+    {
+      "id": "smoke-en-request",
+      "locale": "en-US",
+      "initialType": "INTENT_LOCK_REQUIRED",
+      "finalType": "RECOVERY_FALLBACK",
+      "initialHttp": 200,
+      "finalHttp": 200,
+      "initialLatencyMs": 3081.51,
+      "confirmationLatencyMs": 8659.97,
+      "logicalLatencyMs": 11741.62,
+      "aborted": false,
+      "publicFactIds": []
+    },
+    {
+      "id": "smoke-en-status",
+      "locale": "en-US",
+      "initialType": "RECOVERY_FALLBACK",
+      "finalType": "RECOVERY_FALLBACK",
+      "initialHttp": 200,
+      "finalHttp": 200,
+      "initialLatencyMs": 9484.92,
+      "confirmationLatencyMs": 0,
+      "logicalLatencyMs": 9484.99,
+      "aborted": false,
+      "publicFactIds": []
+    },
+    {
+      "id": "smoke-oos-en-1",
+      "locale": "en-US",
+      "initialType": "OUT_OF_SCOPE",
+      "finalType": "OUT_OF_SCOPE",
+      "initialHttp": 200,
+      "finalHttp": 200,
+      "initialLatencyMs": 2202.28,
+      "confirmationLatencyMs": 0,
+      "logicalLatencyMs": 2202.33,
+      "aborted": false,
+      "publicFactIds": []
+    },
+    {
+      "id": "smoke-oos-en-2",
+      "locale": "en-US",
+      "initialType": "OUT_OF_SCOPE",
+      "finalType": "OUT_OF_SCOPE",
+      "initialHttp": 200,
+      "finalHttp": 200,
+      "initialLatencyMs": 3023.12,
+      "confirmationLatencyMs": 0,
+      "logicalLatencyMs": 3023.21,
+      "aborted": false,
+      "publicFactIds": []
+    },
+    {
+      "id": "smoke-oos-pt-1",
+      "locale": "pt-BR",
+      "initialType": "OUT_OF_SCOPE",
+      "finalType": "OUT_OF_SCOPE",
+      "initialHttp": 200,
+      "finalHttp": 200,
+      "initialLatencyMs": 2487.19,
+      "confirmationLatencyMs": 0,
+      "logicalLatencyMs": 2487.3,
+      "aborted": false,
+      "publicFactIds": []
+    },
+    {
+      "id": "smoke-oos-pt-2",
+      "locale": "pt-BR",
+      "initialType": "OUT_OF_SCOPE",
+      "finalType": "OUT_OF_SCOPE",
+      "initialHttp": 200,
+      "finalHttp": 200,
+      "initialLatencyMs": 2502.43,
+      "confirmationLatencyMs": 0,
+      "logicalLatencyMs": 2502.56,
+      "aborted": false,
+      "publicFactIds": []
+    },
+    {
+      "id": "smoke-pt-apology",
+      "locale": "pt-BR",
+      "initialType": "RECOVERY_FALLBACK",
+      "finalType": "RECOVERY_FALLBACK",
+      "initialHttp": 200,
+      "finalHttp": 200,
+      "initialLatencyMs": 9132.29,
+      "confirmationLatencyMs": 0,
+      "logicalLatencyMs": 9132.43,
+      "aborted": false,
+      "publicFactIds": []
+    },
+    {
+      "id": "smoke-pt-capability",
+      "locale": "pt-BR",
+      "initialType": "TRANSPORT_FAILURE",
+      "finalType": "TRANSPORT_FAILURE",
+      "initialHttp": 200,
+      "finalHttp": 200,
+      "initialLatencyMs": 9037.75,
+      "confirmationLatencyMs": 0,
+      "logicalLatencyMs": 9037.85,
+      "aborted": false,
+      "publicFactIds": []
+    },
+    {
+      "id": "smoke-pt-claim",
+      "locale": "pt-BR",
+      "initialType": "TRANSPORT_FAILURE",
+      "finalType": "TRANSPORT_FAILURE",
+      "initialHttp": 200,
+      "finalHttp": 200,
+      "initialLatencyMs": 10023.45,
+      "confirmationLatencyMs": 0,
+      "logicalLatencyMs": 10023.73,
+      "aborted": false,
+      "publicFactIds": []
+    },
+    {
+      "id": "smoke-pt-collaboration",
+      "locale": "pt-BR",
+      "initialType": "ALEX_REPLY",
+      "finalType": "ALEX_REPLY",
+      "initialHttp": 200,
+      "finalHttp": 200,
+      "initialLatencyMs": 9796.02,
+      "confirmationLatencyMs": 0,
+      "logicalLatencyMs": 9796.17,
+      "aborted": false,
+      "publicFactIds": []
+    },
+    {
+      "id": "smoke-pt-frustration",
+      "locale": "pt-BR",
+      "initialType": "RECOVERY_FALLBACK",
+      "finalType": "RECOVERY_FALLBACK",
+      "initialHttp": 200,
+      "finalHttp": 200,
+      "initialLatencyMs": 8515.1,
+      "confirmationLatencyMs": 0,
+      "logicalLatencyMs": 8515.25,
+      "aborted": false,
+      "publicFactIds": []
+    },
+    {
+      "id": "smoke-pt-generalization",
+      "locale": "pt-BR",
+      "initialType": "TRANSPORT_FAILURE",
+      "finalType": "TRANSPORT_FAILURE",
+      "initialHttp": 200,
+      "finalHttp": 200,
+      "initialLatencyMs": 9338.32,
+      "confirmationLatencyMs": 0,
+      "logicalLatencyMs": 9338.41,
+      "aborted": false,
+      "publicFactIds": []
+    },
+    {
+      "id": "smoke-pt-request",
+      "locale": "pt-BR",
+      "initialType": "INTENT_LOCK_REQUIRED",
+      "finalType": "RECOVERY_FALLBACK",
+      "initialHttp": 200,
+      "finalHttp": 200,
+      "initialLatencyMs": 3484.69,
+      "confirmationLatencyMs": 9404.42,
+      "logicalLatencyMs": 12889.5,
+      "aborted": false,
+      "publicFactIds": []
+    },
+    {
+      "id": "smoke-pt-status",
+      "locale": "pt-BR",
+      "initialType": "RECOVERY_FALLBACK",
+      "finalType": "RECOVERY_FALLBACK",
+      "initialHttp": 200,
+      "finalHttp": 200,
+      "initialLatencyMs": 8517.86,
+      "confirmationLatencyMs": 0,
+      "logicalLatencyMs": 8517.92,
+      "aborted": false,
+      "publicFactIds": []
+    }
+  ]
+}

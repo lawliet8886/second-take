@@ -1,0 +1,59 @@
+1
+00:00:00,000 --> 00:00:06,075
+Your teammate's slides are late. The presentation is Friday. How do you start that
+conversation?
+
+2
+00:00:07,000 --> 00:00:11,825
+Second Take lets you rehearse, rewind, and see what a different choice changes.
+
+3
+00:00:13,000 --> 00:00:20,000
+I tell Alex I am worried about the project. Alex asks what I mean. My concern needs
+clarification.
+
+4
+00:00:21,000 --> 00:00:28,225
+Now I rewind. The app restores the checkpoint before that choice, with the same facts and
+conversation history.
+
+5
+00:00:29,000 --> 00:00:34,525
+Everything before the checkpoint stays fixed. This time, I make a specific request.
+
+6
+00:00:35,000 --> 00:00:40,000
+Can you finish today? That could be a question about ability, or a request to act.
+
+7
+00:00:41,000 --> 00:00:45,725
+Intent Lock lets me confirm which I mean, instead of letting the model guess.
+
+8
+00:00:47,000 --> 00:00:52,750
+Alex now commits to finishing the sources by nine tonight. That is an observable difference.
+
+9
+00:00:54,000 --> 00:01:00,550
+Both attempts are free. The premium comparison puts the choices and immediate responses
+together.
+
+10
+00:01:01,000 --> 00:01:09,350
+Here is the RevenueCat Test Store purchase. No real money is charged. Access opens only with
+an active Pro entitlement.
+
+11
+00:01:13,000 --> 00:01:21,150
+One message led to clarification. The other led to a specific commitment. I can inspect both
+without relying on memory.
+
+12
+00:01:23,000 --> 00:01:30,650
+Gemini interprets language and selects allowed actions. Policy and authored replies keep the
+scenario consistent.
+
+13
+00:01:32,000 --> 00:01:38,175
+A rehearsal, not a prediction of real people. Second Take. Practice the words. See the
+difference.

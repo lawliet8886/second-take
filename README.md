@@ -4,18 +4,23 @@
 
 Second Take is an Android conversation-rehearsal app for moments that matter because real life rarely gives us a clean second attempt. Talk naturally to Alex, rewind to the exact same conversational checkpoint, make a different choice, and compare how the two paths changed.
 
+Your teammate's slides are late and the presentation is Friday. In the recorded rehearsal, **“I am worried about the project”** gets **“What do you mean exactly?”** Rewind, try **“Can you finish today?”**, and Alex replies **“I can finish the sources by nine tonight.”** Second Take lets you inspect that contrast from a preserved checkpoint. It is a rehearsal, not a prediction of how a real person will respond.
+
 ![Second Take comparison](assets/screenshots/06-comparison.png)
 
 ## Shipaton 2026 — Next Gen
 
 Second Take is a confirmed **RevenueCat Shipaton 2026 — Next Gen** submission.
 
-- Public demo: [Second Take — Rehearse, Rewind, Try Again](https://www.youtube.com/watch?v=KMOa5bSV1Eo)
+- Public demo: [Second Take — One Conversation, A Second Choice](https://www.youtube.com/watch?v=lKjPDNHgfNc)
+- Devpost entry: [Second Take](https://devpost.com/software/second-take-kxgcdq)
 - Current submission status: [`docs/CURRENT_SUBMISSION_STATUS.md`](docs/CURRENT_SUBMISSION_STATUS.md)
 - Current rules audit: [`docs/OFFICIAL_RULES_AUDIT.md`](docs/OFFICIAL_RULES_AUDIT.md)
 - Demonstrated-claim boundary: [`docs/FINAL_PRODUCT_CLAIMS.md`](docs/FINAL_PRODUCT_CLAIMS.md)
 
 The demo uses **RevenueCat Test Store**. No real payment or production-store release is claimed.
+
+Reviewing the project? Start with the [short judging guide](docs/JUDGE_REVIEW_GUIDE.md): demo, implementation evidence, provider-free checks, and optional credentialed setup. The [published V5 source](assets/video/second-take-v5-review.mp4) and [media validation](docs/VIDEO_V5_REVIEW.md) identify the 1:41 demo updated on YouTube and the existing Devpost submission on September 21. Earlier edits are archival, not competing submission versions.
 
 ## Why it is different
 
@@ -27,7 +32,7 @@ The free path includes the scenario, natural conversation, Intent Lock where req
 
 ![Architecture](assets/diagrams/architecture.svg)
 
-Gemini 3.7 Flash interprets language and selects among conversation moves already approved by a deterministic policy and finite action graph. Gemini never freely writes Alex's final response. Authored utterances realize the selected safe plan, while a deterministic local fallback keeps the rehearsal moving during provider failures.
+Gemini 3.7 Flash interprets language and selects among conversation moves already approved by a deterministic policy and finite action graph. Gemini never freely writes Alex's final response. Authored utterances realize the selected safe plan. A selector failure can use a deterministic fallback from the safe candidates; a router failure returns an explicit recoverable interruption rather than guessing the user's intention.
 
 Intent Lock gives the user one-tap control over the critical distinction between asking whether Alex *can* do something and asking Alex *to* do it.
 
@@ -38,6 +43,8 @@ Intent Lock gives the user one-tap control over the critical distinction between
 The Android client uses RevenueCat Android SDK 10.19.1 and the RevenueCat Test Store. Offering `default` exposes package `$rc_monthly`; access is granted only from `CustomerInfo.entitlements["pro"].isActive`. No purchase state is faked locally. The Shipaton Next Gen build transparently discloses that it uses Test Store, not a real charged transaction.
 
 The core conversation, rewind, and second attempt remain usable without Pro access. The entitlement gate applies to **Full A/B Comparison**.
+
+The monetization hypothesis is that reviewing both choices and their immediate responses together has value after the rehearsal. The current single-scenario prototype does not establish recurring willingness to pay; its monthly sandbox price is configuration, not evidence of demand or validated pricing.
 
 ## Stack
 
@@ -143,7 +150,7 @@ The backend is the conversation authority and keeps hidden facts server-side. Th
 
 ## Current limits
 
-The MVP contains one polished Alex scenario, uses a local backend, relies on an anonymous RevenueCat user, and uses Test Store rather than a real app-store purchase. The repository does not contain a production backend deployment or production billing configuration. Provider outages can activate a safe local fallback. A full human TalkBack audit remains future work.
+The MVP contains one polished Alex scenario, uses a local backend, relies on an anonymous RevenueCat user, and uses Test Store rather than a real app-store purchase. The repository does not contain a production backend deployment or production billing configuration. Router outages interrupt a turn; selector outages can activate a safe local fallback. Application deadlines bound the wait, but do not guarantee provider availability or cancel provider billing. A full human TalkBack audit remains future work.
 
 ## Roadmap
 

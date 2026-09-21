@@ -1,0 +1,9 @@
+{
+  "schemaVersion": "backend-v06-local-benchmark-1",
+  "createdAt": "2026-09-21T12:43:41.048Z",
+  "requests": 1000,
+  "p50Ms": 0.994,
+  "p95Ms": 7.521,
+  "maxMs": 155.825,
+  "hangingTurns": 0
+}

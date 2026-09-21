@@ -1,5 +1,7 @@
 # Final video production
 
+> Historical V1 production record. This is not the latest local editorial master. See `SUBMISSION_METADATA.md` for the archival master correction and `VIDEO_V4_REVIEW.md` for the unpublished revision candidate. Do not infer which file was uploaded from the filename alone.
+
 - Output: `assets/video/second-take-shipaton-final.mp4`
 - Duration: 107.700 s
 - Container/codecs: MP4, H.264 video, AAC audio

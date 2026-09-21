@@ -9,7 +9,7 @@ const isTransient=(error:unknown)=>/\b(429|499|500|503|504)\b|ECONNRESET|fetch f
 
 export class VertexRouterClient implements RouterPort {
   readonly #client:GoogleGenAI;
-  constructor(project:string,location="global",private readonly limiter=new ConcurrencyLimiter(2,8)){
+  constructor(project:string,location="global",private readonly limiter=new ConcurrencyLimiter(2,8),private readonly model=ROUTER_MODEL_CONFIG_V0521.model){
     this.#client=new GoogleGenAI({vertexai:true,project,location,httpOptions:{baseUrl:"https://aiplatform.googleapis.com",apiVersion:"v1"}});
   }
 
@@ -23,7 +23,7 @@ export class VertexRouterClient implements RouterPort {
           if(remaining<1500)throw last??new Error("ROUTER_GLOBAL_DEADLINE");
           try{
             const response=await this.#client.models.generateContent({
-              model:"gemini-3.7-flash",
+              model:this.model,
               contents:JSON.stringify({scenario:"Alex is the user's teammate. Two research slides are unfinished and the presentation deadline is Friday.",items:[{id:input.requestId,locale:input.locale,text:input.text}],instruction:"Return exactly one route per item, preserving each id. Claim and reference spans must be exact contiguous substrings of that item's text.",...(structural?{repair:"The previous output violated the finite schema or exact-span contract. Return one fully valid replacement without changing the input."}:{})}),
               config:{systemInstruction:ROUTER_SYSTEM_PROMPT_V0521,thinkingConfig:{thinkingLevel:ThinkingLevel.LOW},maxOutputTokens:ROUTER_MODEL_CONFIG_V0521.maxOutputTokens,responseMimeType:"application/json",responseJsonSchema:routerBatchSchemaV0521([input.requestId]),httpOptions:{timeout:remaining,retryOptions:{attempts:1}}},
             });

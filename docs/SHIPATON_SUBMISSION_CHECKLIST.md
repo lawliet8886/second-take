@@ -1,6 +1,6 @@
 # Shipaton submission checklist
 
-Current-status audit refreshed on **2026-09-17**. Official rules were rechecked against the current RevenueCat Shipaton 2026 Devpost rules, schedule, FAQ, and the official Next Gen/Test Store clarification.
+Current-status audit refreshed on **2026-09-21**. Official rules were rechecked against the current RevenueCat Shipaton 2026 Devpost rules, schedule, FAQ, and the official Next Gen/Test Store clarification.
 
 | Requirement | Status | Evidence / note |
 |---|---|---|
@@ -11,12 +11,12 @@ Current-status audit refreshed on **2026-09-17**. Official rules were rechecked 
 | Public open-source repo | PASS | https://github.com/lawliet8886/second-take |
 | Detectable open-source license | PASS | Root `LICENSE` is MIT; GitHub detects the repository license as MIT |
 | Source/assets/setup instructions | PASS_WITH_HARDENING | Present; this audit corrects stale/broken setup paths before merge |
-| Final English video under 2 min | PASS | 107.7 s approved master |
-| Public YouTube/Vimeo URL | PASS | https://www.youtube.com/watch?v=KMOa5bSV1Eo |
+| Final English video under 2 min | PASS | V5 approved/uploaded source: 101.452 seconds, English captions |
+| Public YouTube/Vimeo URL | PASS | https://www.youtube.com/watch?v=lKjPDNHgfNc |
 | Device/platform footage | PASS_RECORDED | Prior video QA records the Android flow, fork, Intent Lock, RevenueCat flow, and comparison |
 | Android app icon | PASS | `assets/app-icon.png`, 1024×1024 |
 | Required screenshot | PASS | `assets/screenshots/required-1179x2556.png`, 1179×2556, no device frame |
-| RevenueCat integration | PASS | Test Store purchase → `CustomerInfo` → `pro` entitlement → Full A/B Comparison |
+| RevenueCat integration | PASS_VERIFIED_NOW | Authenticated dashboard plus a zero-cost 2026-09-21 Test Store run verified `default` → `$rc_monthly` / `monthly` → `CustomerInfo` → active `pro`, Activity relaunch, and restore; the public SDK key remained untracked |
 | Test Store allowed for Next Gen | PASS | Explicitly confirmed by a Shipaton manager in the official Devpost discussion |
 | No false store-release claim | PASS | Next Gen does not require a store release; none is claimed |
 | Devpost story and public links | PASS_RECORDED | Final public URLs were saved before submission |

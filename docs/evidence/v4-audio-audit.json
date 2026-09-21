@@ -1,0 +1,176 @@
+{
+  "method": "offline faster-whisper small int8, English, beam=5",
+  "humanListening": false,
+  "expectedWords": 209,
+  "observedWords": 208,
+  "sequenceMatchRatio": 0.988009592326139,
+  "differences": [
+    {
+      "kind": "replace",
+      "expected": "teammate s",
+      "observed": "teammates"
+    },
+    {
+      "kind": "replace",
+      "expected": "nine",
+      "observed": "9"
+    }
+  ],
+  "transcript": [
+    {
+      "start": 0.0,
+      "end": 2.0,
+      "text": "Your teammates' slides are late."
+    },
+    {
+      "start": 2.0,
+      "end": 4.0,
+      "text": "The presentation is Friday."
+    },
+    {
+      "start": 4.0,
+      "end": 7.0,
+      "text": "How do you start that conversation?"
+    },
+    {
+      "start": 7.0,
+      "end": 13.0,
+      "text": "Second Take lets you rehearse, rewind, and see what a different choice changes."
+    },
+    {
+      "start": 13.0,
+      "end": 16.0,
+      "text": "I tell Alex I am worried about the project."
+    },
+    {
+      "start": 16.0,
+      "end": 18.0,
+      "text": "Alex asks what I mean."
+    },
+    {
+      "start": 18.0,
+      "end": 21.0,
+      "text": "My concern needs clarification."
+    },
+    {
+      "start": 21.0,
+      "end": 23.0,
+      "text": "Now I rewind."
+    },
+    {
+      "start": 23.0,
+      "end": 25.0,
+      "text": "The app restores the checkpoint before that choice"
+    },
+    {
+      "start": 25.0,
+      "end": 29.0,
+      "text": "with the same facts and conversation history."
+    },
+    {
+      "start": 29.0,
+      "end": 32.0,
+      "text": "Everything before the checkpoint stays fixed."
+    },
+    {
+      "start": 32.0,
+      "end": 35.0,
+      "text": "This time, I make a specific request."
+    },
+    {
+      "start": 35.0,
+      "end": 37.0,
+      "text": "Can you finish today?"
+    },
+    {
+      "start": 37.0,
+      "end": 41.0,
+      "text": "That could be a question about ability or a request to act."
+    },
+    {
+      "start": 41.0,
+      "end": 44.0,
+      "text": "Intent lock lets me confirm which I mean"
+    },
+    {
+      "start": 44.0,
+      "end": 47.28,
+      "text": "instead of letting the model guess."
+    },
+    {
+      "start": 47.28,
+      "end": 50.28,
+      "text": "Alex now commits to finishing the sources by 9 tonight."
+    },
+    {
+      "start": 50.28,
+      "end": 54.53,
+      "text": "That is an observable difference."
+    },
+    {
+      "start": 54.53,
+      "end": 56.53,
+      "text": "Both attempts are free."
+    },
+    {
+      "start": 56.53,
+      "end": 58.53,
+      "text": "The premium comparison puts the choices"
+    },
+    {
+      "start": 58.53,
+      "end": 60.53,
+      "text": "and immediate responses together."
+    },
+    {
+      "start": 60.53,
+      "end": 63.53,
+      "text": "Here is the revenue cat test store purchase."
+    },
+    {
+      "start": 63.53,
+      "end": 65.53,
+      "text": "No real money is charged."
+    },
+    {
+      "start": 65.53,
+      "end": 68.53,
+      "text": "Access opens only with an active pro entitlement."
+    },
+    {
+      "start": 68.53,
+      "end": 75.21,
+      "text": "One message led to clarification."
+    },
+    {
+      "start": 75.21,
+      "end": 77.21,
+      "text": "The other led to a specific commitment."
+    },
+    {
+      "start": 77.21,
+      "end": 80.21,
+      "text": "I can inspect both without relying on memory."
+    },
+    {
+      "start": 80.21,
+      "end": 86.13,
+      "text": "Gemini interprets language and selects allowed actions."
+    },
+    {
+      "start": 86.13,
+      "end": 90.13,
+      "text": "Policy and authored replies keep the scenario consistent."
+    },
+    {
+      "start": 90.13,
+      "end": 94.44,
+      "text": "A rehearsal not a prediction of real people."
+    },
+    {
+      "start": 94.44,
+      "end": 98.44,
+      "text": "Second take, practice the words, see the difference."
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "method": "offline faster-whisper small int8, English, beam=5",
+  "humanListening": false,
+  "expectedWords": 223,
+  "observedWords": 221,
+  "sequenceMatchRatio": 0.9819819819819819,
+  "differences": [
+    {
+      "kind": "replace",
+      "expected": "teammate s",
+      "observed": "teammates"
+    },
+    {
+      "kind": "replace",
+      "expected": "intent lock",
+      "observed": "intentlock"
+    },
+    {
+      "kind": "replace",
+      "expected": "nine",
+      "observed": "9"
+    }
+  ],
+  "transcript": [
+    {
+      "start": 0.0,
+      "end": 2.0,
+      "text": "Your teammates' slides are late."
+    },
+    {
+      "start": 2.0,
+      "end": 4.0,
+      "text": "The presentation is Friday."
+    },
+    {
+      "start": 4.0,
+      "end": 7.0,
+      "text": "How do you start that conversation?"
+    },
+    {
+      "start": 7.0,
+      "end": 10.0,
+      "text": "Second take lets you rehearse, rewind, and inspect"
+    },
+    {
+      "start": 10.0,
+      "end": 13.0,
+      "text": "what a different choice changes."
+    },
+    {
+      "start": 13.0,
+      "end": 16.0,
+      "text": "I tell Alex I am worried about the project."
+    },
+    {
+      "start": 16.0,
+      "end": 18.0,
+      "text": "Alex asks what I mean."
+    },
+    {
+      "start": 18.0,
+      "end": 22.0,
+      "text": "The concern is expressed, but the next step is still unclear."
+    },
+    {
+      "start": 22.0,
+      "end": 24.0,
+      "text": "Now I rewind."
+    },
+    {
+      "start": 24.0,
+      "end": 26.0,
+      "text": "The app restores the checkpoint before that choice"
+    },
+    {
+      "start": 26.0,
+      "end": 30.0,
+      "text": "with the same facts and conversation history."
+    },
+    {
+      "start": 30.0,
+      "end": 32.0,
+      "text": "Everything before the checkpoint stays fixed."
+    },
+    {
+      "start": 32.0,
+      "end": 36.0,
+      "text": "This time, I make a specific request."
+    },
+    {
+      "start": 36.0,
+      "end": 38.0,
+      "text": "Can you finish today?"
+    },
+    {
+      "start": 38.0,
+      "end": 42.0,
+      "text": "Am I asking about ability or asking Alex to act?"
+    },
+    {
+      "start": 42.0,
+      "end": 44.0,
+      "text": "IntentLock asks me to confirm."
+    },
+    {
+      "start": 44.0,
+      "end": 48.0,
+      "text": "My intention should be my decision, not the model's guess."
+    },
+    {
+      "start": 48.0,
+      "end": 51.0,
+      "text": "Alex offers the sources by 9 tonight."
+    },
+    {
+      "start": 51.0,
+      "end": 55.0,
+      "text": "Notice the limit, the sources, not the whole project."
+    },
+    {
+      "start": 55.0,
+      "end": 57.0,
+      "text": "Both attempts are free."
+    },
+    {
+      "start": 57.0,
+      "end": 62.0,
+      "text": "The premium comparison brings the choices and immediate responses together."
+    },
+    {
+      "start": 62.0,
+      "end": 65.0,
+      "text": "Here is the revenue cat test store purchase."
+    },
+    {
+      "start": 65.0,
+      "end": 67.0,
+      "text": "No real money is charged."
+    },
+    {
+      "start": 67.0,
+      "end": 74.68,
+      "text": "Access opens only with an active pro entitlement."
+    },
+    {
+      "start": 74.68,
+      "end": 77.68,
+      "text": "Side by side, I can see what is still unclear"
+    },
+    {
+      "start": 77.68,
+      "end": 79.68,
+      "text": "and what Alex actually offered."
+    },
+    {
+      "start": 79.68,
+      "end": 83.68,
+      "text": "A specific next step, not a promise to finish everything."
+    },
+    {
+      "start": 83.68,
+      "end": 87.68,
+      "text": "Gemini interprets language and selects allowed actions."
+    },
+    {
+      "start": 87.68,
+      "end": 91.68,
+      "text": "Policy and authored replies keep the scenario consistent."
+    },
+    {
+      "start": 91.68,
+      "end": 95.96,
+      "text": "A rehearsal, not a prediction of real people."
+    },
+    {
+      "start": 95.96,
+      "end": 99.96,
+      "text": "Second take, practice the words, read the response."
+    }
+  ]
+}

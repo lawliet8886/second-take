@@ -1,21 +1,18 @@
 import { createHash, randomUUID } from "node:crypto";
-import { readFileSync, writeFileSync } from "node:fs";
+import { mkdirSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { execFileSync } from "node:child_process";
 import { buildApp } from "../src/api/app.js";
 import type { BackendConfig } from "../src/config/config.js";
 import { InMemoryTelemetry } from "../src/telemetry/telemetry.js";
+import { VERTEX_SMOKE_CASES } from "./vertex-smoke-corpus.js";
 
 type Case={id:string;locale:"pt-BR"|"en-US";text:string;canonicalPrimaryIntent:string};
 const percentile=(values:number[],q:number)=>values.slice().sort((a,b)=>a-b)[Math.min(values.length-1,Math.floor(q*values.length))]??0;
 const project=process.env.VERTEX_PROJECT_ID?.trim()||(process.platform==="win32"?execFileSync("cmd.exe",["/d","/s","/c","gcloud config get-value project"],{encoding:"utf8"}):execFileSync("gcloud",["config","get-value","project"],{encoding:"utf8"})).trim();
 if(!project)throw new Error("VERTEX_PROJECT_ID_REQUIRED");
 const config:BackendConfig={vertexProjectId:project,vertexLocation:"global",host:"127.0.0.1",port:8765,selectorDeadlineMs:10_000,routerDeadlineMs:10_000,vertexConcurrency:2,vertexQueueLimit:8,logContent:false};
-const calibration=JSON.parse(readFileSync(resolve("../ai-lab/results/v0521/calibration-dataset.json"),"utf8")).cases as Case[];
-const intents=["ASK_STATUS","ASK_CAPABILITY","REQUEST_COMPLETION","EXPRESS_FRUSTRATION","PROPOSE_COLLABORATION","ASSERT_CLAIM","APOLOGIZE","ACCUSE_GENERALIZATION"];
-const chosen:Case[]=[];
-for(const locale of ["pt-BR","en-US"] as const)for(const intent of intents){const matches=calibration.filter(item=>item.locale===locale&&item.canonicalPrimaryIntent===intent);for(let index=0;index<(intent==="ASK_CAPABILITY"||intent==="REQUEST_COMPLETION"?5:4);index++)if(matches[index])chosen.push(matches[index]!);}
-const cases=chosen.slice(0,56);
+const cases:Case[]=VERTEX_SMOKE_CASES.map(item=>({...item}));
 cases.push(
   {id:"smoke-oos-pt-1",locale:"pt-BR",text:"Qual é a capital da França?",canonicalPrimaryIntent:"OUT_OF_SCOPE"},
   {id:"smoke-oos-pt-2",locale:"pt-BR",text:"Me diga a previsão do tempo para amanhã.",canonicalPrimaryIntent:"OUT_OF_SCOPE"},
@@ -47,5 +44,6 @@ const routerUsage=sumUsage("routerUsage"),selectorUsage=sumUsage("selectorUsage"
 const attemptKinds=telemetryEvents.flatMap(event=>event.providerAttempts).reduce((counts:any,attempt)=>{const key=attempt.httpStatus?`HTTP_${attempt.httpStatus}`:attempt.kind;counts[key]=(counts[key]??0)+1;return counts;},{});
 const counts=records.reduce((acc:any,record)=>{acc[record.initialType]=(acc[record.initialType]??0)+1;if(record.finalType!==record.initialType)acc[record.finalType]=(acc[record.finalType]??0)+1;return acc;},{});
 const result={schemaVersion:"backend-v06-vertex-smoke-1",createdAt:new Date().toISOString(),route:{provider:"VERTEX_AI_GLOBAL_STANDARD",host:"aiplatform.googleapis.com",location:"global",apiVersion:"v1",model:"gemini-3.7-flash",thinking:"low",maxOutputTokensSingle:512,projectHash:createHash("sha256").update(project).digest("hex").slice(0,12)},logicalTurns:records.length,sessions:sessions.length,responseCounts:counts,remoteSelected:records.filter(record=>record.finalType==="ALEX_REPLY").length,localFallbackSelected:records.filter(record=>record.finalType==="RECOVERY_FALLBACK").length,intentLockRequired:records.filter(record=>record.initialType==="INTENT_LOCK_REQUIRED").length,outOfScope:records.filter(record=>record.finalType==="OUT_OF_SCOPE").length,transportFailure:records.filter(record=>record.finalType==="TRANSPORT_FAILURE"||record.finalType==="CLIENT_ABORT").length,hangingTurns:records.filter(record=>record.aborted).length,latency:{logical:{p50Ms:Number(percentile(latencies,.5).toFixed(2)),p95Ms:Number(percentile(latencies,.95).toFixed(2)),maxMs:Number(Math.max(...latencies).toFixed(2))},initialRequest:{p50Ms:Number(percentile(initialLatencies,.5).toFixed(2)),p95Ms:Number(percentile(initialLatencies,.95).toFixed(2)),maxMs:Number(Math.max(...initialLatencies).toFixed(2))}},retries:{router:telemetryEvents.reduce((sum,event)=>sum+event.routerRetries,0),selectorTransport:telemetryEvents.reduce((sum,event)=>sum+event.selectorTransportRetries,0),selectorStructural:telemetryEvents.reduce((sum,event)=>sum+event.selectorStructuralRetries,0)},providerAttempts:attemptKinds,usage:{router:routerUsage,selector:selectorUsage,combined},estimatedCostUsd:Number(estimatedCostUsd.toFixed(6)),records};
+mkdirSync(resolve("results"),{recursive:true});
 writeFileSync(resolve("results/vertex-smoke.json"),`${JSON.stringify(result,null,2)}\n`);
 process.stdout.write(`${JSON.stringify({...result,records:undefined},null,2)}\n`);
