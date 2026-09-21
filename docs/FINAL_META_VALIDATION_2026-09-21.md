@@ -4,6 +4,21 @@ Branch: `codex/shipaton-final-meta`
 Initial baseline: `8fcd40795045e0bc2fc7c925e2d6717bae864a3f` (`origin/main`)
 Target: RevenueCat Shipaton 2026 — Next Gen
 
+## Later candidacy revision on the same date
+
+The review follow-up adds application deadlines, a V4 media candidate and clearer judging materials. These do not mean that the public video, Devpost entry or `main` have been updated.
+
+- Backend build/tests/security pass with 24 tests, including stalled-provider and late-response state-invariance cases.
+- Android debug/release builds, unit tests and lint pass; no Android runtime behavior was changed in this follow-up.
+- The connected `ConversationForkFlowTest` was rerun on API 34: 9/9 pass, covering the fork, Intent Lock, comparison gate, network retry, recreation, cancellation/failure and restore using controlled repositories. This does not replace the separately recorded live RevenueCat test.
+- After the owner confirmed available cloud credits, a standard 20-turn live smoke produced 3 Gemini-selected replies, 8 safe selector fallbacks, 4 out-of-scope responses and 5 router recoveries. There were zero client aborts; initial-request p95 was 10,076 ms. Logical-turn p95 was 15,229 ms and includes Intent Lock confirmation as a second request.
+- Selector attempts included HTTP 429 and 504. Live availability remains a material limitation; the deadline patch bounds recovery and does not fix provider service capacity. Differences from the earlier failing sample cannot be attributed solely to this patch.
+- A bounded direct-router follow-up retried the five failed synthetic inputs once each: four returned the expected intent, while the Portuguese capability input again reached the 10-second deadline. This supports intermittent failure, not a universal inability to route these inputs. See `evidence/candidacy-router-diagnostics-2026-09-21.json`.
+- Evidence: `evidence/candidacy-vertex-smoke-2026-09-21.json`. Its token/cost fields cover reported usage, omit some failed/out-of-scope requests and are **not** a complete billing receipt.
+- The revised 100-second video, English captions, thumbnail and replacement Devpost copy remain unpublished review artifacts. No human listening or independent audience study is claimed.
+
+The earlier sections below preserve the evidence and limitations recorded before this follow-up.
+
 ## VERIFIED_NOW
 
 ### Official requirements

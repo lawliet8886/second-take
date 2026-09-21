@@ -58,6 +58,8 @@ It does **not** claim:
 
 ## Current audit note
 
+The later 2026-09-21 candidacy review prepared an unpublished 100-second V4, stronger Devpost copy and a short judging guide. An application-level deadline now bounds stalled provider waits. The new live smoke had 5 router recoveries in 20 turns and no client aborts, so service availability is still a limitation. Public video and Devpost content remain unchanged; PR #4 has not been merged. See `VIDEO_V4_REVIEW.md` and the follow-up section of `FINAL_META_VALIDATION_2026-09-21.md`.
+
 On 2026-09-17, the public repository was re-audited for Shipaton Next Gen alignment. The hardening branch addresses stale submission-status documentation, broken setup references, cross-platform backend configuration fallback, and reproducibility wording. The core product architecture and submitted claims remain substantively unchanged.
 
 On 2026-09-18, independent clean-room verification passed the provider-free backend gates (`npm ci`, build, tests, security check, `verify`) and the committed-wrapper Android gates (`./gradlew --version`, `assembleDebug`, `testDebugUnitTest`, `lintDebug`, `assembleRelease`) with Gradle 8.13. `@google/genai` is pinned consistently to `2.19.0` in the manifest and lockfile. External credentialed runtime checks remain separately classified.

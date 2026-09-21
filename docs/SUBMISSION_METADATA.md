@@ -1,5 +1,7 @@
 # Submission metadata
 
+> Historical publication record with corrected artifact pointers, reviewed 2026-09-21. The earlier `second-take-shipaton-final.mp4` hash below identifies V1, not the final editorial master. The final archival master is `assets/video/second-take-shipaton-final-master.mp4`, SHA-256 `C1F6CB8151216BC1114D619BCF974CC297D15A8C692C8D43C971967717E8EBA3`, as recorded in `FINAL_MASTER_QA.md`. Public playback was verified, but byte identity between the upload and this local file was not independently established. V4 is a separate, unpublished review candidate; see `VIDEO_V4_REVIEW.md`.
+
 ## Repository
 
 - Public repository: https://github.com/lawliet8886/second-take

@@ -1,0 +1,69 @@
+{
+  "createdAt": "2026-09-21T12:56:50.847Z",
+  "model": "gemini-3.7-flash",
+  "deadlineMs": 10000,
+  "records": [
+    {
+      "id": "smoke-pt-capability",
+      "result": "DEADLINE",
+      "latencyMs": 10098
+    },
+    {
+      "id": "smoke-pt-claim",
+      "result": "SUCCESS",
+      "primaryIntent": "ASSERT_CLAIM",
+      "expectedIntent": "ASSERT_CLAIM",
+      "retries": 0,
+      "latencyMs": 6224,
+      "usage": {
+        "inputTokens": 2229,
+        "outputTokens": 150,
+        "thinkingTokens": 124,
+        "totalTokens": 2503
+      }
+    },
+    {
+      "id": "smoke-pt-generalization",
+      "result": "SUCCESS",
+      "primaryIntent": "ACCUSE_GENERALIZATION",
+      "expectedIntent": "ACCUSE_GENERALIZATION",
+      "retries": 0,
+      "latencyMs": 2638,
+      "usage": {
+        "inputTokens": 2229,
+        "outputTokens": 116,
+        "thinkingTokens": 0,
+        "totalTokens": 2345
+      }
+    },
+    {
+      "id": "smoke-en-frustration",
+      "result": "SUCCESS",
+      "primaryIntent": "EXPRESS_FRUSTRATION",
+      "expectedIntent": "EXPRESS_FRUSTRATION",
+      "retries": 0,
+      "latencyMs": 3698,
+      "usage": {
+        "inputTokens": 2230,
+        "outputTokens": 116,
+        "thinkingTokens": 119,
+        "totalTokens": 2465
+      }
+    },
+    {
+      "id": "smoke-en-apology",
+      "result": "SUCCESS",
+      "primaryIntent": "APOLOGIZE",
+      "expectedIntent": "APOLOGIZE",
+      "retries": 2,
+      "latencyMs": 6405,
+      "usage": {
+        "inputTokens": 2232,
+        "outputTokens": 113,
+        "thinkingTokens": 0,
+        "totalTokens": 2345
+      }
+    }
+  ],
+  "limitation": "One retry sample per previously failing input. Not a latency SLA or full billing accounting."
+}

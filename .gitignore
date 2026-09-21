@@ -8,4 +8,5 @@
 submission-private/
 .idea/
 .DS_Store
-
+artifacts/v4-work/
+backend/results/
