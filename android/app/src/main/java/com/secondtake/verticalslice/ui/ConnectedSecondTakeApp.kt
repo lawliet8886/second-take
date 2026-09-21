@@ -84,6 +84,8 @@ import com.secondtake.verticalslice.billing.EntitlementUiState
 import com.secondtake.verticalslice.billing.EntitlementViewModel
 import com.secondtake.verticalslice.data.ScenarioRepository
 import com.secondtake.verticalslice.domain.BranchPresentation
+import com.secondtake.verticalslice.domain.ReplyObservation
+import com.secondtake.verticalslice.domain.observeReply
 import com.secondtake.verticalslice.domain.LocaleTag
 import com.secondtake.verticalslice.domain.MessageRole
 import com.secondtake.verticalslice.domain.VisibleMessage
@@ -110,6 +112,9 @@ fun ConnectedSecondTakeApp(viewModel:ConnectedConversationViewModel, entitlement
     LaunchedEffect(entitlementState.openFullComparison){
         if(entitlementState.openFullComparison){viewModel.showComparison();entitlementViewModel.consumeOpenFullComparison()}
     }
+    LaunchedEffect(entitlementState.access, state.showComparison) {
+        if (state.showComparison && entitlementState.access != AccessState.Pro) viewModel.hideComparison()
+    }
     ProvideInterfaceLanguage(state.localeContract.interfaceLanguage){
         var exit by rememberSaveable{mutableStateOf(false)}
         BackHandler(enabled=entitlementState.paywallVisible||state.status !is ConversationUiStatus.Intro){when{entitlementState.paywallVisible->entitlementViewModel.dismissPaywall();state.showComparison->viewModel.hideComparison();else->exit=true}}
@@ -117,7 +122,7 @@ fun ConnectedSecondTakeApp(viewModel:ConnectedConversationViewModel, entitlement
         when{
             entitlementState.paywallVisible->RevenueCatPaywallScreen(entitlementState,entitlementViewModel,state.localeContract.interfaceLanguage,purchaseActivity)
             state.status is ConversationUiStatus.Rewinding->ConnectedRewindScreen()
-            state.showComparison&&state.comparison!=null->ConnectedComparisonScreen(state,viewModel::hideComparison)
+            state.showComparison&&state.comparison!=null&&entitlementState.access==AccessState.Pro->ConnectedComparisonScreen(state,viewModel::hideComparison)
             else->Column(Modifier.fillMaxSize().background(CanvasColor).statusBarsPadding()){
                 ConnectedBrandBar(state.localeContract.interfaceLanguage,state.status is ConversationUiStatus.Intro,viewModel::setLocale)
                 when(state.status){
@@ -203,7 +208,38 @@ fun ConnectedSecondTakeApp(viewModel:ConnectedConversationViewModel, entitlement
 
 @Composable private fun ConnectedRewindScreen(){val context=LocalContext.current;val reduced=remember{Settings.Global.getFloat(context.contentResolver,Settings.Global.ANIMATOR_DURATION_SCALE,1f)==0f};val transition=rememberInfiniteTransition(label="rewind");val angle by transition.animateFloat(0f,-360f,infiniteRepeatable(tween(1250,easing=LinearEasing),RepeatMode.Restart),label="rewind-angle");Column(Modifier.fillMaxSize().testTag("rewind_screen").background(CanvasColor).statusBarsPadding(),verticalArrangement=Arrangement.Center,horizontalAlignment=Alignment.CenterHorizontally){ConnectedEyebrow(textResource(R.string.rewinding),Violet);Spacer(Modifier.height(22.dp));Canvas(Modifier.size(118.dp).semantics{contentDescription="Rewinding conversation"}){drawCircle(Line,size.minDimension*.34f,style=Stroke(3.dp.toPx()));drawArc(Checkpoint,205f,150f,false,style=Stroke(3.dp.toPx(),cap=StrokeCap.Round));rotate(if(reduced)-45f else angle){drawCircle(Checkpoint,8.dp.toPx(),Offset(center.x,center.y-size.minDimension*.34f))}};Spacer(Modifier.height(24.dp));Text(textResource(R.string.restoring_checkpoint),color=Ink,fontWeight=FontWeight.Bold,fontSize=18.sp)}}
 
-@Composable private fun ConnectedComparisonScreen(state:ConnectedUiState,onBack:()->Unit){val comparison=state.comparison?:return;BoxWithConstraints(Modifier.fillMaxSize().background(CanvasColor).statusBarsPadding()){val inset=if(maxWidth<360.dp)14.dp else 20.dp;Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(horizontal=inset,vertical=16.dp).testTag("comparison_screen")){ConnectedEyebrow(textResource(R.string.fork_complete),Violet);Spacer(Modifier.height(12.dp));Text(textResource(R.string.two_trajectories),color=Ink,fontWeight=FontWeight.Black,fontSize=30.sp,lineHeight=36.sp);Spacer(Modifier.height(8.dp));Text(textResource(R.string.comparison_observable),color=Muted);Spacer(Modifier.height(20.dp));ConnectedVersionCard(textResource(R.string.version_a),comparison.branchA,Coral);Spacer(Modifier.height(12.dp));ConnectedVersionCard(textResource(R.string.version_b),comparison.branchB,Mint);Spacer(Modifier.height(16.dp));ConnectedPrimaryButton(textResource(R.string.back_to_conversation),"comparison_back",onBack);Spacer(Modifier.height(12.dp))}}}
+@Composable
+internal fun ConnectedComparisonScreen(state: ConnectedUiState, onBack: () -> Unit) {
+    val comparison = state.comparison ?: return
+    BoxWithConstraints(Modifier.fillMaxSize().background(CanvasColor).statusBarsPadding()) {
+        val inset = if (maxWidth < 360.dp) 14.dp else 20.dp
+        Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState())
+            .padding(horizontal = inset, vertical = 16.dp).testTag("comparison_screen")) {
+            ConnectedEyebrow(textResource(R.string.fork_complete), Violet)
+            Spacer(Modifier.height(12.dp))
+            Text(textResource(R.string.two_trajectories), color = Ink,
+                fontWeight = FontWeight.Black, fontSize = 30.sp, lineHeight = 36.sp)
+            Spacer(Modifier.height(8.dp))
+            Text(textResource(R.string.comparison_observable), color = Muted)
+            Spacer(Modifier.height(20.dp))
+            ConnectedVersionCard(textResource(R.string.version_a), comparison.branchA, Coral)
+            Spacer(Modifier.height(12.dp))
+            ConnectedVersionCard(textResource(R.string.version_b), comparison.branchB, Mint)
+            Spacer(Modifier.height(20.dp))
+            Text(textResource(R.string.comparison_reflect), color = Ink,
+                fontWeight = FontWeight.Bold, fontSize = 20.sp, lineHeight = 27.sp)
+            Spacer(Modifier.height(8.dp))
+            Text(textResource(R.string.comparison_reflect_body), color = Muted,
+                fontSize = 16.sp, lineHeight = 24.sp)
+            Spacer(Modifier.height(12.dp))
+            Text(textResource(R.string.comparison_limit), color = Muted,
+                fontSize = 14.sp, lineHeight = 21.sp)
+            Spacer(Modifier.height(20.dp))
+            ConnectedPrimaryButton(textResource(R.string.back_to_conversation), "comparison_back", onBack)
+            Spacer(Modifier.height(24.dp))
+        }
+    }
+}
 
 @Composable private fun RevenueCatPaywallScreen(state:EntitlementUiState,viewModel:EntitlementViewModel,locale:LocaleTag,activity:Activity){
     val pt=locale==ScenarioRepository.PortugueseBrazil
@@ -218,7 +254,35 @@ fun ConnectedSecondTakeApp(viewModel:ConnectedConversationViewModel, entitlement
 @Composable private fun PaywallBenefit(copy:String){Row(verticalAlignment=Alignment.Top){Text("✓",color=Mint,fontWeight=FontWeight.Black);Spacer(Modifier.width(9.dp));Text(copy,color=Ink,modifier=Modifier.weight(1f),lineHeight=21.sp)}}
 @Composable private fun entitlementMessage(message:EntitlementMessage)=when(message){EntitlementMessage.PURCHASE_FAILED->textResource(R.string.paywall_purchase_failed);EntitlementMessage.RESTORE_FAILED->textResource(R.string.paywall_restore_failed);EntitlementMessage.NOTHING_TO_RESTORE->textResource(R.string.paywall_nothing_to_restore);EntitlementMessage.OFFERING_UNAVAILABLE->textResource(R.string.paywall_offering_unavailable)}
 private fun periodSuffix(period:String?,pt:Boolean)=when(period){"P1M"->if(pt)" / mês" else " / month";"P1Y"->if(pt)" / ano" else " / year";"P1W"->if(pt)" / semana" else " / week";else->""}
-@Composable private fun ConnectedVersionCard(label:String,branch:BranchPresentation,accent:Color){Surface(Modifier.fillMaxWidth(),color=SurfaceColor,border=androidx.compose.foundation.BorderStroke(1.dp,accent.copy(alpha=.65f)),shape=RoundedCornerShape(20.dp)){Column(Modifier.padding(15.dp)){ConnectedEyebrow(label,accent);Spacer(Modifier.height(10.dp));Text("“${branch.userChoice}”",color=Ink,fontWeight=FontWeight.Bold,fontSize=16.sp,lineHeight=22.sp);Spacer(Modifier.height(10.dp));HorizontalDivider(color=Line);Spacer(Modifier.height(10.dp));Text(branch.alexReply,color=Muted,fontSize=14.sp,lineHeight=20.sp)}}}
+@Composable
+private fun ConnectedVersionCard(label: String, branch: BranchPresentation, accent: Color) {
+    val observation = when (observeReply(branch.alexReply)) {
+        ReplyObservation.CLARIFICATION -> R.string.comparison_clarification
+        ReplyObservation.SOURCES_BY_NINE -> R.string.comparison_sources
+        ReplyObservation.SOURCES_PROPOSAL -> R.string.comparison_proposal
+        ReplyObservation.UNCLASSIFIED -> R.string.comparison_unclassified
+    }
+    Surface(Modifier.fillMaxWidth(), color = SurfaceColor,
+        border = androidx.compose.foundation.BorderStroke(1.dp, accent.copy(alpha = .65f)),
+        shape = RoundedCornerShape(20.dp)) {
+        Column(Modifier.padding(18.dp)) {
+            ConnectedEyebrow(label, accent)
+            Spacer(Modifier.height(12.dp))
+            Text("“${branch.userChoice}”", color = Ink, fontWeight = FontWeight.Bold,
+                fontSize = 17.sp, lineHeight = 25.sp)
+            Spacer(Modifier.height(12.dp))
+            HorizontalDivider(color = Line)
+            Spacer(Modifier.height(12.dp))
+            Text(textResource(R.string.alex_quote, branch.alexReply), color = Ink,
+                fontSize = 17.sp, lineHeight = 25.sp)
+            Spacer(Modifier.height(16.dp))
+            Text(textResource(R.string.comparison_reading), color = accent,
+                fontWeight = FontWeight.Bold, fontSize = 15.sp)
+            Spacer(Modifier.height(6.dp))
+            Text(textResource(observation), color = Muted, fontSize = 16.sp, lineHeight = 24.sp)
+        }
+    }
+}
 @Composable private fun CenteredStatus(text:String,tag:String){Box(Modifier.fillMaxSize().testTag(tag),contentAlignment=Alignment.Center){Text(text,color=Muted)}}
 @Composable private fun ConnectedEyebrow(text:String,color:Color){Row(verticalAlignment=Alignment.CenterVertically){Box(Modifier.width(18.dp).height(1.dp).background(color));Spacer(Modifier.width(8.dp));Text(text.uppercase(),color=color,fontWeight=FontWeight.ExtraBold,fontSize=11.sp,letterSpacing=1.3.sp)}}
 @Composable private fun ConnectedPrimaryButton(label:String,tag:String,onClick:()->Unit,start:Color=Violet){Button(onClick=onClick,modifier=Modifier.fillMaxWidth().heightIn(min=56.dp).testTag(tag),shape=RoundedCornerShape(18.dp),colors=ButtonDefaults.buttonColors(containerColor=start,contentColor=CanvasColor)){Text(label,fontWeight=FontWeight.Bold,fontSize=15.sp)}}

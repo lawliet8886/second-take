@@ -8,6 +8,8 @@ Your teammate's slides are late and the presentation is Friday. In the recorded 
 
 ![Second Take comparison](assets/screenshots/06-comparison.png)
 
+This screenshot shows the published baseline. The comparison-reading refinement described below is on the review branch and is not shown in V5.
+
 ## Shipaton 2026 — Next Gen
 
 Second Take is a confirmed **RevenueCat Shipaton 2026 — Next Gen** submission.
@@ -45,6 +47,17 @@ The Android client uses RevenueCat Android SDK 10.19.1 and the RevenueCat Test S
 The core conversation, rewind, and second attempt remain usable without Pro access. The entitlement gate applies to **Full A/B Comparison**.
 
 The monetization hypothesis is that reviewing both choices and their immediate responses together has value after the rehearsal. The current single-scenario prototype does not establish recurring willingness to pay; its monthly sandbox price is configuration, not evidence of demand or validated pricing.
+
+### Comparison reading (review branch)
+
+The comparison now pairs each visible reply with a bounded reading: clarification,
+an ability statement about sources by nine, or an offer to deliver those sources.
+It distinguishes a partial delivery from the whole project. Only exact matches to
+24 reviewed English/Portuguese authored replies receive a specific reading; other
+replies use a neutral prompt. No model generates these notes, no hidden facts are
+read, and no path receives a score. These notes remain behind the real Pro gate.
+See [implementation and validation](docs/COMPARISON_READING_2026-09-21.md).
+The published V5 predates this UI refinement and is not evidence of the new screen.
 
 ## Stack
 

@@ -24,7 +24,7 @@
     <string name="dismiss">Fechar</string>
     <string name="back_here_now">Checkpoint restaurado</string>
     <string name="restoring_checkpoint">Restaurando o momento preservado…</string>
-    <string name="comparison_observable">Mesmo contexto anterior. Uma fala diferente do usuário, seguida de outra resposta.</string>
+    <string name="comparison_observable">Mesmo contexto anterior. Compare suas escolhas e as respostas imediatas de Alex.</string>
     <string name="back_to_conversation">Voltar à conversa</string>
     <string name="check_in">Conversar com Alex</string>
     <string name="your_turn">Sua vez</string>
@@ -59,7 +59,7 @@
     <string name="paywall_title">Continue o Second Take</string>
     <string name="paywall_body">Compare exatamente o que mudou entre suas duas tentativas.</string>
     <string name="paywall_benefit_comparison">Comparação completa dos caminhos</string>
-    <string name="paywall_benefit_consequences">Consequências A/B reunidas numa só visão</string>
+    <string name="paywall_benefit_consequences">Respostas imediatas com notas de leitura</string>
     <string name="paywall_loading">Carregando o plano atual…</string>
     <string name="paywall_offering_unavailable">Não foi possível carregar a opção de compra agora.</string>
     <string name="paywall_unlock">Desbloquear Pro</string>
@@ -90,4 +90,12 @@
     <string name="leave_practice_body">O Conversation Fork atual será reiniciado.</string>
     <string name="keep_practising">Continuar treinando</string>
     <string name="leave_practice">Sair do treino</string>
+    <string name="comparison_reading">Leia a resposta</string>
+    <string name="comparison_clarification">Alex pede esclarecimento. Essa resposta não especifica uma entrega nem um prazo.</string>
+    <string name="comparison_sources">Alex diz que consegue deixar as fontes prontas até as nove de hoje. O escopo são as fontes — não o projeto inteiro.</string>
+    <string name="comparison_proposal">Alex oferece terminar as fontes até as nove de hoje. Essa oferta não abrange o projeto inteiro.</string>
+    <string name="comparison_unclassified">Não há uma leitura específica para essa resposta. Considere as palavras exatas de Alex acima; não presuma um resultado que não foi dito.</string>
+    <string name="comparison_reflect">O que você esclareceria agora?</string>
+    <string name="comparison_reflect_body">Observe o que foi especificado, o que continua em aberto e o que você perguntaria a seguir. Nenhum caminho recebe uma nota de vencedor.</string>
+    <string name="comparison_limit">Estas notas descrevem a resposta visível, não os sentimentos de Alex nem o que uma pessoa real faria.</string>
 </resources>

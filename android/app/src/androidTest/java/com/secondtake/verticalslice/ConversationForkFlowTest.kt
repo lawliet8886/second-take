@@ -4,12 +4,14 @@ import android.graphics.Bitmap
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onAllNodesWithTag
+import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performScrollTo
 import androidx.compose.ui.test.performTextInput
 import androidx.test.platform.app.InstrumentationRegistry
+import androidx.test.espresso.Espresso
 import com.secondtake.verticalslice.domain.BackendOutcome
 import com.secondtake.verticalslice.domain.ConversationClientError
 import com.secondtake.verticalslice.domain.ConversationRepository
@@ -59,9 +61,15 @@ class ConversationForkFlowTest {
         capture("08-primeira-tentativa")
         composeRule.onNodeWithTag("turning_point").performScrollTo()
         capture("09-turning-point")
+        val rewindGate = CompletableDeferred<Unit>()
+        fake.rewindGate = rewindGate
         composeRule.onNodeWithTag("rewind_button").performScrollTo().performClick()
+        composeRule.waitUntil(5_000) {
+            runCatching { composeRule.onNodeWithTag("rewind_screen").assertIsDisplayed(); true }.getOrDefault(false)
+        }
         composeRule.onNodeWithTag("rewind_screen").assertIsDisplayed()
         capture("10-rewind")
+        rewindGate.complete(Unit)
         composeRule.waitUntil(4_000) { composeRule.onAllNodesWithTag("checkpoint").fetchSemanticsNodes().isNotEmpty() }
         capture("11-checkpoint-restaurado")
         send("Você consegue terminar hoje?")
@@ -82,6 +90,33 @@ class ConversationForkFlowTest {
         composeRule.onNodeWithTag("comparison_screen").assertIsDisplayed()
         capture("14-comparacao-ab")
         assertEquals("REQUEST_COMPLETION", fake.confirmedIntent)
+    }
+
+    @Test fun comparison_shows_neutral_reading_and_hides_when_pro_is_revoked() {
+        reachComparisonGate()
+        composeRule.onNodeWithTag("compare_button").performScrollTo().performClick()
+        composeRule.onAllNodesWithText("No specific reading is available for this reply. Use Alex’s exact words above; do not assume an unstated outcome.")[0]
+            .performScrollTo().assertIsDisplayed()
+        composeRule.onNodeWithText("What would you clarify next?").performScrollTo().assertIsDisplayed()
+        composeRule.onNodeWithText("These notes describe the visible reply, not Alex’s feelings or what a real person would do.")
+            .performScrollTo().assertIsDisplayed()
+        captureV08("comparison-reading-en-fake")
+        entitlements.setAccess(AccessState.Free)
+        composeRule.waitForIdle()
+        composeRule.onNodeWithTag("comparison_screen").assertDoesNotExist()
+        Espresso.closeSoftKeyboard()
+        Espresso.pressBack()
+        composeRule.waitUntil(5_000) {
+            runCatching { composeRule.onNodeWithTag("keep_practising").assertIsDisplayed(); true }.getOrDefault(false)
+        }
+        composeRule.onNodeWithTag("keep_practising").assertIsDisplayed().performClick()
+        entitlements.setAccess(AccessState.Pro)
+        composeRule.waitForIdle()
+        composeRule.onNodeWithTag("comparison_screen").assertDoesNotExist()
+        entitlements.setAccess(AccessState.Free)
+        composeRule.waitForIdle()
+        composeRule.onNodeWithTag("compare_button").performScrollTo().performClick()
+        composeRule.onNodeWithTag("revenuecat_paywall").assertIsDisplayed()
     }
 
     @Test fun out_of_scope_is_a_compact_second_take_intervention() {
@@ -171,6 +206,7 @@ class ConversationForkFlowTest {
     private fun captureV08(name:String){composeRule.waitForIdle();Thread.sleep(180);val instrumentation=InstrumentationRegistry.getInstrumentation();val screenshot=instrumentation.uiAutomation.takeScreenshot()?:return;val dir=File(instrumentation.targetContext.getExternalFilesDir(null),"v08-controlled").apply{mkdirs()};FileOutputStream(File(dir,"$name.png")).use{screenshot.compress(Bitmap.CompressFormat.PNG,100,it)}}
 
     private class InstrumentedFakeRepository : ConversationRepository {
+        var rewindGate: CompletableDeferred<Unit>? = null
         var session=initial();var failNext=false;var confirmedIntent:String?=null;var nextTurnGate:CompletableDeferred<Unit>?=null;var confirmGate:CompletableDeferred<Unit>?=null;val clientIds=mutableListOf<String>();private var count=0
         fun reset(){session=initial();failNext=false;confirmedIntent=null;nextTurnGate=null;confirmGate=null;clientIds.clear();count=0}
         override suspend fun health()=true
@@ -179,7 +215,7 @@ class ConversationForkFlowTest {
         override suspend fun getSession(sessionId:String)=session
         override suspend fun sendTurn(sessionId:String,text:String,clientTurnId:String):BackendOutcome {clientIds+=clientTurnId;if(failNext){failNext=false;throw ConversationClientError.Connection(IllegalStateException("offline"))};nextTurnGate?.let{gate->nextTurnGate=null;gate.await()};count++;val turnId="t$count";val user=VisibleMessage("u$count",MessageRole.USER,text,turnId);session=session.copy(messages=session.messages+user);if(text.contains("capital da França",ignoreCase=true))return BackendOutcome.OutOfScope(turnId,session,"Este treino funciona melhor quando a fala está ligada à conversa que você está ensaiando.");if(count==2){val choices=options(session.locale);session=session.copy(pendingIntentLockTurnId=turnId,pendingIntentLockOptions=choices);return BackendOutcome.IntentLockRequired(turnId,session,choices)};return alex(turnId)}
         override suspend fun confirmIntent(sessionId:String,turnId:String,confirmedIntent:String):BackendOutcome.AlexReply {this.confirmedIntent=confirmedIntent;confirmGate?.let{gate->confirmGate=null;gate.await()};return alex(turnId)}
-        override suspend fun rewind(sessionId:String,snapshotId:String):PublicConversation {session=session.copy(messages=emptyList(),activeBranch="branch-b",pendingIntentLockTurnId=null,pendingIntentLockOptions=emptyList());return session}
+        override suspend fun rewind(sessionId:String,snapshotId:String):PublicConversation {rewindGate?.await();rewindGate=null;session=session.copy(messages=emptyList(),activeBranch="branch-b",pendingIntentLockTurnId=null,pendingIntentLockOptions=emptyList());return session}
         private fun alex(turnId:String):BackendOutcome.AlexReply {val copy=if(session.locale.value=="pt-BR")"Eu entendi. Posso explicar onde parei e combinar com você o que consigo entregar primeiro, sem prometer um prazo que ainda não confirmei." else "I understand. I can explain where I stopped and agree with you on what I can deliver first, without promising a deadline I have not confirmed.";val message=VisibleMessage("a$count",MessageRole.ALEX,copy,turnId);session=session.copy(messages=session.messages+message,pendingIntentLockTurnId=null,pendingIntentLockOptions=emptyList());return BackendOutcome.AlexReply(turnId,session,message,SelectionSource.REMOTE)}
         companion object {private fun initial()=PublicConversation("instrumented-session",LocaleTag("en-US"),emptyList(),emptySet(),"main");private fun options(locale:LocaleTag)=if(locale.value=="pt-BR")listOf(IntentOption("ASK_CAPABILITY","Saber se Alex consegue terminar hoje"),IntentOption("REQUEST_COMPLETION","Pedir para Alex terminar hoje"))else listOf(IntentOption("ASK_CAPABILITY","Find out if Alex can finish today"),IntentOption("REQUEST_COMPLETION","Ask Alex to finish today"))}
     }

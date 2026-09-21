@@ -18,6 +18,7 @@
 ## Interpretation and commercial limits
 
 - The connected comparison displays the user's choice and Alex's immediate response in each branch. It is not a demonstrated multi-turn outcome forecast, relationship score or therapeutic assessment.
+- The comparison-reading review branch adds deterministic notes for 24 exact authored replies across three families (clarification, sources-by-nine capability, sources-by-nine offer), in English and Portuguese. Unknown replies receive no specific reading. Notes use only the displayed reply, not hidden facts or a new model call. The published V5 predates these notes; validation is tracked in `COMPARISON_READING_2026-09-21.md`.
 - The monthly Test Store price is an experimental configuration. Recurring willingness to pay, retention, customer demand and revenue have not been validated.
 
 ## Roadmap, not current functionality

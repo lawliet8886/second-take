@@ -24,7 +24,7 @@
     <string name="dismiss">Dismiss</string>
     <string name="back_here_now">Restored checkpoint</string>
     <string name="restoring_checkpoint">Restoring the preserved moment…</string>
-    <string name="comparison_observable">Same earlier context. One different user message, followed by a different response.</string>
+    <string name="comparison_observable">Same earlier context. Compare your choices and Alex’s immediate replies.</string>
     <string name="back_to_conversation">Back to conversation</string>
     <string name="check_in">Check in with Alex</string>
     <string name="your_turn">Your turn</string>
@@ -59,7 +59,7 @@
     <string name="paywall_title">Continue your Second Take</string>
     <string name="paywall_body">See exactly what changed between your two attempts.</string>
     <string name="paywall_benefit_comparison">Full path comparison</string>
-    <string name="paywall_benefit_consequences">A/B consequences, together in one view</string>
+    <string name="paywall_benefit_consequences">Immediate replies with reading notes</string>
     <string name="paywall_loading">Loading the current plan…</string>
     <string name="paywall_offering_unavailable">The purchase option could not be loaded right now.</string>
     <string name="paywall_unlock">Unlock Pro</string>
@@ -90,4 +90,12 @@
     <string name="leave_practice_body">Your current Conversation Fork will reset.</string>
     <string name="keep_practising">Keep practicing</string>
     <string name="leave_practice">Leave practice</string>
+    <string name="comparison_reading">Read the response</string>
+    <string name="comparison_clarification">Alex asks for clarification. This reply does not specify a delivery or a deadline.</string>
+    <string name="comparison_sources">Alex says the sources can be ready by nine tonight. The scope is the sources — not the whole project.</string>
+    <string name="comparison_proposal">Alex offers to finish the sources by nine tonight. This offer does not cover the whole project.</string>
+    <string name="comparison_unclassified">No specific reading is available for this reply. Use Alex’s exact words above; do not assume an unstated outcome.</string>
+    <string name="comparison_reflect">What would you clarify next?</string>
+    <string name="comparison_reflect_body">Look for what is specified, what is still open, and what you would ask next. Neither path is scored as the winner.</string>
+    <string name="comparison_limit">These notes describe the visible reply, not Alex’s feelings or what a real person would do.</string>
 </resources>
