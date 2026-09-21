@@ -7,6 +7,7 @@ import type {
 } from "../domain/contracts.js";
 import { InMemorySessionStore, publicSession } from "../sessions/store.js";
 import { SelectorCircuitBreaker } from "../resilience/circuit-breaker.js";
+import { withinDeadline } from "../resilience/deadline.js";
 import { assertCandidate, selectLocalFallback } from "../resilience/fallback.js";
 
 const clone = <T>(value: T): T => structuredClone(value);
@@ -35,7 +36,7 @@ export class TurnOrchestrator {
     const turnId=randomUUID(),requestId=randomUUID(),fullStart=performance.now(),stateBefore=clone(session.currentState);
     session.messages.push({id:randomUUID(),role:"USER",text:input.text,turnId});
     let routed;
-    try { routed=await this.router.route({requestId:`ROUTER_${requestId}`,text:input.text,locale:session.locale,deadlineMs:Math.min(this.routerDeadlineMs,this.selectorDeadlineMs)}); }
+    try { const budget=Math.min(this.routerDeadlineMs,this.selectorDeadlineMs);routed=await withinDeadline(this.router.route({requestId:`ROUTER_${requestId}`,text:input.text,locale:session.locale,deadlineMs:budget}),budget); }
     catch {
       const response:TurnResponse={type:"TRANSPORT_FAILURE",turnId,message:session.locale==="pt-BR"?"Não foi possível processar esta fala agora. Tente novamente em instantes.":"This turn could not be processed right now. Please try again shortly.",publicState:publicSession(session)};
       session.idempotency.set(input.clientTurnId,response); return response;
@@ -82,7 +83,7 @@ export class TurnOrchestrator {
     const remainingTurnBudget=Math.floor(this.selectorDeadlineMs-(performance.now()-input.fullStart));
     if(this.circuit.canRequest()&&remainingTurnBudget>=1500){
       try{
-        const selected=await this.selector.select({requestId:`SELECTOR_${input.requestId}`,userTurn:input.userText,resolvedPrimaryIntent:input.envelope.primaryIntent,state:session.currentState,recentContext:session.messages.slice(-5).map(message=>`${message.role}: ${message.text}`),candidates:input.candidates,locale:input.locale,deadlineMs:remainingTurnBudget});
+        const selected=await withinDeadline(this.selector.select({requestId:`SELECTOR_${input.requestId}`,userTurn:input.userText,resolvedPrimaryIntent:input.envelope.primaryIntent,state:session.currentState,recentContext:session.messages.slice(-5).map(message=>`${message.role}: ${message.text}`),candidates:input.candidates,locale:input.locale,deadlineMs:remainingTurnBudget}),remainingTurnBudget);
         selectorLatencyMs=selected.latencyMs;selectorTransportRetries=selected.transportRetries;selectorStructuralRetries=selected.structuralRetries;selectorUsage=selected.usage;providerAttempts=selected.attempts;
         if(selected.confidence==="LOW")plan=selectLocalFallback(input.candidates,session.currentState);else{plan=assertCandidate(selected.planId,input.candidates);source="GEMINI_SELECTOR";}
         this.circuit.record({retried:selectorTransportRetries>0,terminal:false});
