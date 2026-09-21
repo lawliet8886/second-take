@@ -4,17 +4,17 @@
 
 Second Take is an Android conversation-rehearsal app for moments that matter because real life rarely gives us a clean second attempt. Talk naturally to Alex, rewind to the exact same conversational checkpoint, make a different choice, and compare how the two paths changed.
 
-Your teammate's slides are late and the presentation is Friday. In the recorded rehearsal, **“I am worried about the project”** gets **“What do you mean exactly?”** Rewind, try **“Can you finish today?”**, and Alex replies **“I can finish the sources by nine tonight.”** Second Take lets you inspect that contrast from a preserved checkpoint. It is a rehearsal, not a prediction of how a real person will respond.
+Your teammate's slides are late and the presentation is Friday. In the recorded rehearsal, **“I am worried about the project”** gets **“Can you be more specific?”** Rewind, try **“Can you finish today?”**, and Alex replies **“I can get the sources done by nine tonight.”** Second Take lets you inspect that contrast from a preserved checkpoint. It is a rehearsal, not a prediction of how a real person will respond.
 
 ![Second Take comparison](assets/screenshots/06-comparison.png)
 
-This screenshot shows the published baseline. The comparison-reading refinement described below is on the review branch and is not shown in V5. The [new V6 review video](assets/video/second-take-v6-review.mp4) records the updated app with the real backend and RevenueCat Test Store; see [capture and media evidence](docs/VIDEO_V6_REVIEW.md). V6 has not replaced the public submission video.
+This screenshot shows the earlier baseline. The [submitted V6 video](https://www.youtube.com/watch?v=IWfMWZyNDaI) records the updated app with the real backend, RevenueCat Test Store and in-app comparison reading notes; see [capture and media evidence](docs/VIDEO_V6_REVIEW.md). The implementation is on open PR #5; Devpost links the matching public commit, not an unmerged main revision.
 
 ## Shipaton 2026 — Next Gen
 
 Second Take is a confirmed **RevenueCat Shipaton 2026 — Next Gen** submission.
 
-- Public demo: [Second Take — One Conversation, A Second Choice](https://www.youtube.com/watch?v=lKjPDNHgfNc)
+- Public demo: [Second Take — One Conversation, A Second Choice](https://www.youtube.com/watch?v=IWfMWZyNDaI)
 - Devpost entry: [Second Take](https://devpost.com/software/second-take-kxgcdq)
 - Current submission status: [`docs/CURRENT_SUBMISSION_STATUS.md`](docs/CURRENT_SUBMISSION_STATUS.md)
 - Current rules audit: [`docs/OFFICIAL_RULES_AUDIT.md`](docs/OFFICIAL_RULES_AUDIT.md)
@@ -22,7 +22,7 @@ Second Take is a confirmed **RevenueCat Shipaton 2026 — Next Gen** submission.
 
 The demo uses **RevenueCat Test Store**. No real payment or production-store release is claimed.
 
-Reviewing the project? Start with the [short judging guide](docs/JUDGE_REVIEW_GUIDE.md): demo, implementation evidence, provider-free checks, and optional credentialed setup. The [published V5 source](assets/video/second-take-v5-review.mp4) and [media validation](docs/VIDEO_V5_REVIEW.md) identify the 1:41 demo updated on YouTube and the existing Devpost submission on September 21. Earlier edits are archival, not competing submission versions.
+Reviewing the project? Start with the [short judging guide](docs/JUDGE_REVIEW_GUIDE.md): demo, implementation evidence, provider-free checks, and optional credentialed setup. The [V6 MP4](assets/video/second-take-v6-review.mp4), [media validation](docs/VIDEO_V6_REVIEW.md) and [publication receipt](docs/PUBLICATION_V6_2026-09-21.md) identify the 1:43 demo published on YouTube and the existing Devpost submission on September 21. Earlier edits are archival, not competing submission versions.
 
 ## Why it is different
 
@@ -57,7 +57,7 @@ It distinguishes a partial delivery from the whole project. Only exact matches t
 replies use a neutral prompt. No model generates these notes, no hidden facts are
 read, and no path receives a score. These notes remain behind the real Pro gate.
 See [implementation and validation](docs/COMPARISON_READING_2026-09-21.md).
-The published V5 predates this UI refinement and is not evidence of the new screen.
+The submitted V6 records this UI refinement; V5 is retained as historical evidence only.
 
 ## Stack
 

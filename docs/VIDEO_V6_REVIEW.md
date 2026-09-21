@@ -1,8 +1,8 @@
 # V6 — real updated-app review video
 
-Status: **REVIEW CANDIDATE ON PR #5, NOT THE YOUTUBE/DEVPOST SUBMISSION VIDEO**.
+Status: **OWNER-APPROVED V6 PUBLISHED ON YOUTUBE AND THE EXISTING DEVPOST SUBMISSION**.
 Date: September 21, 2026. Production code: `246fd4811fd70c8a707c3b64d6664b2c6c07bb62`.
-The published V5 remains unchanged; this candidate belongs to PR #5.
+Published demo: https://www.youtube.com/watch?v=IWfMWZyNDaI. V5 remains available as an archive. Code belongs to open PR #5; no merge is claimed. See [publication receipt](PUBLICATION_V6_2026-09-21.md).
 
 ## Watch and inspect
 

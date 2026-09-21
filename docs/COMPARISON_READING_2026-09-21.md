@@ -103,5 +103,7 @@ app, not the four fixture screenshots described above. The separate opt-in
 the real backend, Intent Lock, rewind and a real zero-cost Test Store purchase.
 Refreshed `CustomerInfo` was asserted to contain active `pro` before capturing
 the comparison. Source footage, failed-attempt disclosure, hashes, media checks
-and reproduction are in [VIDEO_V6_REVIEW.md](VIDEO_V6_REVIEW.md). The published V5
-and Devpost entry have not been replaced by this review candidate.
+and reproduction are in [VIDEO_V6_REVIEW.md](VIDEO_V6_REVIEW.md). Following owner
+approval, V6 replaced V5 on the existing Devpost submission; see
+[publication receipt](PUBLICATION_V6_2026-09-21.md). Earlier publication-status
+statements in this implementation record describe the pre-approval checkpoint.
