@@ -30,6 +30,7 @@ The owner explicitly approved publishing V5, updating the existing Devpost submi
 
 - Starting task SHA: `bec981b3895a19bf445bb158abe5a42ed829f0a4`.
 - Integration PR: https://github.com/lawliet8886/second-take/pull/4, targeting `main`. Its merge event is the authoritative integration receipt for this committed document.
+- Post-merge readback: **MERGED** at `2026-09-21T13:52:52Z`, merge SHA `012278a0b60c9cbdc5c9e89bfec84b7cbcd50465`. The merge tree exactly matched the validated PR head. Public raw `main/README.md` returned the new V5 URL without the stale V4 callout. Local `main` was fast-forwarded without discarding work.
 - GitHub reported the PR mergeable; no remote status checks were configured. Local gates are explicitly reported instead of inventing CI results.
 - Backend `npm run verify`: PASS, build + 24/24 tests + secret check.
 - Local fake-provider benchmark: 1,000 requests; p50 0.199 ms, p95 0.932 ms, max 7.687 ms; zero hanging turns. These are not Vertex latencies.
