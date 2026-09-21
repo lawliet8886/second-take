@@ -1,0 +1,64 @@
+1
+00:00:00,000 --> 00:00:06,075
+Os slides do seu colega estão atrasados.
+A apresentação é sexta. Como começar a conversa?
+
+2
+00:00:07,000 --> 00:00:12,650
+A questão não é qual frase vence,
+mas o que a resposta realmente oferece.
+
+3
+00:00:13,000 --> 00:00:21,525
+Digo a Alex que estou preocupado com o projeto.
+Ele pede mais clareza. O próximo passo ainda está indefinido.
+
+4
+00:00:21,900 --> 00:00:29,125
+Volto ao ponto anterior à escolha.
+O aplicativo restaura os mesmos fatos e histórico.
+
+5
+00:00:29,900 --> 00:00:35,425
+Tudo antes desse ponto permanece igual.
+Desta vez, faço um pedido específico.
+
+6
+00:00:35,900 --> 00:00:40,750
+Você consegue terminar hoje?
+Pergunto sobre capacidade ou peço uma ação?
+
+7
+00:00:41,900 --> 00:00:48,000
+O Intent Lock pede confirmação.
+Minha intenção é uma decisão minha, não um palpite do modelo.
+
+8
+00:00:48,367 --> 00:00:53,817
+Alex cita as fontes e um horário: nove da noite.
+Isso não é o projeto inteiro.
+
+9
+00:00:55,367 --> 00:01:02,017
+As duas tentativas são gratuitas.
+A comparação premium reúne escolhas e respostas imediatas.
+
+10
+00:01:02,367 --> 00:01:10,717
+Esta é uma compra no RevenueCat Test Store, sem cobrança real.
+O acesso só abre com o entitlement Pro ativo.
+
+11
+00:01:14,367 --> 00:01:21,367
+Agora, o próprio aplicativo explica a resposta visível:
+na versão A, ainda falta esclarecer o que se quer.
+
+12
+00:01:24,367 --> 00:01:31,217
+Na versão B, observe o escopo e o prazo. O que ainda falta?
+Nenhum caminho recebe uma pontuação de vencedor.
+
+13
+00:01:33,367 --> 00:01:42,242
+Gemini interpreta; regras e respostas autorais limitam o resultado.
+Second Take. Ensaie a conversa e decida o que dizer.

@@ -1,0 +1,206 @@
+{
+  "version": "V6-review-candidate",
+  "publication": "NOT_PUBLISHED",
+  "source": "assets/video/second-take-v6-cfr-source.mp4",
+  "sourceSha256": "6acf9291e83badf210949acc6fca98daae794fc5c2a8d7e40f712b77a66fdde0",
+  "videoSha256": "386b2f7c30b8ead238d1449ca9e44753ee56401fefeda4e5803ea25349efc8e8",
+  "durationSeconds": 102.60000000000001,
+  "disclosure": "Real connected Android capture on September 21, 2026. Waiting time shortened and frames held. Comparison previews and enlarged screen crops are labeled. Real RevenueCat Test Store; no real charge. One authored Alex scenario, not a prediction of real people.",
+  "timeline": [
+    {
+      "segment": 1,
+      "label": "THE MOMENT",
+      "start": 0.0,
+      "end": 7.0,
+      "sourceStart": 52,
+      "sourceEnd": 55,
+      "speedMultiplier": 1.0,
+      "crop": [
+        62,
+        0,
+        596,
+        1280
+      ]
+    },
+    {
+      "segment": 2,
+      "label": "PREVIEW \u2022 IN-APP COMPARISON",
+      "start": 7.0,
+      "end": 13.0,
+      "sourceStart": 145,
+      "sourceEnd": 148,
+      "speedMultiplier": 1.0,
+      "crop": [
+        82,
+        330,
+        560,
+        840
+      ]
+    },
+    {
+      "segment": 3,
+      "label": "01 / FIRST ATTEMPT",
+      "start": 13.0,
+      "end": 21.9,
+      "sourceStart": 80,
+      "sourceEnd": 85,
+      "speedMultiplier": 1.0,
+      "crop": [
+        82,
+        170,
+        560,
+        550
+      ]
+    },
+    {
+      "segment": 4,
+      "label": "02 / REWIND",
+      "start": 21.9,
+      "end": 29.9,
+      "sourceStart": 86,
+      "sourceEnd": 92,
+      "speedMultiplier": 1.0,
+      "crop": [
+        62,
+        140,
+        596,
+        580
+      ]
+    },
+    {
+      "segment": 5,
+      "label": "CHECKPOINT RESTORED",
+      "start": 29.9,
+      "end": 35.9,
+      "sourceStart": 92,
+      "sourceEnd": 95,
+      "speedMultiplier": 1.0,
+      "crop": [
+        82,
+        260,
+        560,
+        300
+      ]
+    },
+    {
+      "segment": 6,
+      "label": "03 / SECOND ATTEMPT",
+      "start": 35.9,
+      "end": 41.9,
+      "sourceStart": 97.5,
+      "sourceEnd": 102,
+      "speedMultiplier": 1.0,
+      "crop": [
+        62,
+        255,
+        596,
+        740
+      ]
+    },
+    {
+      "segment": 7,
+      "label": "INTENT LOCK",
+      "start": 41.9,
+      "end": 48.36666666666667,
+      "sourceStart": 103,
+      "sourceEnd": 112,
+      "speedMultiplier": 1.3917525773195876,
+      "crop": [
+        82,
+        505,
+        560,
+        475
+      ]
+    },
+    {
+      "segment": 8,
+      "label": "04 / OBSERVE THE RESPONSE",
+      "start": 48.36666666666667,
+      "end": 55.36666666666667,
+      "sourceStart": 116,
+      "sourceEnd": 120,
+      "speedMultiplier": 1.0,
+      "crop": [
+        82,
+        505,
+        560,
+        390
+      ]
+    },
+    {
+      "segment": 9,
+      "label": "TWO ATTEMPTS \u2022 FREE",
+      "start": 55.36666666666667,
+      "end": 62.36666666666667,
+      "sourceStart": 120,
+      "sourceEnd": 122,
+      "speedMultiplier": 1.0,
+      "crop": [
+        62,
+        0,
+        596,
+        1280
+      ]
+    },
+    {
+      "segment": 10,
+      "label": "REVENUECAT \u2022 TEST STORE",
+      "start": 62.36666666666667,
+      "end": 74.36666666666667,
+      "sourceStart": 125,
+      "sourceEnd": 144,
+      "speedMultiplier": 1.5833333333333335,
+      "crop": [
+        62,
+        0,
+        596,
+        1280
+      ]
+    },
+    {
+      "segment": 11,
+      "label": "05 / COMPARE \u2022 SCREEN DETAIL",
+      "start": 74.36666666666667,
+      "end": 84.36666666666667,
+      "sourceStart": 145,
+      "sourceEnd": 151,
+      "speedMultiplier": 1.0,
+      "crop": [
+        82,
+        330,
+        560,
+        390
+      ]
+    },
+    {
+      "segment": 12,
+      "label": "06 / REFLECT \u2022 SCREEN DETAIL",
+      "start": 84.36666666666667,
+      "end": 93.36666666666667,
+      "sourceStart": 171.6,
+      "sourceEnd": 172.5,
+      "speedMultiplier": 1.0,
+      "crop": [
+        82,
+        442,
+        560,
+        650
+      ]
+    },
+    {
+      "segment": 13,
+      "label": "SECOND TAKE",
+      "start": 93.36666666666667,
+      "end": 102.60000000000001,
+      "sourceStart": 169,
+      "sourceEnd": 172,
+      "speedMultiplier": 1.0,
+      "crop": [
+        62,
+        0,
+        596,
+        1280
+      ]
+    }
+  ]
+}

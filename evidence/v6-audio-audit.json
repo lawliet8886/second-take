@@ -1,0 +1,197 @@
+{
+  "decodedAudioPcmSha256": "55196788c43d8a8c7148dcc59c561e83aed6b6dfd0eb6e7ab555743da4de11ea",
+  "method": "offline faster-whisper small int8, English, beam=5",
+  "humanListening": false,
+  "expectedWords": 225,
+  "observedWords": 224,
+  "sequenceMatchRatio": 0.9755011135857461,
+  "differences": [
+    {
+      "kind": "replace",
+      "expected": "teammate s",
+      "observed": "teammates"
+    },
+    {
+      "kind": "replace",
+      "expected": "intent lock",
+      "observed": "intentlock"
+    },
+    {
+      "kind": "replace",
+      "expected": "nine tonight",
+      "observed": "9 to night"
+    }
+  ],
+  "transcript": [
+    {
+      "start": 0.0,
+      "end": 2.0,
+      "text": "Your teammates' slides are late."
+    },
+    {
+      "start": 2.0,
+      "end": 4.0,
+      "text": "The presentation is Friday."
+    },
+    {
+      "start": 4.0,
+      "end": 6.0,
+      "text": "How do you start that conversation?"
+    },
+    {
+      "start": 7.0,
+      "end": 10.0,
+      "text": "The useful question is not which line wins."
+    },
+    {
+      "start": 10.0,
+      "end": 13.0,
+      "text": "It is what the response actually gives you."
+    },
+    {
+      "start": 13.0,
+      "end": 16.0,
+      "text": "I tell Alex I am worried about the project."
+    },
+    {
+      "start": 16.0,
+      "end": 18.0,
+      "text": "Alex asks what I mean."
+    },
+    {
+      "start": 18.0,
+      "end": 22.0,
+      "text": "The concern is expressed, but the next step is still unclear."
+    },
+    {
+      "start": 22.0,
+      "end": 24.0,
+      "text": "Now I rewind."
+    },
+    {
+      "start": 24.0,
+      "end": 26.0,
+      "text": "The app restores the checkpoint before that choice"
+    },
+    {
+      "start": 26.0,
+      "end": 29.0,
+      "text": "with the same facts and conversation history."
+    },
+    {
+      "start": 30.0,
+      "end": 33.0,
+      "text": "Everything before the checkpoint stays fixed."
+    },
+    {
+      "start": 33.0,
+      "end": 36.0,
+      "text": "This time I make a specific request."
+    },
+    {
+      "start": 36.0,
+      "end": 38.0,
+      "text": "Can you finish today?"
+    },
+    {
+      "start": 38.0,
+      "end": 42.0,
+      "text": "Am I asking about ability or asking Alex to act?"
+    },
+    {
+      "start": 42.0,
+      "end": 44.0,
+      "text": "IntentLock asks me to confirm."
+    },
+    {
+      "start": 44.0,
+      "end": 48.0,
+      "text": "My intention should be my decision, not the model's guess."
+    },
+    {
+      "start": 48.0,
+      "end": 52.0,
+      "text": "Alex names the sources and a time, 9 to night."
+    },
+    {
+      "start": 52.0,
+      "end": 55.57,
+      "text": "That is not the whole project."
+    },
+    {
+      "start": 55.57,
+      "end": 57.57,
+      "text": "Both attempts are free."
+    },
+    {
+      "start": 57.57,
+      "end": 59.57,
+      "text": "The premium comparison brings the choices"
+    },
+    {
+      "start": 59.57,
+      "end": 62.57,
+      "text": "and immediate responses together."
+    },
+    {
+      "start": 62.57,
+      "end": 65.57,
+      "text": "Here is the revenue cat test store purchase."
+    },
+    {
+      "start": 65.57,
+      "end": 67.57,
+      "text": "No real money is charged."
+    },
+    {
+      "start": 67.57,
+      "end": 70.57,
+      "text": "Access opens only with an active pro entitlement."
+    },
+    {
+      "start": 70.57,
+      "end": 78.28,
+      "text": "Now the comparison explains the visible reply inside the app."
+    },
+    {
+      "start": 78.28,
+      "end": 81.28,
+      "text": "Clarification is still needed in version A."
+    },
+    {
+      "start": 81.28,
+      "end": 87.32,
+      "text": "In version B, read the scope and deadline."
+    },
+    {
+      "start": 87.32,
+      "end": 89.32,
+      "text": "Then ask what is still open."
+    },
+    {
+      "start": 89.32,
+      "end": 91.32,
+      "text": "Neither path gets a winning score."
+    },
+    {
+      "start": 91.32,
+      "end": 95.46,
+      "text": "Gemini interprets."
+    },
+    {
+      "start": 95.46,
+      "end": 97.46,
+      "text": "Policy and authored replies bound the outcome."
+    },
+    {
+      "start": 97.46,
+      "end": 99.46,
+      "text": "Second take."
+    },
+    {
+      "start": 99.46,
+      "end": 102.46,
+      "text": "Rehearse the conversation, then decide what to say."
+    }
+  ]
+}

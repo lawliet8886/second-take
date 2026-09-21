@@ -8,7 +8,7 @@ Your teammate's slides are late and the presentation is Friday. In the recorded 
 
 ![Second Take comparison](assets/screenshots/06-comparison.png)
 
-This screenshot shows the published baseline. The comparison-reading refinement described below is on the review branch and is not shown in V5.
+This screenshot shows the published baseline. The comparison-reading refinement described below is on the review branch and is not shown in V5. The [new V6 review video](assets/video/second-take-v6-review.mp4) records the updated app with the real backend and RevenueCat Test Store; see [capture and media evidence](docs/VIDEO_V6_REVIEW.md). V6 has not replaced the public submission video.
 
 ## Shipaton 2026 — Next Gen
 

@@ -94,3 +94,14 @@ The connected test covers revocation, Back navigation, reactivation and the payw
 The local competitive audit is preserved outside this change's staged files.
 No competitor media, generated build output, credential file or temporary cache is
 included. No merge, new video publication, Devpost edit or charged purchase was made.
+
+## V6 live-capture follow-up
+
+The subsequent V6 review candidate now shows these notes in the real connected
+app, not the four fixture screenshots described above. The separate opt-in
+`RealDemoCaptureTest` passed one complete flow with repository overrides absent,
+the real backend, Intent Lock, rewind and a real zero-cost Test Store purchase.
+Refreshed `CustomerInfo` was asserted to contain active `pro` before capturing
+the comparison. Source footage, failed-attempt disclosure, hashes, media checks
+and reproduction are in [VIDEO_V6_REVIEW.md](VIDEO_V6_REVIEW.md). The published V5
+and Devpost entry have not been replaced by this review candidate.

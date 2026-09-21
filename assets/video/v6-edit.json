@@ -1,0 +1,174 @@
+{
+  "version": "V6-review-candidate",
+  "source": "assets/video/second-take-v6-cfr-source.mp4",
+  "originalCapture": "assets/video/second-take-v6-real-source.mp4",
+  "normalization": "FFmpeg fps=30; existing frames duplicated/dropped by timestamp, no interpolation or fabricated UI.",
+  "thumbnailTime": 149,
+  "disclosure": "Real connected Android capture on September 21, 2026. Waiting time shortened and frames held. Comparison previews and enlarged screen crops are labeled. Real RevenueCat Test Store; no real charge. One authored Alex scenario, not a prediction of real people.",
+  "segments": [
+    {
+      "label": "THE MOMENT",
+      "title": "Friday is coming.\nThe slides are not.",
+      "body": "How do you start the conversation?",
+      "start": 52,
+      "end": 55,
+      "text": "Your teammate's slides are late. The presentation is Friday. How do you start that conversation?"
+    },
+    {
+      "label": "PREVIEW • IN-APP COMPARISON",
+      "title": "Read what changed.\nNot a score.",
+      "body": "Your words. Alex's response.\nWhat is still open?",
+      "start": 145,
+      "end": 148,
+      "text": "The useful question is not which line wins. It is what the response actually gives you.",
+      "crop": [
+        82,
+        330,
+        560,
+        840
+      ]
+    },
+    {
+      "label": "01 / FIRST ATTEMPT",
+      "title": "Start with\na concern.",
+      "body": "“I am worried about the project”\n\nAlex asks for clarification.",
+      "start": 80,
+      "end": 85,
+      "text": "I tell Alex I am worried about the project. Alex asks what I mean. The concern is expressed, but the next step is still unclear.",
+      "crop": [
+        82,
+        170,
+        560,
+        550
+      ]
+    },
+    {
+      "label": "02 / REWIND",
+      "title": "Go back to\nthe same moment.",
+      "body": "Same facts. Same history.\nSame conversation state.",
+      "start": 86,
+      "end": 92,
+      "text": "Now I rewind. The app restores the checkpoint before that choice, with the same facts and conversation history.",
+      "crop": [
+        62,
+        140,
+        596,
+        580
+      ]
+    },
+    {
+      "label": "CHECKPOINT RESTORED",
+      "title": "Change one thing:\nyour choice.",
+      "body": "A second attempt from\nthe preserved context.",
+      "start": 92,
+      "end": 95,
+      "text": "Everything before the checkpoint stays fixed. This time, I make a specific request.",
+      "crop": [
+        82,
+        260,
+        560,
+        300
+      ]
+    },
+    {
+      "label": "03 / SECOND ATTEMPT",
+      "title": "“Can you\nfinish today?”",
+      "body": "A capability question — or a request?",
+      "start": 97.5,
+      "end": 102,
+      "text": "Can you finish today? Am I asking about ability, or asking Alex to act?",
+      "crop": [
+        62,
+        255,
+        596,
+        740
+      ]
+    },
+    {
+      "label": "INTENT LOCK",
+      "title": "Your intention.\nYour decision.",
+      "body": "Ask whether Alex can finish\n\nor ask Alex to finish.\n\nYou confirm before the reply.",
+      "start": 103,
+      "end": 112,
+      "text": "Intent Lock asks me to confirm. My intention should be my decision, not the model's guess.",
+      "crop": [
+        82,
+        505,
+        560,
+        475
+      ]
+    },
+    {
+      "label": "04 / OBSERVE THE RESPONSE",
+      "title": "Read the scope.\nRead the deadline.",
+      "body": "The sources. By nine tonight.\n\nNot the whole project.",
+      "start": 116,
+      "end": 120,
+      "text": "Alex names the sources and a time: nine tonight. That is not the whole project.",
+      "crop": [
+        82,
+        505,
+        560,
+        390
+      ]
+    },
+    {
+      "label": "TWO ATTEMPTS • FREE",
+      "title": "Practice first.\nCompare next.",
+      "body": "The conversation, rewind and\nsecond attempt are free.",
+      "start": 120,
+      "end": 122,
+      "text": "Both attempts are free. The premium comparison brings the choices and immediate responses together."
+    },
+    {
+      "label": "REVENUECAT • TEST STORE",
+      "title": "Unlock the\ncomparison.",
+      "body": "Development purchase. No real charge.\n\nActive Pro entitlement required.\nDisplayed price is a sandbox setting.",
+      "start": 125,
+      "end": 144,
+      "text": "Here is the Revenue Cat Test Store purchase. No real money is charged. Access opens only with an active Pro entitlement."
+    },
+    {
+      "label": "05 / COMPARE • SCREEN DETAIL",
+      "title": "What is\nstill unclear?",
+      "body": "A: clarification is needed.\n\nNo delivery or deadline\nis specified in this reply.",
+      "start": 145,
+      "end": 151,
+      "text": "Now the comparison explains the visible reply inside the app: clarification is still needed in version A.",
+      "crop": [
+        82,
+        330,
+        560,
+        390
+      ]
+    },
+    {
+      "label": "06 / REFLECT • SCREEN DETAIL",
+      "title": "What would you\nclarify next?",
+      "body": "B: sources, by nine tonight.\n\nRead what is there.\nDo not invent what is not.",
+      "start": 171.6,
+      "end": 172.5,
+      "text": "In version B, read the scope and deadline. Then ask what is still open. Neither path gets a winning score.",
+      "crop": [
+        82,
+        442,
+        560,
+        650
+      ]
+    },
+    {
+      "label": "SECOND TAKE",
+      "title": "Practice the words.\nRead the response.",
+      "body": "Gemini interprets. Policy constrains.\nAlex's replies are authored.\n\nOne Android scenario. Open source.\nA rehearsal, not a prediction.",
+      "start": 169,
+      "end": 172,
+      "text": "Gemini interprets; policy and authored replies bound the outcome. Second Take. Rehearse the conversation, then decide what to say."
+    }
+  ],
+  "baseCrop": [
+    62,
+    0,
+    596,
+    1280
+  ]
+}
