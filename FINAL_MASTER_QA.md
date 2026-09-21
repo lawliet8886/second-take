@@ -2,7 +2,7 @@
 
 > Historical August 28 technical QA, archived with its master during the September 21 candidacy revision. These measurements are not new tests of the V4 candidate. See `docs/VIDEO_V4_REVIEW.md` for the current review artifact.
 
-Date: 2026-08-28  
+Date: 2026-08-28
 Artifact: `assets/video/second-take-shipaton-final-master.mp4`
 
 ## Technical identity
