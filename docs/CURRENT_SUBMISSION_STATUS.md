@@ -31,7 +31,7 @@ No private academic email address or enrollment document is reproduced here.
 - Devpost entry: https://devpost.com/software/second-take-kxgcdq
 - Demo video: https://www.youtube.com/watch?v=IWfMWZyNDaI
 - Demo duration: **102.652 seconds** (V6 local master; YouTube player reports 102.667 seconds)
-- Matching public source: https://github.com/lawliet8886/second-take/tree/846e64a2d784fd336ac1407169c6422564b3edc2 (open PR #5; no merge)
+- Current public source: https://github.com/lawliet8886/second-take (PR #5 merged into `main` at `eae02af9ca7af6880194768dcf6120d7d2a34164` on September 21).
 - Devpost readback on September 21: **Submitted — 5/5 steps done**, updated video URL, revised story and tagline saved; no duplicate submission or new terms acceptance.
 - License: MIT
 

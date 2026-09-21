@@ -8,7 +8,7 @@ Your teammate's slides are late and the presentation is Friday. In the recorded 
 
 ![Second Take comparison](assets/screenshots/06-comparison.png)
 
-This screenshot shows the earlier baseline. The [submitted V6 video](https://www.youtube.com/watch?v=IWfMWZyNDaI) records the updated app with the real backend, RevenueCat Test Store and in-app comparison reading notes; see [capture and media evidence](docs/VIDEO_V6_REVIEW.md). The implementation is on open PR #5; Devpost links the matching public commit, not an unmerged main revision.
+This screenshot shows the earlier baseline. The [submitted V6 video](https://www.youtube.com/watch?v=IWfMWZyNDaI) records the current app with the real backend, RevenueCat Test Store and in-app comparison reading notes; see [capture and media evidence](docs/VIDEO_V6_REVIEW.md). PR #5 is merged into `main`; this repository contains the submitted implementation.
 
 ## Shipaton 2026 — Next Gen
 
@@ -48,7 +48,7 @@ The core conversation, rewind, and second attempt remain usable without Pro acce
 
 The monetization hypothesis is that reviewing both choices and their immediate responses together has value after the rehearsal. The current single-scenario prototype does not establish recurring willingness to pay; its monthly sandbox price is configuration, not evidence of demand or validated pricing.
 
-### Comparison reading (review branch)
+### Comparison reading
 
 The comparison now pairs each visible reply with a bounded reading: clarification,
 an ability statement about sources by nine, or an offer to deliver those sources.

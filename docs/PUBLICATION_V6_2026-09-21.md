@@ -1,5 +1,9 @@
 # V6 publication receipt — September 21, 2026
 
+## Final integration update
+
+The owner subsequently authorized merging PR #5 to eliminate split-version judging surfaces. GitHub confirmed **MERGED** at `2026-09-21T19:04:03Z`, merge SHA `eae02af9ca7af6880194768dcf6120d7d2a34164`. The current implementation is now on `main`. Statements below about an open PR and pinned-source workaround record the earlier publication checkpoint, not the current status. No production deployment or charged transaction was involved.
+
 ## VERIFIED_NOW
 
 - Owner approved V6 publication and explicitly confirmed YouTube upload terms.

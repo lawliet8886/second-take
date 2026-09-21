@@ -2,7 +2,7 @@
 
 ## See the product
 
-Watch the [submitted 1:43 V6 demo](https://www.youtube.com/watch?v=IWfMWZyNDaI). It shows the real connected Alex rehearsal, preserved checkpoint, Intent Lock, second choice, RevenueCat Test Store purchase and unlocked comparison with deterministic in-app reading notes. The demo is edited footage of an Android development build, with English captions and synthetic narration. The notes are bounded readings of visible authored replies, not free-form AI coaching. It does not claim production hosting or a real payment. [Source matching the recording](https://github.com/lawliet8886/second-take/tree/846e64a2d784fd336ac1407169c6422564b3edc2) is on PR #5, not merged into main.
+Watch the [submitted 1:43 V6 demo](https://www.youtube.com/watch?v=IWfMWZyNDaI). It shows the real connected Alex rehearsal, preserved checkpoint, Intent Lock, second choice, RevenueCat Test Store purchase and unlocked comparison with deterministic in-app reading notes. The demo is edited footage of an Android development build, with English captions and synthetic narration. The notes are bounded readings of visible authored replies, not free-form AI coaching. It does not claim production hosting or a real payment. The [current source on main](https://github.com/lawliet8886/second-take) includes merged PR #5 and the implementation shown in the video.
 
 The core question is small and concrete: **what changes when I choose different words at the same conversational moment?** The comparison shows the user's wording and Alex's immediate response in each branch. It does not predict a real person's response or establish therapeutic effectiveness.
 

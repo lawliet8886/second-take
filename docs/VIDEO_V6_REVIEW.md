@@ -2,7 +2,7 @@
 
 Status: **OWNER-APPROVED V6 PUBLISHED ON YOUTUBE AND THE EXISTING DEVPOST SUBMISSION**.
 Date: September 21, 2026. Production code: `246fd4811fd70c8a707c3b64d6664b2c6c07bb62`.
-Published demo: https://www.youtube.com/watch?v=IWfMWZyNDaI. V5 remains available as an archive. Code belongs to open PR #5; no merge is claimed. See [publication receipt](PUBLICATION_V6_2026-09-21.md).
+Published demo: https://www.youtube.com/watch?v=IWfMWZyNDaI. V5 remains available as an archive. PR #5 is merged into `main`; see [publication and integration receipt](PUBLICATION_V6_2026-09-21.md).
 
 ## Watch and inspect
 
