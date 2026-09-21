@@ -1,5 +1,7 @@
 # V4 review candidate — not published
 
+Archived alternative. The owner approved V5 instead; the current published video is https://www.youtube.com/watch?v=lKjPDNHgfNc. See `VIDEO_V5_REVIEW.md` and `PUBLICATION_RECEIPT_2026-09-21.md`. The text below records the earlier V4 review, not outstanding submission work.
+
 ## Editorial decision
 
 V4 is the preferred candidate for final human review, not a replacement already published to YouTube or Devpost. It uses recorded Android footage, local narration and editorial text. No fresh capture, new scenario or added app feature is implied.

@@ -98,6 +98,8 @@ The earlier sections below preserve the evidence and limitations recorded before
 
 ## Editorial follow-up — V5
 
+Publication update: the owner subsequently approved all finalization actions. V5 is now public and embedded in the existing submitted Devpost entry. The pre-publication classifications below are historical where superseded by `PUBLICATION_RECEIPT_2026-09-21.md`; independent audience research and provider limitations remain unresolved.
+
 - VERIFIED_NOW: backend `npm run verify` passed again (24 tests, build and security). Gitleaks scans of scripts, documentation and Git history passed. Renderer negative checks rejected mismatched versions and stale narration.
 - HISTORICAL: Android, RevenueCat and Vertex observations above are not new tests from this editorial follow-up. Application runtime and model defaults were not changed.
 - ADOPTED: retain one real Alex example; explain the response's limited scope (sources by nine, not the entire project), and present Intent Lock as the user's choice. See `VIDEO_V5_REVIEW.md` for media validation and `STRATEGIC_REFINEMENT_2026-09-21.md` for the competitive reasoning.

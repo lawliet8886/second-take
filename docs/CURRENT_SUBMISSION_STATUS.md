@@ -28,8 +28,10 @@ No private academic email address or enrollment document is reproduced here.
 ## Public judging surfaces
 
 - Repository: https://github.com/lawliet8886/second-take
-- Demo video: https://www.youtube.com/watch?v=KMOa5bSV1Eo
-- Demo duration: approximately **1:47.7**
+- Devpost entry: https://devpost.com/software/second-take-kxgcdq
+- Demo video: https://www.youtube.com/watch?v=lKjPDNHgfNc
+- Demo duration: approximately **1:41.45** (V5)
+- Devpost readback on September 21: **Submitted — 5/5 steps done**, updated video URL, revised story and tagline saved; no duplicate submission or new terms acceptance.
 - License: MIT
 
 ## Product claim boundary
@@ -58,7 +60,7 @@ It does **not** claim:
 
 ## Current audit note
 
-The later 2026-09-21 candidacy review prepared an unpublished 100-second V4, stronger Devpost copy and a short judging guide. An application-level deadline now bounds stalled provider waits. The new live smoke had 5 router recoveries in 20 turns and no client aborts, so service availability is still a limitation. Public video and Devpost content remain unchanged; PR #4 has not been merged. See `VIDEO_V4_REVIEW.md` and the follow-up section of `FINAL_META_VALIDATION_2026-09-21.md`.
+The September 21 owner-approved publication replaced the submitted video with V5 (1:41), updated the existing Devpost story/tagline and judge instructions, and retained the original video as an archive. See `PUBLICATION_RECEIPT_2026-09-21.md` for exact publication and GitHub evidence. V4 is an archived alternative, not the current submission. An application-level deadline bounds stalled provider waits. The latest live smoke had 5 router recoveries in 20 turns and no client aborts, so service availability remains a limitation.
 
 On 2026-09-17, the public repository was re-audited for Shipaton Next Gen alignment. The hardening branch addresses stale submission-status documentation, broken setup references, cross-platform backend configuration fallback, and reproducibility wording. The core product architecture and submitted claims remain substantively unchanged.
 

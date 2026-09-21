@@ -1,6 +1,6 @@
-# Devpost revision candidate — not published
+# Devpost revision — published September 21, 2026
 
-Target: the existing Second Take entry, not a new submission. Retain the currently submitted video until the replacement is approved and public playback is checked.
+Published to the existing Second Take entry after explicit owner approval. The filename is retained for traceability. See `PUBLICATION_RECEIPT_2026-09-21.md` for verification.
 
 ## Tagline
 
@@ -41,5 +41,5 @@ The next product questions are whether people understand the difference between 
 ## Links
 
 - Code: https://github.com/lawliet8886/second-take
-- Current submitted video: https://www.youtube.com/watch?v=KMOa5bSV1Eo
-- Replacement video: pending review and explicit publication approval; do not paste a local path into Devpost.
+- Current submitted video: https://www.youtube.com/watch?v=lKjPDNHgfNc
+- Public entry: https://devpost.com/software/second-take-kxgcdq

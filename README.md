@@ -12,14 +12,15 @@ Your teammate's slides are late and the presentation is Friday. In the recorded 
 
 Second Take is a confirmed **RevenueCat Shipaton 2026 — Next Gen** submission.
 
-- Public demo: [Second Take — Rehearse, Rewind, Try Again](https://www.youtube.com/watch?v=KMOa5bSV1Eo)
+- Public demo: [Second Take — One Conversation, A Second Choice](https://www.youtube.com/watch?v=lKjPDNHgfNc)
+- Devpost entry: [Second Take](https://devpost.com/software/second-take-kxgcdq)
 - Current submission status: [`docs/CURRENT_SUBMISSION_STATUS.md`](docs/CURRENT_SUBMISSION_STATUS.md)
 - Current rules audit: [`docs/OFFICIAL_RULES_AUDIT.md`](docs/OFFICIAL_RULES_AUDIT.md)
 - Demonstrated-claim boundary: [`docs/FINAL_PRODUCT_CLAIMS.md`](docs/FINAL_PRODUCT_CLAIMS.md)
 
 The demo uses **RevenueCat Test Store**. No real payment or production-store release is claimed.
 
-Reviewing the project? Start with the [short judging guide](docs/JUDGE_REVIEW_GUIDE.md): demo, implementation evidence, provider-free checks, and optional credentialed setup. The [100-second V4 candidate](assets/video/second-take-v4-review.mp4) and [editorial review](docs/VIDEO_V4_REVIEW.md) are available separately; the public demo above remains the submitted version until explicitly replaced.
+Reviewing the project? Start with the [short judging guide](docs/JUDGE_REVIEW_GUIDE.md): demo, implementation evidence, provider-free checks, and optional credentialed setup. The [published V5 source](assets/video/second-take-v5-review.mp4) and [media validation](docs/VIDEO_V5_REVIEW.md) identify the 1:41 demo updated on YouTube and the existing Devpost submission on September 21. Earlier edits are archival, not competing submission versions.
 
 ## Why it is different
 

@@ -1,5 +1,7 @@
 # Strategic refinement — 2026-09-21
 
+Execution update: the subsequent explicit owner approval authorized publication and GitHub finalization. V5 was published and the existing Devpost entry updated; see `PUBLICATION_RECEIPT_2026-09-21.md`. The decisions below preserve the pre-publication reasoning and its evidence boundaries.
+
 ## Scope and decision
 
 Implement the approved narrow presentation improvement: retain one recorded Alex scenario, explain the scope of the observed response, and make Intent Lock understandable without technical terminology. Preserve V4 for comparison. V5 is a local review candidate, not a published replacement.

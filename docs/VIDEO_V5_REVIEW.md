@@ -1,4 +1,6 @@
-# V5 review candidate — not published
+# V5 — published September 21, 2026
+
+Owner-approved upload: https://www.youtube.com/watch?v=lKjPDNHgfNc. The existing Devpost entry now embeds this video. Filenames retain `review` to preserve artifact identity. `v5-render-manifest.json` records the pre-publication render state; the publication receipt is `PUBLICATION_RECEIPT_2026-09-21.md`.
 
 ## Editorial change
 
@@ -37,4 +39,4 @@ The renderer retains its V4 defaults. It now rejects mismatched version/narratio
 
 ## Review limits
 
-Full human listening, independent audience comprehension and preference remain unverified. Publication and Devpost replacement require approval of the actual candidate. Runtime tests from prior work remain historical except for backend `npm run verify`, rerun successfully during this editorial change (24 tests and security check). Android runtime code and provider configuration are unchanged; Android and cloud suites are not claimed as newly executed here.
+Independent audience comprehension and preference remain unverified. The owner approved publication of this candidate. The editorial checks do not establish an independent human full-length listening verdict. Runtime tests from prior work remain historical except for backend `npm run verify`, rerun successfully during the editorial change (24 tests and security check). See the publication receipt for subsequent pre-merge gates; this media document does not imply fresh cloud-service validation.

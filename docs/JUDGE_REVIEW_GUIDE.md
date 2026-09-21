@@ -2,7 +2,7 @@
 
 ## See the product
 
-Watch the [submitted 1:47 demo](https://www.youtube.com/watch?v=KMOa5bSV1Eo). It shows the Alex rehearsal, preserved checkpoint, second choice, RevenueCat Test Store purchase and unlocked comparison. The demo is edited footage of an Android development build. It does not claim production hosting or a real payment.
+Watch the [submitted 1:41 demo](https://www.youtube.com/watch?v=lKjPDNHgfNc). It shows the Alex rehearsal, preserved checkpoint, second choice, RevenueCat Test Store purchase and unlocked comparison. The demo is edited footage of an Android development build, with English captions. Editorial interpretation is outside the app capture, not an automated coaching feature. It does not claim production hosting or a real payment.
 
 The core question is small and concrete: **what changes when I choose different words at the same conversational moment?** The comparison shows the user's wording and Alex's immediate response in each branch. It does not predict a real person's response or establish therapeutic effectiveness.
 

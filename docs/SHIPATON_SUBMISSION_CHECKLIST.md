@@ -11,8 +11,8 @@ Current-status audit refreshed on **2026-09-21**. Official rules were rechecked 
 | Public open-source repo | PASS | https://github.com/lawliet8886/second-take |
 | Detectable open-source license | PASS | Root `LICENSE` is MIT; GitHub detects the repository license as MIT |
 | Source/assets/setup instructions | PASS_WITH_HARDENING | Present; this audit corrects stale/broken setup paths before merge |
-| Final English video under 2 min | PASS | 107.7 s approved master |
-| Public YouTube/Vimeo URL | PASS | https://www.youtube.com/watch?v=KMOa5bSV1Eo |
+| Final English video under 2 min | PASS | V5 approved/uploaded source: 101.452 seconds, English captions |
+| Public YouTube/Vimeo URL | PASS | https://www.youtube.com/watch?v=lKjPDNHgfNc |
 | Device/platform footage | PASS_RECORDED | Prior video QA records the Android flow, fork, Intent Lock, RevenueCat flow, and comparison |
 | Android app icon | PASS | `assets/app-icon.png`, 1024×1024 |
 | Required screenshot | PASS | `assets/screenshots/required-1179x2556.png`, 1179×2556, no device frame |

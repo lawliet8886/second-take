@@ -1,6 +1,6 @@
 # Devpost submission copy
 
-> This file preserves the reviewed English submission copy associated with the confirmed RevenueCat Shipaton 2026 — Next Gen entry. Devpost confirmed submission on 2026-08-29. See [`CURRENT_SUBMISSION_STATUS.md`](CURRENT_SUBMISSION_STATUS.md) for current status.
+> Historical copy from the August 29 submission, superseded on September 21. Current published copy is in [`DEVPOST_REVIEW_CANDIDATE_2026-09-21.md`](DEVPOST_REVIEW_CANDIDATE_2026-09-21.md); the filename is retained for traceability. See [`CURRENT_SUBMISSION_STATUS.md`](CURRENT_SUBMISSION_STATUS.md) for the current video and submission receipt.
 
 ## Project name
 

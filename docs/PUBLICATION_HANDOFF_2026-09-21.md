@@ -1,4 +1,6 @@
-# Publication handoff — approval required
+# Publication handoff — approved and executed September 21, 2026
+
+The owner explicitly approved publication, Devpost updates and GitHub finalization. YouTube and Devpost updates below were executed; see `PUBLICATION_RECEIPT_2026-09-21.md` for verification and GitHub state. The checklist below preserves the approved plan, not outstanding approval requests.
 
 ## Concrete materials for approval
 
@@ -6,9 +8,9 @@
 - Thumbnail: `assets/thumbnail-v5-review.png`.
 - English captions: `assets/video/second-take-v5-review.srt`.
 - Devpost copy: `DEVPOST_REVIEW_CANDIDATE_2026-09-21.md`.
-- Code/documentation: existing PR https://github.com/lawliet8886/second-take/pull/4; merge remains separately prohibited until the owner explicitly approves it.
+- Code/documentation: PR https://github.com/lawliet8886/second-take/pull/4; the owner's September 21 finalization approval includes merge after passing checks.
 
-No public changes have been made by this revision. The old video and confirmed submission remain available.
+Current public video: https://www.youtube.com/watch?v=lKjPDNHgfNc. The old video remains available; the existing confirmed submission was updated, not duplicated.
 
 ## Proposed YouTube metadata
 
@@ -40,4 +42,4 @@ The internal target is September 28. The official deadline checked during planni
 
 ## Remaining risk
 
-The latest 20-turn Vertex smoke includes five router interruptions. The application now bounds waiting and prevents late transitions; it does not guarantee cloud availability. Human listening and preference review of V5 are still needed before the final publication decision. No independent user-demand or comprehension research has been conducted.
+The latest 20-turn Vertex smoke includes five router interruptions. The application now bounds waiting and prevents late transitions; it does not guarantee cloud availability. Publication approval does not establish independent user-demand, comprehension or human listening research.
