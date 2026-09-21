@@ -26,9 +26,9 @@ RevenueCat's Shipaton manager has also explicitly confirmed in the official Devp
 
 The local key file is ignored by Git. Do not use a RevenueCat secret REST key. Google Play publication is not required for a Next Gen submission.
 
-## Submitted project snapshot
+## Verified project snapshot
 
-This is the recorded submission configuration, not a claim that the live dashboard was revalidated on 2026-09-21. The current checkout contained no `REVENUECAT_TEST_STORE_API_KEY`, and authenticated dashboard inspection could not be completed.
+The authenticated dashboard and zero-cost Test Store flow were revalidated on 2026-09-21. The public SDK key was used ephemerally for the local debug build and was not printed, written to a tracked file, or committed.
 
 - RevenueCat project: Second Take.
 - App/provider: Test Store only.
@@ -37,6 +37,16 @@ This is the recorded submission configuration, not a claim that the live dashboa
 - Offering: `default`.
 - Package: `$rc_monthly`.
 - Identity: anonymous RevenueCat App User IDs; no Firebase/login layer.
+
+The live run loaded `default` / `$rc_monthly` / `monthly`, completed `TEST VALID PURCHASE`, observed active `pro` through `CustomerInfo`, retained `pro` after Activity relaunch, and returned `ProRestored` from restore. This was a sandbox transaction with no card or real charge.
+
+For an explicit live recheck, first provide the public key through ignored `android/local.properties`, start an emulator, and run only the opt-in smoke test:
+
+```powershell
+.\gradlew.bat connectedDebugAndroidTest '-Pandroid.testInstrumentationRunnerArguments.class=com.secondtake.verticalslice.RevenueCatPurchaseSmokeTest' '-Pandroid.testInstrumentationRunnerArguments.runRevenueCatPurchase=true'
+```
+
+The test verifies offering/product metadata, selects RevenueCat's zero-cost `TEST VALID PURCHASE` action, requires active `pro`, relaunches the Activity, refreshes `CustomerInfo`, and restores. Without the explicit opt-in argument it is skipped.
 
 ## Safety boundary
 

@@ -10,6 +10,7 @@ Target: RevenueCat Shipaton 2026 — Next Gen
 
 - Rechecked the current Devpost rules, dates, Next Gen page, official Test Store clarification, and RevenueCat Test Store documentation on 2026-09-21.
 - The deadline remains 2026-09-30 at 11:45 PM PDT. Next Gen remains exempt from store release/download testing and requires the public repository, open-source license, public sub-two-minute demo, and active-student eligibility evidence already recorded for the submission.
+- The rules state that Next Gen is judged on the video and open-source repository. Judges may inspect the repository for testing, but they are not required to install the app and may judge from the submitted description, images, and video.
 - No new rule was found that invalidates the submitted Second Take path.
 
 ### Backend and security
@@ -27,6 +28,9 @@ Target: RevenueCat Shipaton 2026 — Next Gen
 - Real Android-to-local-backend instrumentation: 2/2 tests, 42 turns, zero test failures or hangs. The 12-turn run recorded p50 5,860 ms / p95 9,334 ms / max 10,939 ms; the 30-turn run recorded p50 4,342 ms / p95 9,047 ms / max 10,023 ms.
 - Controlled Compose flow: 9/9 tests covering Alex, Intent Lock, path A, exact rewind, path B, comparison, activity recreation, network retry, purchase cancellation/failure, restore, and the entitlement-backed comparison gate.
 - Manual connected APK pass reached a provider-recovery state safely, retried with a new turn, produced a Turning Point, restored the exact checkpoint, showed the real Intent Lock options, completed path B, and kept Full A/B Comparison behind the paywall.
+- Authenticated RevenueCat dashboard inspection verified the live Test Store app, active `default` offering, `$rc_monthly` package, `monthly` product, and active `pro` entitlement association.
+- A targeted zero-cost Test Store run loaded the live offering, displayed RevenueCat's native `Test Store Purchase` dialog for `monthly` at the configured sandbox price, selected `TEST VALID PURCHASE`, returned `PurchaseResult.ProActivated`, and observed `AccessState.Pro`.
+- The same opt-in `RevenueCatPurchaseSmokeTest` closed and relaunched the Activity, refreshed `CustomerInfo` as `Pro`, returned `RestoreResult.ProRestored`, and completed `connectedDebugAndroidTest` successfully. It is gated behind the explicit `runRevenueCatPurchase=true` instrumentation argument, so ordinary connected runs cannot create sandbox activity accidentally. The public SDK key was supplied ephemerally from the authenticated dashboard and was not printed, stored in a tracked file, or committed.
 - Automated lint and visual/semantic inspection found no material accessibility blocker. Touch targets and content descriptions were present on the reviewed path. A human TalkBack audit was not performed.
 
 ### Vertex and model decision
@@ -48,15 +52,13 @@ Target: RevenueCat Shipaton 2026 — Next Gen
 
 ## NOT_VERIFIED
 
-- Live RevenueCat dashboard configuration on 2026-09-21.
-- Real Test Store offering `default`, product `monthly`, package `$rc_monthly`, purchase, `CustomerInfo`, active `pro`, restore, and relaunch in the current environment.
 - Devpost management state and public YouTube playback were not modified or re-submitted during this pass.
 - Human TalkBack traversal and human screen-reader comprehension.
 
 ## LIMITATIONS
 
-- The current checkout has no `REVENUECAT_TEST_STORE_API_KEY`; the debug paywall therefore correctly reports that the purchase option is unavailable.
-- Authenticated RevenueCat inspection could not be completed because the Chrome automation helper repeatedly failed to load its request-header policy. No login, 2FA, key creation, dashboard mutation, purchase, or charge was attempted.
+- The public Test Store SDK key remains intentionally absent from tracked files and the release build. A fresh local checkout must provide it through ignored `android/local.properties` or an ephemeral Gradle project property before a real Test Store run.
+- The verified purchase was a RevenueCat Test Store sandbox event. No card, real store, charged payment, real subscription, production revenue, or production entitlement was created.
 - Vertex showed transient provider failures. The product stayed within bounded recovery/fallback behavior, but these results are a dated sample rather than a latency SLA.
 - A final 20-turn `npm run smoke` at the production 10 s router deadline produced 19 typed transport recoveries and one 12 s client abort. An isolated 30 s router preflight immediately afterward succeeded in 25,793 ms with the expected intent, showing severe provider latency rather than an ADC/model-access failure. The earlier 42-turn connected run remained green; no current latency SLA is claimed.
 - One polished Alex scenario, anonymous RevenueCat identity, local backend, Test Store, and no production release/backend remain intentional and disclosed.
@@ -69,7 +71,7 @@ Target: RevenueCat Shipaton 2026 — Next Gen
 - Fix local benchmark output-directory creation.
 - Upgrade Vitest to 5.0.1 to clear the current advisories.
 - Suppress the duplicated offering-unavailable message while retaining the actionable inline paywall state.
-- Refresh rules, current-status, claims, setup, and evidence boundaries.
+- Refresh rules, current-status, claims, setup, and evidence boundaries, including the live RevenueCat revalidation.
 
 ## REJECTED
 

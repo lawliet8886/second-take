@@ -16,7 +16,7 @@ Current-status audit refreshed on **2026-09-21**. Official rules were rechecked 
 | Device/platform footage | PASS_RECORDED | Prior video QA records the Android flow, fork, Intent Lock, RevenueCat flow, and comparison |
 | Android app icon | PASS | `assets/app-icon.png`, 1024×1024 |
 | Required screenshot | PASS | `assets/screenshots/required-1179x2556.png`, 1179×2556, no device frame |
-| RevenueCat integration | PASS_RECORDED_NOT_REVERIFIED_NOW | Submission evidence records Test Store purchase → `CustomerInfo` → `pro` entitlement → Full A/B Comparison; the 2026-09-21 checkout had no Test Store SDK key, so the live sequence could not be rerun |
+| RevenueCat integration | PASS_VERIFIED_NOW | Authenticated dashboard plus a zero-cost 2026-09-21 Test Store run verified `default` → `$rc_monthly` / `monthly` → `CustomerInfo` → active `pro`, Activity relaunch, and restore; the public SDK key remained untracked |
 | Test Store allowed for Next Gen | PASS | Explicitly confirmed by a Shipaton manager in the official Devpost discussion |
 | No false store-release claim | PASS | Next Gen does not require a store release; none is claimed |
 | Devpost story and public links | PASS_RECORDED | Final public URLs were saved before submission |

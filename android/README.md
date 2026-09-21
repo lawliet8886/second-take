@@ -27,6 +27,14 @@ Debug builds enable RevenueCat only when that value is present. Release builds a
 
 The Full A/B Comparison is the only Pro gate. Conversation, first rewind, second attempt, Intent Lock, and the observable branch change remain free. Access is granted only when `CustomerInfo.entitlements["pro"].isActive` is true.
 
+The live purchase smoke is deliberately opt-in because it creates a zero-cost Test Store sandbox event. With the public key in ignored `local.properties` and an emulator running:
+
+```powershell
+.\gradlew.bat connectedDebugAndroidTest '-Pandroid.testInstrumentationRunnerArguments.class=com.secondtake.verticalslice.RevenueCatPurchaseSmokeTest' '-Pandroid.testInstrumentationRunnerArguments.runRevenueCatPurchase=true'
+```
+
+The ordinary connected suite skips this test unless `runRevenueCatPurchase=true` is supplied.
+
 ## Submission-build limitation
 
 Second Take is a Shipaton Next Gen development/demo build. The release build intentionally contains no Test Store key and points at a non-production backend placeholder. It is not presented as a production-distributed APK; Next Gen judging uses the public code repository and submitted demo video.
