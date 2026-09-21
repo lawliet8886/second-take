@@ -29,8 +29,9 @@ No private academic email address or enrollment document is reproduced here.
 
 - Repository: https://github.com/lawliet8886/second-take
 - Devpost entry: https://devpost.com/software/second-take-kxgcdq
-- Demo video: https://www.youtube.com/watch?v=lKjPDNHgfNc
-- Demo duration: approximately **1:41.45** (V5)
+- Demo video: https://www.youtube.com/watch?v=IWfMWZyNDaI
+- Demo duration: **102.652 seconds** (V6 local master; YouTube player reports 102.667 seconds)
+- Matching public source: https://github.com/lawliet8886/second-take/tree/846e64a2d784fd336ac1407169c6422564b3edc2 (open PR #5; no merge)
 - Devpost readback on September 21: **Submitted — 5/5 steps done**, updated video URL, revised story and tagline saved; no duplicate submission or new terms acceptance.
 - License: MIT
 
@@ -59,6 +60,8 @@ It does **not** claim:
 - a completed human TalkBack accessibility audit.
 
 ## Current audit note
+
+The later September 21 owner-approved V6 publication supersedes V5 as the submitted demo. YouTube confirmed publication; Devpost retained **SUBMITTED, 5/5 steps done** after the video, exact recorded replies, deterministic reading notes and matching-code links were saved. See [V6 publication receipt](PUBLICATION_V6_2026-09-21.md). Earlier V5 publication evidence below is historical.
 
 The September 21 owner-approved publication replaced the submitted video with V5 (1:41), updated the existing Devpost story/tagline and judge instructions, and retained the original video as an archive. See `PUBLICATION_RECEIPT_2026-09-21.md` for exact publication and GitHub evidence. V4 is an archived alternative, not the current submission. An application-level deadline bounds stalled provider waits. The latest live smoke had 5 router recoveries in 20 turns and no client aborts, so service availability remains a limitation.
 

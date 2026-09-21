@@ -1,0 +1,67 @@
+[
+  {
+    "index": 0,
+    "seconds": 6.075,
+    "text": "Your teammate's slides are late. The presentation is Friday. How do you start that conversation?"
+  },
+  {
+    "index": 1,
+    "seconds": 5.65,
+    "text": "The useful question is not which line wins. It is what the response actually gives you."
+  },
+  {
+    "index": 2,
+    "seconds": 8.525,
+    "text": "I tell Alex I am worried about the project. Alex asks what I mean. The concern is expressed, but the next step is still unclear."
+  },
+  {
+    "index": 3,
+    "seconds": 7.225,
+    "text": "Now I rewind. The app restores the checkpoint before that choice, with the same facts and conversation history."
+  },
+  {
+    "index": 4,
+    "seconds": 5.525,
+    "text": "Everything before the checkpoint stays fixed. This time, I make a specific request."
+  },
+  {
+    "index": 5,
+    "seconds": 4.85,
+    "text": "Can you finish today? Am I asking about ability, or asking Alex to act?"
+  },
+  {
+    "index": 6,
+    "seconds": 6.1,
+    "text": "Intent Lock asks me to confirm. My intention should be my decision, not the model's guess."
+  },
+  {
+    "index": 7,
+    "seconds": 5.45,
+    "text": "Alex names the sources and a time: nine tonight. That is not the whole project."
+  },
+  {
+    "index": 8,
+    "seconds": 6.65,
+    "text": "Both attempts are free. The premium comparison brings the choices and immediate responses together."
+  },
+  {
+    "index": 9,
+    "seconds": 8.35,
+    "text": "Here is the Revenue Cat Test Store purchase. No real money is charged. Access opens only with an active Pro entitlement."
+  },
+  {
+    "index": 10,
+    "seconds": 7.0,
+    "text": "Now the comparison explains the visible reply inside the app: clarification is still needed in version A."
+  },
+  {
+    "index": 11,
+    "seconds": 6.85,
+    "text": "In version B, read the scope and deadline. Then ask what is still open. Neither path gets a winning score."
+  },
+  {
+    "index": 12,
+    "seconds": 8.875,
+    "text": "Gemini interprets; policy and authored replies bound the outcome. Second Take. Rehearse the conversation, then decide what to say."
+  }
+]

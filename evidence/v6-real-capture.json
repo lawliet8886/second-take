@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "second-take-real-video-capture-1",
+  "date": "2026-09-21",
+  "productionCodeRevision": "246fd4811fd70c8a707c3b64d6664b2c6c07bb62",
+  "test": "RealDemoCaptureTest.record_current_connected_app",
+  "result": "OK (1 test)",
+  "instrumentationSeconds": 153.532,
+  "source": "assets/video/second-take-v6-real-source.mp4",
+  "sourceSha256": "AA809D7C3AC2BAE6557D09C6E64B117F83401CA769F19E382CE71BB0A00E0ECE",
+  "sourceSeconds": 176.304989,
+  "privateDebugApkSha256": "402AFE82237808DB7EB3A841BDB9DA886879ACE2935851A6A4BBAB1CE1D3EA5B",
+  "backend": {"realRepository": true, "modelConfiguration": "gemini-3.7-flash", "location": "global", "host": "loopback", "deadlinesUnchanged": true, "allCapturedTurnsRemotelySelected": "NOT_INDEPENDENTLY_MEASURED"},
+  "billing": {"testStoreKeyGuard": true, "realRepository": true, "fakeOverridesAbsent": true, "validTestPurchase": true, "customerInfoProAsserted": true, "realCharge": false, "restoreAndRelaunchInThisCapture": false},
+  "observedReplies": {"A": "Can you be more specific?", "B": "I can get the sources done by nine tonight."},
+  "stagesElapsedRealtimeMs": {"intro":3789870,"attempt-a":3817462,"rewind-action":3825201,"checkpoint":3829251,"intent-lock":3842089,"attempt-b":3854322,"test-store-paywall":3862787,"test-store-sheet":3871890,"comparison-top":3883303,"comparison-b":3893312,"reflection":3903318,"comparison-end":3911417},
+  "earlierAttempts": {"productCaptureFailures": 1, "failure": "Recovery before first Alex reply; stopped without simulated success.", "infrastructureStartsBeforeAppLaunch": 2, "infrastructureCause": "Cold emulator not ready; then restored snapshot did not contain the newly installed instrumentation.", "localEvidenceDirectory": "artifacts/v6-work", "failureRootCause": "NOT_FULLY_ISOLATED: cold call latency and host pressure observed; no authentication failure reproduced."},
+  "providerPreflight": {"directRouterSucceeded": true, "subsequentRealApiResponse": "ALEX_REPLY", "selectionSource": "GEMINI_SELECTOR", "sessionAndTurnElapsedMs":9379},
+  "limitations": ["Edited video is not a latency benchmark.", "Live provider availability is not guaranteed.", "UI automation drives real controls; it is not a human usability study.", "No production store purchase, deployment, retention or revenue claim."]
+}
