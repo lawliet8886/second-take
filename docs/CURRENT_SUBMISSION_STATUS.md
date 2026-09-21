@@ -1,6 +1,6 @@
 # Current submission status
 
-**Last verified: 2026-09-18**
+**Last verified: 2026-09-21**
 
 This file is the canonical current-status record for Second Take. Older readiness and form-audit documents are preserved as historical snapshots and may describe pre-submission states.
 
@@ -61,5 +61,7 @@ It does **not** claim:
 On 2026-09-17, the public repository was re-audited for Shipaton Next Gen alignment. The hardening branch addresses stale submission-status documentation, broken setup references, cross-platform backend configuration fallback, and reproducibility wording. The core product architecture and submitted claims remain substantively unchanged.
 
 On 2026-09-18, independent clean-room verification passed the provider-free backend gates (`npm ci`, build, tests, security check, `verify`) and the committed-wrapper Android gates (`./gradlew --version`, `assembleDebug`, `testDebugUnitTest`, `lintDebug`, `assembleRelease`) with Gradle 8.13. `@google/genai` is pinned consistently to `2.19.0` in the manifest and lockfile. External credentialed runtime checks remain separately classified.
+
+On 2026-09-21, the complete provider-free gates passed again; Vertex ADC and connected Android-to-backend execution were verified; and a controlled Gemini 3.7 Flash versus 3.8 Flash evaluation retained 3.7 because 3.8 was not non-inferior on ambiguity accuracy. The current environment did not contain the RevenueCat Test Store public SDK key, so the real offering/purchase/restore/relaunch sequence was not reverified. See [`FINAL_META_VALIDATION_2026-09-21.md`](FINAL_META_VALIDATION_2026-09-21.md).
 
 Historical documents should be read in their dated context. In particular, any older `NOT_SUBMITTED`, `PENDING_JOIN`, `READY_PENDING_PUBLIC_URLS`, or similar labels describe states before the confirmed 2026-08-29 submission.

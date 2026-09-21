@@ -1,6 +1,6 @@
 # RevenueCat Test Store setup v0.8
 
-Official documentation rechecked on 2026-09-17:
+Official documentation rechecked on 2026-09-21:
 
 - https://www.revenuecat.com/docs/test-and-launch/sandbox/test-store
 - https://www.revenuecat.com/docs/getting-started/configuring-sdk
@@ -27,6 +27,8 @@ RevenueCat's Shipaton manager has also explicitly confirmed in the official Devp
 The local key file is ignored by Git. Do not use a RevenueCat secret REST key. Google Play publication is not required for a Next Gen submission.
 
 ## Submitted project snapshot
+
+This is the recorded submission configuration, not a claim that the live dashboard was revalidated on 2026-09-21. The current checkout contained no `REVENUECAT_TEST_STORE_API_KEY`, and authenticated dashboard inspection could not be completed.
 
 - RevenueCat project: Second Take.
 - App/provider: Test Store only.

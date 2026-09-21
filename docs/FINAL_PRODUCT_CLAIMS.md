@@ -4,7 +4,7 @@
 
 - A working bilingual Android app connected to a local orchestration backend.
 - Natural text conversation with Alex, one-tap Intent Lock, exact checkpoint rewind, a second branch, and Full A/B Comparison.
-- RevenueCat Test Store purchase, `CustomerInfo`, entitlement `pro`, restore, relaunch recognition, cancellation, and failure handling.
+- Recorded submission evidence covers RevenueCat Test Store purchase, `CustomerInfo`, entitlement `pro`, restore, relaunch recognition, cancellation, and failure handling. The real Test Store sequence was not reverified on 2026-09-21 because the local public SDK key was absent.
 - Safe local selector fallback, session isolation, idempotent turns, and backend-owned hidden facts.
 
 ## Architectural guarantees
@@ -18,4 +18,3 @@
 
 - More scenarios and production hosting.
 - Store billing outside RevenueCat Test Store, accounts, cross-device persistence, voice, and an optional coaching layer.
-
