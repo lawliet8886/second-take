@@ -13,4 +13,4 @@ Baseline: `origin/main` at `8fcd40795045e0bc2fc7c925e2d6717bae864a3f`
 - [x] Complete UX/accessibility, privacy/security, secret/PII, claims, and reproducibility review.
 - [x] Write `FINAL_META_VALIDATION_2026-09-21.md` with explicit evidence classes and model decision.
 - [x] Rerun affected gates and the complete final suite; resolve material P0/P1/P2 findings.
-- [ ] Review and clean the diff, commit coherently, push the branch, and open a PR against `main` without merging.
+- [x] Review and clean the diff, commit coherently, push the branch, and open PR #4 against `main` without merging.
