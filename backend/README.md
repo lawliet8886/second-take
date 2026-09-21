@@ -64,6 +64,9 @@ If a turn returns `INTENT_LOCK_REQUIRED`, send the returned `turnId` and either 
 - `npm run verify` — build, tests, and security check
 - `npm run benchmark:local` — provider-free overhead benchmark
 - `npm run smoke` — controlled real Vertex smoke; incurs usage
+- `npm run benchmark:model-ab` — reproducible Gemini 3.7/3.8 Vertex comparison; incurs usage and writes the dated evidence artifact
+
+The model A/B command keeps production defaults unchanged. It uses the same frozen prompts, schemas, policy, candidates, state shape, retry behavior, and deterministic fallback for both models. The migration gate requires non-inferior safety and correction plus a material gain; see `../docs/FINAL_META_VALIDATION_2026-09-21.md` for the dated decision.
 
 ## Scope
 

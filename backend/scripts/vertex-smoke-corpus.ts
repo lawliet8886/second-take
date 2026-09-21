@@ -1,0 +1,18 @@
+export const VERTEX_SMOKE_CASES = [
+  {id:"smoke-pt-status",locale:"pt-BR",text:"O que ainda falta nos dois slides?",canonicalPrimaryIntent:"ASK_STATUS"},
+  {id:"smoke-pt-capability",locale:"pt-BR",text:"É realisticamente possível você concluir os dois slides hoje?",canonicalPrimaryIntent:"ASK_CAPABILITY"},
+  {id:"smoke-pt-request",locale:"pt-BR",text:"Por favor, termine os dois slides hoje.",canonicalPrimaryIntent:"REQUEST_COMPLETION"},
+  {id:"smoke-pt-frustration",locale:"pt-BR",text:"Estou muito frustrado com esse atraso.",canonicalPrimaryIntent:"EXPRESS_FRUSTRATION"},
+  {id:"smoke-pt-collaboration",locale:"pt-BR",text:"Vamos dividir os slides e terminar juntos?",canonicalPrimaryIntent:"PROPOSE_COLLABORATION"},
+  {id:"smoke-pt-claim",locale:"pt-BR",text:"O prazo da apresentação é sexta-feira.",canonicalPrimaryIntent:"ASSERT_CLAIM"},
+  {id:"smoke-pt-apology",locale:"pt-BR",text:"Desculpa por ter falado daquele jeito.",canonicalPrimaryIntent:"APOLOGIZE"},
+  {id:"smoke-pt-generalization",locale:"pt-BR",text:"Você nunca entrega nada no prazo.",canonicalPrimaryIntent:"ACCUSE_GENERALIZATION"},
+  {id:"smoke-en-status",locale:"en-US",text:"What is still missing from the two slides?",canonicalPrimaryIntent:"ASK_STATUS"},
+  {id:"smoke-en-capability",locale:"en-US",text:"Is it realistically possible for you to finish both slides today?",canonicalPrimaryIntent:"ASK_CAPABILITY"},
+  {id:"smoke-en-request",locale:"en-US",text:"Please finish both slides today.",canonicalPrimaryIntent:"REQUEST_COMPLETION"},
+  {id:"smoke-en-frustration",locale:"en-US",text:"I am really frustrated by this delay.",canonicalPrimaryIntent:"EXPRESS_FRUSTRATION"},
+  {id:"smoke-en-collaboration",locale:"en-US",text:"Can we split the slides and finish them together?",canonicalPrimaryIntent:"PROPOSE_COLLABORATION"},
+  {id:"smoke-en-claim",locale:"en-US",text:"The presentation deadline is Friday.",canonicalPrimaryIntent:"ASSERT_CLAIM"},
+  {id:"smoke-en-apology",locale:"en-US",text:"I am sorry I spoke to you that way.",canonicalPrimaryIntent:"APOLOGIZE"},
+  {id:"smoke-en-generalization",locale:"en-US",text:"You never deliver anything on time.",canonicalPrimaryIntent:"ACCUSE_GENERALIZATION"},
+] as const;

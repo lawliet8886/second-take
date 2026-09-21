@@ -1,4 +1,4 @@
-import { writeFileSync } from "node:fs";
+import { mkdirSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { FAMILY_BY_INTENT } from "../src/frozen.js";
 import type { RouterPort, SelectorPort } from "../src/domain/contracts.js";
@@ -17,5 +17,6 @@ for(let index=0;index<1_000;index++){
   samples.push(performance.now()-started);
 }
 const result={schemaVersion:"backend-v06-local-benchmark-1",createdAt:new Date().toISOString(),requests:samples.length,p50Ms:Number(percentile(samples,.5).toFixed(3)),p95Ms:Number(percentile(samples,.95).toFixed(3)),maxMs:Number(Math.max(...samples).toFixed(3)),hangingTurns:0};
+mkdirSync(resolve("results"),{recursive:true});
 writeFileSync(resolve("results/local-benchmark.json"),`${JSON.stringify(result,null,2)}\n`);
 process.stdout.write(`${JSON.stringify(result,null,2)}\n`);
