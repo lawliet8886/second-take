@@ -15,13 +15,19 @@ from PIL import Image, ImageDraw, ImageFont
 parser = argparse.ArgumentParser()
 parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[1])
 parser.add_argument("--work", type=Path, required=True)
+parser.add_argument("--manifest", type=Path, default=Path("assets/video/v4-edit.json"))
+parser.add_argument("--version", choices=["v4", "v5"], default="v4")
 parser.add_argument("--font", type=Path, default=Path("C:/Windows/Fonts/arial.ttf"))
 parser.add_argument("--bold-font", type=Path, default=Path("C:/Windows/Fonts/arialbd.ttf"))
 args = parser.parse_args()
 root, work = args.root.resolve(), args.work.resolve()
 work.mkdir(parents=True, exist_ok=True)
-manifest = json.loads((root / "assets/video/v4-edit.json").read_text(encoding="utf-8"))
+manifest = json.loads((root / args.manifest).read_text(encoding="utf-8"))
 timing = json.loads((work / "voice-timing.json").read_text(encoding="utf-8"))
+if manifest["version"].split("-")[0].lower() != args.version:
+    raise ValueError("Manifest version and output version must match")
+if [row["text"] for row in manifest["segments"]] != [row["text"] for row in timing]:
+    raise ValueError("Narration does not match the edit manifest; synthesize it again")
 source = root / manifest["source"]
 def font(size, bold=False):
     return ImageFont.truetype(str(args.bold_font if bold else args.font), size)
@@ -53,6 +59,16 @@ for i, (row, voice) in enumerate(zip(manifest["segments"], timing, strict=True))
         d.rounded_rectangle((x, 924, x + 67, 929), radius=2, fill="#aa8df6" if step <= i else "#27324a")
     d.rectangle((0, 951, 1920, 1080), fill="#050912")
     text = textwrap.fill(row["text"].replace("Revenue Cat", "RevenueCat"), width=94)
+    for position, value, face, spacing, limit in [
+        ((82, 248), row["title"], font(82, True), 12, (1300, 480)),
+        ((88, 494), row["body"], font(36), 14, (1300, 825)),
+    ]:
+        bounds = d.multiline_textbbox(position, value, font=face, spacing=spacing)
+        if bounds[2] > limit[0] or bounds[3] > limit[1]:
+            raise ValueError(f"Segment {i + 1}: editorial text exceeds safe bounds")
+    caption_bounds = d.multiline_textbbox((960, 980), text, font=font(32), anchor="ma", align="center", spacing=7)
+    if caption_bounds[0] < 30 or caption_bounds[2] > 1890 or caption_bounds[3] > 1070:
+        raise ValueError(f"Segment {i + 1}: captions exceed safe bounds")
     d.multiline_text((960, 980), text, font=font(32), fill="#f4f6fc", anchor="ma", align="center", spacing=7)
     panel = work / f"panel-{i:02}.png"
     bg.save(panel)
@@ -66,13 +82,15 @@ for i, (row, voice) in enumerate(zip(manifest["segments"], timing, strict=True))
     records.append({"segment": i + 1, "label": row["label"], "start": cursor, "end": cursor + duration, "sourceStart": row["start"], "sourceEnd": row["end"], "speedMultiplier": 1/speed})
     cursor += duration
     print(f"rendered_segment={i+1} cumulative_seconds={cursor:.2f}", flush=True)
+if cursor >= 120:
+    raise ValueError("Review video must remain under two minutes")
 concat = work / "concat.txt"
 concat.write_text("".join(f"file '{(work / f'clip-{i:02}.mp4').as_posix()}'\n" for i in range(len(timing))), encoding="utf-8")
-output = root / "assets/video/second-take-v4-review.mp4"
+output = root / f"assets/video/second-take-{args.version}-review.mp4"
 run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(concat), "-c:v", "copy", "-af", "loudnorm=I=-16:TP=-1.5:LRA=7", "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", str(output)])
-(root / "assets/video/second-take-v4-review.srt").write_text("\n\n".join(captions) + "\n", encoding="utf-8")
+(root / f"assets/video/second-take-{args.version}-review.srt").write_text("\n\n".join(captions) + "\n", encoding="utf-8")
 manifest_out = {"version": manifest["version"], "publication": "NOT_PUBLISHED", "source": manifest["source"], "sourceSha256": hashlib.sha256(source.read_bytes()).hexdigest(), "videoSha256": hashlib.sha256(output.read_bytes()).hexdigest(), "durationSeconds": cursor, "disclosure": manifest["disclosure"], "timeline": records}
-(root / "assets/video/v4-render-manifest.json").write_text(json.dumps(manifest_out, indent=2) + "\n", encoding="utf-8")
+(root / f"assets/video/{args.version}-render-manifest.json").write_text(json.dumps(manifest_out, indent=2) + "\n", encoding="utf-8")
 still = work / "comparison-still.png"
 run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-ss", "77", "-i", str(source), "-frames:v", "1", str(still)])
 thumbnail = Image.new("RGB", (1280, 720), "#0b1220")
@@ -88,5 +106,5 @@ td.text((54, 650), "Android prototype • RevenueCat Shipaton Next Gen", font=fo
 app = Image.open(still).convert("RGB")
 app.thumbnail((356, 638), Image.Resampling.LANCZOS)
 thumbnail.paste(app, (867, 40))
-thumbnail.save(root / "assets/thumbnail-v4-review.png")
+thumbnail.save(root / f"assets/thumbnail-{args.version}-review.png")
 print(json.dumps({"durationSeconds": cursor, "output": output.name}))

@@ -1,0 +1,59 @@
+1
+00:00:00,000 --> 00:00:06,075
+Your teammate's slides are late. The presentation is Friday. How do you start that
+conversation?
+
+2
+00:00:07,000 --> 00:00:12,150
+Second Take lets you rehearse, rewind, and inspect what a different choice changes.
+
+3
+00:00:13,000 --> 00:00:21,525
+I tell Alex I am worried about the project. Alex asks what I mean. The concern is expressed,
+but the next step is still unclear.
+
+4
+00:00:21,900 --> 00:00:29,125
+Now I rewind. The app restores the checkpoint before that choice, with the same facts and
+conversation history.
+
+5
+00:00:29,900 --> 00:00:35,425
+Everything before the checkpoint stays fixed. This time, I make a specific request.
+
+6
+00:00:35,900 --> 00:00:40,750
+Can you finish today? Am I asking about ability, or asking Alex to act?
+
+7
+00:00:41,900 --> 00:00:48,000
+Intent Lock asks me to confirm. My intention should be my decision, not the model's guess.
+
+8
+00:00:48,367 --> 00:00:54,742
+Alex offers the sources by nine tonight. Notice the limit: the sources, not the whole project.
+
+9
+00:00:55,367 --> 00:01:02,017
+Both attempts are free. The premium comparison brings the choices and immediate responses
+together.
+
+10
+00:01:02,367 --> 00:01:10,717
+Here is the RevenueCat Test Store purchase. No real money is charged. Access opens only with
+an active Pro entitlement.
+
+11
+00:01:14,367 --> 00:01:23,342
+Side by side, I can see what is still unclear and what Alex actually offered. A specific next
+step, not a promise to finish everything.
+
+12
+00:01:24,367 --> 00:01:32,017
+Gemini interprets language and selects allowed actions. Policy and authored replies keep the
+scenario consistent.
+
+13
+00:01:33,367 --> 00:01:39,892
+A rehearsal, not a prediction of real people. Second Take. Practice the words. Read the
+response.

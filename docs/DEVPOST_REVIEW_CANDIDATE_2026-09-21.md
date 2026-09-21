@@ -16,6 +16,8 @@ Second Take gives that moment a second attempt. Instead of starting a new rolepl
 
 In the recorded Alex rehearsal, “I am worried about the project” gets “What do you mean exactly?” After a rewind, “Can you finish today?” leads to “I can finish the sources by nine tonight.” The comparison puts those choices and immediate responses together.
 
+The useful detail is the limit of that offer: sources by nine, not the whole project. Reading both responses side by side helps distinguish an unresolved concern from a specific next step. This is an interpretation of the recorded example, not an automated coaching score or proof that one phrasing always works better.
+
 Intent Lock lets the user confirm whether an ambiguous message asks about ability or requests action. The conversation, rewind and second attempt are free. RevenueCat gates Full A/B Comparison after both attempts, when the user has a reason to review what changed.
 
 ## How we built it

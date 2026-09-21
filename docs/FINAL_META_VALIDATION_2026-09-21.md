@@ -95,3 +95,12 @@ The earlier sections below preserve the evidence and limitations recorded before
 - Free-form Gemini-authored Alex responses: rejected; authored responses and finite candidates remain invariant.
 - Local/faked Pro unlock in production flow: rejected; Full A/B Comparison still depends on `CustomerInfo.entitlements["pro"].isActive`.
 - Any claim of production users, revenue, charged purchase, store release, production backend, or scenarios not present in the repository: rejected.
+
+## Editorial follow-up — V5
+
+- VERIFIED_NOW: backend `npm run verify` passed again (24 tests, build and security). Gitleaks scans of scripts, documentation and Git history passed. Renderer negative checks rejected mismatched versions and stale narration.
+- HISTORICAL: Android, RevenueCat and Vertex observations above are not new tests from this editorial follow-up. Application runtime and model defaults were not changed.
+- ADOPTED: retain one real Alex example; explain the response's limited scope (sources by nine, not the entire project), and present Intent Lock as the user's choice. See `VIDEO_V5_REVIEW.md` for media validation and `STRATEGIC_REFINEMENT_2026-09-21.md` for the competitive reasoning.
+- REJECTED: invented coaching features/scores, a second scenario for presentation breadth alone, and unsupported winning/recurring-value claims.
+- NOT_VERIFIED: human full-length listening, independent comprehension/preference, and public V5 playback. Publication remains approval-gated.
+- LIMITATIONS: this is a presentation improvement, not a provider-reliability fix or added in-app comparison functionality. Known runtime limitations remain.

@@ -2,9 +2,9 @@
 
 ## Concrete materials for approval
 
-- Video: `assets/video/second-take-v4-review.mp4`, approximately 1:40, 1920×1080. Reviewed SHA-256 is stored in `assets/video/v4-render-manifest.json`.
-- Thumbnail: `assets/thumbnail-v4-review.png`.
-- English captions: `assets/video/second-take-v4-review.srt`.
+- Video: `assets/video/second-take-v5-review.mp4`, approximately 1:41, 1920×1080. SHA-256 and timeline are stored in `assets/video/v5-render-manifest.json`; review details in `VIDEO_V5_REVIEW.md`. V4 is retained unchanged.
+- Thumbnail: `assets/thumbnail-v5-review.png`.
+- English captions: `assets/video/second-take-v5-review.srt`.
 - Devpost copy: `DEVPOST_REVIEW_CANDIDATE_2026-09-21.md`.
 - Code/documentation: existing PR https://github.com/lawliet8886/second-take/pull/4; merge remains separately prohibited until the owner explicitly approves it.
 
@@ -20,9 +20,11 @@ Description:
 >
 > Second Take is an Android rehearsal prototype: try a message, rewind to the same checkpoint, change your choice, and compare the immediate responses.
 >
+> In this example, Alex offers sources by nine, not completion of the whole project. Inspect what was actually offered, not just whether the reply sounds positive.
+>
 > Built for RevenueCat Shipaton 2026 — Next Gen. The demo uses RevenueCat Test Store: no real charge. One Alex scenario, local backend, authored replies and policy-bounded AI. This is a rehearsal, not a prediction of real people.
 >
-> Edited Android footage; waits are shortened and selected frames held. The early comparison is a preview; the Intent Lock close-up is a labeled detail insert.
+> Edited Android footage; waits are shortened and selected frames held. The early comparison is a preview; the Intent Lock close-up is a labeled detail insert. Editorial interpretation is outside the app capture, not an automated coaching feature.
 >
 > Open-source code: https://github.com/lawliet8886/second-take
 
@@ -38,4 +40,4 @@ The internal target is September 28. The official deadline checked during planni
 
 ## Remaining risk
 
-The latest 20-turn Vertex smoke includes five router interruptions. The application now bounds waiting and prevents late transitions; it does not guarantee cloud availability. Human listening and preference review of V4 are still needed before the final publication decision. No independent user-demand or comprehension research has been conducted.
+The latest 20-turn Vertex smoke includes five router interruptions. The application now bounds waiting and prevents late transitions; it does not guarantee cloud availability. Human listening and preference review of V5 are still needed before the final publication decision. No independent user-demand or comprehension research has been conducted.
